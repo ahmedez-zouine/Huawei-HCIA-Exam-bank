@@ -735,3 +735,214 @@ add('tf', 'Firewall User Authentication',
     'RADIUS encrypts the entire authentication packet including the username.',
     ['True', 'False'], 'False',
     'RADIUS encrypts only the password field; the rest of the packet is not encrypted.')
+
+
+# =============================================================================
+# CHAPTER 9: Cryptography and PKI
+# =============================================================================
+
+add('single', 'Cryptography Basics',
+    'Which encryption type uses the same key for encryption and decryption?',
+    ['Symmetric encryption', 'Asymmetric encryption', 'Hashing', 'Steganography'], 'A',
+    'Symmetric encryption uses a single shared key for both encryption and decryption.')
+
+add('single', 'Cryptography Basics',
+    'Which encryption type uses a key pair: public key and private key?',
+    ['Symmetric encryption', 'Asymmetric encryption', 'Hashing', 'Encoding'], 'B',
+    'Asymmetric encryption uses a public key to encrypt and a private key to decrypt (or vice versa).')
+
+add('single', 'Cryptography Basics',
+    'Which algorithm is a symmetric encryption standard?',
+    ['RSA', 'AES', 'ECC', 'DSA'], 'B',
+    'AES (Advanced Encryption Standard) is a widely used symmetric encryption algorithm.')
+
+add('single', 'Cryptography Basics',
+    'Which algorithm is an asymmetric encryption algorithm?',
+    ['AES', 'DES', 'RSA', '3DES'], 'C',
+    'RSA is an asymmetric algorithm used for encryption, digital signatures, and key exchange.')
+
+add('single', 'Hash Algorithms',
+    'What is a key property of a cryptographic hash function?',
+    ['Reversible output', 'Fixed-length output regardless of input size', 'Requires a public key', 'Uses the same key for hashing and verification'], 'B',
+    'Hash functions produce a fixed-length digest for any input size.')
+
+add('single', 'Hash Algorithms',
+    'Which hash algorithm produces a 256-bit digest?',
+    ['MD5', 'SHA-1', 'SHA-256', 'SHA-512'], 'C',
+    'SHA-256 produces a 256-bit hash digest.')
+
+add('single', 'Hash Algorithms',
+    'Which hash algorithm is considered broken and unsuitable for security use?',
+    ['SHA-256', 'MD5', 'SHA-3', 'BLAKE2'], 'B',
+    'MD5 is vulnerable to collision attacks and should not be used for security-sensitive applications.')
+
+add('single', 'Digital Signatures',
+    'What is the purpose of a digital signature?',
+    ['Encrypt all data', 'Verify authenticity and integrity', 'Compress files', 'Hide sender identity'], 'B',
+    'Digital signatures verify the sender identity and ensure data has not been altered.')
+
+add('single', 'PKI',
+    'What does PKI stand for?',
+    ['Public Key Infrastructure', 'Private Key Interface', 'Packet Knowledge Index', 'Policy Key Identifier'], 'A',
+    'PKI provides a framework for managing public keys, certificates, and trust relationships.')
+
+add('single', 'PKI',
+    'Which entity issues digital certificates in a PKI?',
+    ['Registration Authority', 'Certificate Authority', 'End user', 'Repository'], 'B',
+    'A Certificate Authority (CA) issues and signs digital certificates.')
+
+add('single', 'PKI',
+    'Which PKI component validates an applicant identity before certificate issuance?',
+    ['Certificate Authority', 'Registration Authority', 'Repository', 'CRL'], 'B',
+    'A Registration Authority (RA) verifies identities and forwards requests to the CA.')
+
+add('single', 'PKI',
+    'What is a CRL used for?',
+    ['Storing public keys', 'Listing revoked certificates', 'Encrypting emails', 'Generating hash values'], 'B',
+    'A Certificate Revocation List (CRL) contains certificates that have been revoked before expiration.')
+
+add('multi', 'Cryptography Basics',
+    'Which are symmetric encryption algorithms? (Choose all that apply)',
+    ['AES', 'DES', '3DES', 'RSA'], 'A,B,C',
+    'AES, DES, and 3DES are symmetric; RSA is asymmetric.')
+
+add('multi', 'PKI',
+    'Which are core PKI components? (Choose all that apply)',
+    ['Certificate Authority', 'Registration Authority', 'Certificate repository', 'CRL/OCSP'], 'A,B,C,D',
+    'PKI includes CAs, RAs, repositories, and revocation mechanisms such as CRL and OCSP.')
+
+add('tf', 'Cryptography Basics',
+    'Symmetric encryption is generally faster than asymmetric encryption.',
+    ['True', 'False'], 'True',
+    'Symmetric algorithms are faster and suitable for bulk data encryption.')
+
+add('tf', 'Cryptography Basics',
+    'Asymmetric encryption is ideal for encrypting large amounts of data directly.',
+    ['True', 'False'], 'False',
+    'Asymmetric encryption is slower; it is often used for key exchange and signatures, while symmetric encryption handles bulk data.')
+
+add('tf', 'Hash Algorithms',
+    'A hash function can be reversed to recover the original input.',
+    ['True', 'False'], 'False',
+    'Hash functions are one-way; the original input cannot be derived from the digest.')
+
+add('tf', 'PKI',
+    'A digital certificate binds a public key to an identity.',
+    ['True', 'False'], 'True',
+    'Certificates contain a public key and identity information, signed by a trusted CA.')
+
+add('tf', 'PKI',
+    'A CRL lists certificates that are still valid.',
+    ['True', 'False'], 'False',
+    'A CRL lists certificates that have been revoked and should no longer be trusted.')
+
+
+# =============================================================================
+# CHAPTER 10: VPN
+# =============================================================================
+
+add('single', 'VPN Overview',
+    'What does VPN stand for?',
+    ['Virtual Private Network', 'Virtual Public Network', 'Verified Private Node', 'Virtual Protocol Network'], 'A',
+    'A VPN extends a private network across a public network using encryption and tunneling.')
+
+add('single', 'VPN Overview',
+    'Which benefit does a VPN provide over the public Internet?',
+    ['Higher physical speed', 'Confidentiality and secure remote access', 'Free bandwidth', 'No encryption needed'], 'B',
+    'VPNs provide confidentiality, integrity, and secure access over untrusted networks.')
+
+add('single', 'VPN Overview',
+    'Which VPN type connects individual remote users to a corporate network?',
+    ['Site-to-site VPN', 'Remote-access VPN', 'Intranet VPN', 'Extranet VPN'], 'B',
+    'Remote-access VPNs allow individual users to securely connect to a corporate network.')
+
+add('single', 'GRE VPN',
+    'Which protocol does GRE use as its transport protocol?',
+    ['TCP', 'UDP', 'IP protocol 47', 'IP protocol 50'], 'C',
+    'GRE encapsulates packets using IP protocol number 47.')
+
+add('single', 'GRE VPN',
+    'Which statement about GRE is correct?',
+    ['GRE provides encryption by default', 'GRE is a simple tunneling protocol without built-in encryption',
+     'GRE cannot tunnel multicast', 'GRE uses UDP port 500'], 'B',
+    'GRE provides encapsulation and tunneling but does not provide encryption or authentication by itself.')
+
+add('single', 'IPsec VPN',
+    'Which IPsec protocol provides encryption and confidentiality?',
+    ['AH', 'ESP', 'IKE', 'GRE'], 'B',
+    'ESP (Encapsulating Security Payload) provides encryption, authentication, and integrity.')
+
+add('single', 'IPsec VPN',
+    'Which IPsec protocol provides authentication and integrity but not encryption?',
+    ['AH', 'ESP', 'IKE', 'L2TP'], 'A',
+    'AH (Authentication Header) provides source authentication and integrity but does not encrypt payloads.')
+
+add('single', 'IPsec VPN',
+    'Which protocol is used to establish and manage IPsec security associations?',
+    ['AH', 'ESP', 'IKE', 'GRE'], 'C',
+    'IKE (Internet Key Exchange) negotiates keys and Security Associations for IPsec.')
+
+add('single', 'IPsec VPN',
+    'Which IPsec mode encrypts the entire original IP packet and adds a new IP header?',
+    ['Transport mode', 'Tunnel mode', 'Gre mode', 'Bridge mode'], 'B',
+    'Tunnel mode encapsulates and encrypts the entire original packet, adding a new IP header.')
+
+add('single', 'IPsec VPN',
+    'Which IPsec mode encrypts only the payload and is used for host-to-host communications?',
+    ['Transport mode', 'Tunnel mode', 'Bridge mode', 'Trunk mode'], 'A',
+    'Transport mode encrypts only the IP payload, leaving the original IP header intact.')
+
+add('single', 'L2TP VPN',
+    'Which layer-2 tunneling protocol is often combined with IPsec for encryption?',
+    ['PPTP', 'L2TP', 'GRE', 'MPLS'], 'B',
+    'L2TP provides tunneling and is commonly paired with IPsec to provide encryption.')
+
+add('single', 'SSL VPN',
+    'Which VPN type is commonly accessed through a web browser without a dedicated client?',
+    ['IPsec VPN', 'SSL VPN', 'GRE VPN', 'L2TP VPN'], 'B',
+    'SSL VPN can be accessed via a web browser, making it convenient for remote users.')
+
+add('single', 'SSL VPN',
+    'Which SSL VPN mode provides access to specific web applications through a browser?',
+    ['Web proxy mode', 'Network extension mode', 'File sharing mode', 'Full tunnel mode'], 'A',
+    'Web proxy mode allows browser-based access to internal web applications.')
+
+add('multi', 'VPN Overview',
+    'Which are common VPN types? (Choose all that apply)',
+    ['Site-to-site VPN', 'Remote-access VPN', 'Intranet VPN', 'Extranet VPN'], 'A,B,C,D',
+    'VPNs can be site-to-site, remote-access, intranet, or extranet based on deployment.')
+
+add('multi', 'IPsec VPN',
+    'Which are IPsec protocols? (Choose all that apply)',
+    ['AH', 'ESP', 'IKE', 'GRE'], 'A,B,C',
+    'AH, ESP, and IKE are part of IPsec; GRE is a separate tunneling protocol.')
+
+add('multi', 'SSL VPN',
+    'Which are common SSL VPN access modes? (Choose all that apply)',
+    ['Web proxy', 'File sharing', 'Network extension', 'Port forwarding'], 'A,B,C,D',
+    'SSL VPN can offer web proxy, file sharing, network extension, and port forwarding.')
+
+add('tf', 'GRE VPN',
+    'GRE provides strong encryption by default.',
+    ['True', 'False'], 'False',
+    'GRE only encapsulates traffic; encryption must be added separately, often with IPsec.')
+
+add('tf', 'IPsec VPN',
+    'ESP provides both encryption and authentication.',
+    ['True', 'False'], 'True',
+    'ESP can encrypt payloads and authenticate packets.')
+
+add('tf', 'IPsec VPN',
+    'AH provides payload encryption.',
+    ['True', 'False'], 'False',
+    'AH provides authentication and integrity but does not encrypt the payload.')
+
+add('tf', 'L2TP VPN',
+    'L2TP alone does not provide encryption.',
+    ['True', 'False'], 'True',
+    'L2TP provides tunneling but relies on IPsec or other mechanisms for encryption.')
+
+add('tf', 'SSL VPN',
+    'SSL VPN typically uses TCP port 443.',
+    ['True', 'False'], 'True',
+    'SSL/TLS VPNs commonly use HTTPS/TCP 443, which is usually allowed through firewalls.')
