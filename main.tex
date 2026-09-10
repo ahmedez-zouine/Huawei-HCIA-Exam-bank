@@ -8,40 +8,27 @@
 % =========================================================================
 \begin{titlepage}
     \centering
-    \vspace*{0.6cm}
+    \vspace*{0.4cm}
     
-    % Top Header Branding
-    {\small\scshape\bfseries\color{darkslate!75} Huawei Certified ICT Associate $\;\cdot\;$ Official Certification Curriculum}\par
+    % Official UM5R University Logo & Department Info
+    \includegraphics[height=2.0cm]{assets/um5r_logo.png}\par
+    \vspace{0.4cm}
+    {\small\bfseries\color{darkslate!85} Université Mohammed V de Rabat $\;\cdot\;$ Faculté des Sciences}\par
+    \vspace{0.2em}
+    {\small\bfseries\color{hblue} Master 2I2S -- Ingénierie Informatique et Sécurité des Systèmes}\par
     \vspace{0.6em}
-    {\color{hred}\rule{\textwidth}{1.8pt}}\par
+    {\color{hblue}\rule{\textwidth}{1.2pt}}\par
     \vspace{1.2cm}
     
-    % Minimalist TikZ Vector Security Shield
-    \begin{tikzpicture}[scale=1.0]
-        % Outer shield
-        \draw[line width=1.8pt, color=hblue, fill=hblue!4] 
-            (0, 1.6) -- (1.5, 1.6) .. controls (1.5, 0.0) and (0.8, -1.2) .. (0, -1.8) 
-            .. controls (-0.8, -1.2) and (-1.5, 0.0) .. (-1.5, 1.6) -- cycle;
-        % Inner shield accent
-        \draw[line width=0.8pt, color=hblue!35] 
-            (0, 1.35) -- (1.2, 1.35) .. controls (1.2, 0.0) and (0.6, -0.9) .. (0, -1.45) 
-            .. controls (-0.6, -0.9) and (-1.2, 0.0) .. (-1.2, 1.35) -- cycle;
-        % Center checkmark accent
-        \draw[line width=2.4pt, color=hred, line cap=round, line join=round] 
-            (-0.45, -0.1) -- (-0.1, -0.45) -- (0.6, 0.45);
-    \end{tikzpicture}\par
-    
-    \vspace{1.0cm}
-    
-    % Grand Title & Subtitle
-    {\fontsize{28}{34}\selectfont\bfseries\color{hblue} HCIA-Security V3.0\par}
+    % Main Title & Subtitles
+    {\fontsize{26}{32}\selectfont\bfseries\color{hblue} Huawei HCIA-Security V3.0\par}
     \vspace{0.4cm}
-    {\fontsize{18}{24}\selectfont\bfseries\color{darkslate} Master Certification Exam Guide\par}
+    {\fontsize{18}{23}\selectfont\bfseries\color{darkslate} Master 2I2S Exam Preparation Guide\par}
     \vspace{0.3cm}
-    {\large\color{darkslate!70} 1,050 Practice Questions with In-Depth Conceptual Explanations\par}
+    {\large\color{darkslate!75} 1,050 Practice Questions with Simple Explanations\par}
     
-    \vspace{0.6cm}
-    {\color{hblue!25}\rule{0.3\textwidth}{0.8pt}}\par
+    \vspace{0.5cm}
+    {\color{hred}\rule{0.25\textwidth}{1.4pt}}\par
     \vspace{0.8cm}
     
     % Clean Specification Card
@@ -59,17 +46,16 @@
         right=14pt
     ]
         \centering
-        {\large\bfseries\color{hblue} Examination Specifications \& Syllabus Blueprint}\\[0.7em]
+        {\large\bfseries\color{hblue} Master 2I2S Study Guide \& Exam Specifications}\\[0.6em]
         \color{darkslate}\small
         \renewcommand{\arraystretch}{1.25}
         \begin{tabular}{r@{\hspace{0.8em}}l}
             \textbf{Target Exam:} & Huawei Certified ICT Associate -- Security (Exam Code: \textbf{H12-711}) \\
-            \textbf{Curriculum Standard:} & HCIA-Security V3.0 (All 11 Official Courseware Modules) \\
-            \textbf{Total Question Volume:} & \textbf{1,050 Fully Annotated Questions} \\
-            \textbf{Format Distribution:} & 420 Single Choice $\;\cdot\;$ 320 Multiple Choice $\;\cdot\;$ 310 True/False \\
-            \textbf{Pedagogical Scope:} & Exhaustive Technical Rationale \& Principle Breakdown for Every Question \\
-            \textbf{Rapid Assessment:} & Master Answer Key Matrix (Pages 300--305) for Self-Testing \\
-            \textbf{Passing Threshold:} & 600 / 1000 Points (60\% Passing Standard) \\
+            \textbf{Master Program:} & \textbf{Master 2I2S} (Université Mohammed V de Rabat -- UM5R) \\
+            \textbf{Total Questions:} & \textbf{1,050 Questions} (420 Single Choice $\;\cdot\;$ 320 Multiple Choice $\;\cdot\;$ 310 True/False) \\
+            \textbf{Explanations:} & Clear explanation for every question to understand the real concept \\
+            \textbf{Answer Key:} & Quick-check tables at the end (Pages 300--305) for fast scoring \\
+            \textbf{Passing Score:} & 600 / 1000 (Pass your HCIA during your Master 2I2S degree!) \\
         \end{tabular}
     \end{tcolorbox}
     
@@ -77,17 +63,17 @@
     
     % Core Domains Overview
     {\small\color{darkslate!75}
-    \textbf{Curriculum Domains:} 
-    Network Security Basics $\;\cdot\;$ Threats \& Prevention $\;\cdot\;$ Next-Gen Firewalls $\;\cdot\;$ NAT\\
-    Dual-System Hot Standby (VRRP/VGMP) $\;\cdot\;$ AAA \& Identity $\;\cdot\;$ IPS $\;\cdot\;$ Cryptography $\;\cdot\;$ PKI $\;\cdot\;$ IPsec \& SSL VPN\par}
+    \textbf{All 11 Chapters Covered:} 
+    Network Basics $\;\cdot\;$ Attacks \& Defense $\;\cdot\;$ Firewalls $\;\cdot\;$ NAT\\
+    Dual-System Hot Standby (VRRP/VGMP) $\;\cdot\;$ AAA \& Users $\;\cdot\;$ IPS $\;\cdot\;$ Encryption $\;\cdot\;$ PKI $\;\cdot\;$ IPsec \& SSL VPN\par}
     
     \vfill
     
     % Bottom Footer Rule & Tagline
-    {\color{hblue!40}\rule{\textwidth}{0.8pt}}\par
+    {\color{hblue!30}\rule{\textwidth}{0.8pt}}\par
     \vspace{0.4em}
-    {\footnotesize\color{darkslate!60}
-    \textbf{Huawei ICT Academy Exam Resource Edition} \hfill \textbf{Comprehensive Study Edition $\cdot$ 2026}
+    {\footnotesize\color{darkslate!65}
+    \textbf{Master 2I2S $\;\cdot\;$ Université Mohammed V de Rabat (UM5R)} \hfill \textbf{Student Revision Guide $\cdot$ 2025/2026}
     }\par
     \vspace*{0.2cm}
 \end{titlepage}
