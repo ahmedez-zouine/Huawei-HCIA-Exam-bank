@@ -11,11 +11,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/UM5R-Master%202I2S-1E3A8A?style=flat-square" alt="Master 2I2S">
-  <img src="https://img.shields.io/badge/Exam-H12--711-DC2626?style=flat-square" alt="Exam Code">
-  <img src="https://img.shields.io/badge/Questions-1%2C050%20Questions-0D9488?style=flat-square" alt="Questions">
-  <img src="https://img.shields.io/badge/Format-PDF%20Book%20(305%20Pages)-6D28D9?style=flat-square" alt="PDF Book">
-  <img src="https://img.shields.io/badge/Status-100%25%20Free%20for%20Students-047857?style=flat-square" alt="Free for Students">
+  <a href="https://e.huawei.com/en/talent/#/cert/product-details?target=_blank&category=1&certId=14">
+    <img src="https://img.shields.io/badge/Huawei%20Certification-HCIA--Security%20V3.0-1E3A8A?style=for-the-badge&logo=huawei" alt="Huawei Certification">
+  </a>
+  <img src="https://img.shields.io/badge/Exam%20Code-H12--711-DC2626?style=for-the-badge" alt="Exam Code">
+  <a href="data/full_question_bank.json">
+    <img src="https://img.shields.io/badge/Question%20Bank-1%2C050%20Questions-0D9488?style=for-the-badge" alt="Question Bank">
+  </a>
+  <a href="HCIA_Security_1050_Questions_Master_Guide.pdf">
+    <img src="https://img.shields.io/badge/PDF%20Book-305%20Pages%20(1.5%20MB)-6D28D9?style=for-the-badge&logo=adobe-acrobat-reader" alt="PDF Book">
+  </a>
+  <img src="https://img.shields.io/badge/Typeset%20with-LaTeX%20%2F%20TikZ-047857?style=for-the-badge&logo=latex" alt="LaTeX">
 </p>
 
 ---
