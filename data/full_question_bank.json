@@ -5636,7 +5636,7 @@
         "ECC can only be executed on supercomputers"
       ],
       "answer": "B",
-      "explanation": "Based on the discrete logarithm problem over elliptic curves, ECC delivers equivalent cryptographic security with much smaller key sizes (e.g., 256-bit ECC $\u0007pprox$ 3072-bit RSA), resulting in faster computations and lower bandwidth/memory footprints.",
+      "explanation": "Based on the discrete logarithm problem over elliptic curves, ECC delivers equivalent cryptographic security with much smaller key sizes (e.g., 256-bit ECC roughly equivalent to 3072-bit RSA), resulting in faster computations and lower bandwidth/memory footprints.",
       "qid": 326,
       "part": 1
     },

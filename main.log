@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.30)  10 SEP 2026 20:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.30)  10 SEP 2026 20:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -801,8 +801,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ef
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count349
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -823,6 +822,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -903,6 +903,8 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 Package hyperref Info: Link coloring ON on input line 4.
+
+(./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -963,227 +965,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/us
 r/local/texlive/2026basic/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/t
-exlive/2026basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-No file main.toc.
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
-
+exlive/2026basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (./main.toc
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 \clearpage
-                [1] (./chapters/exam_blueprint.tex
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.21 ...vailability (VRRP & VGMP) & 38 & 30 & 28 &
-                                                   96 \\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.26 ...cations (IPsec & SSL VPN) & 40 & 30 & 32 &
-                                                   102 \\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
-Overfull \hbox (76.04532pt too wide) in paragraph at lines 12--31
- [][] 
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-6.
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [2
-
-{/usr/local/texlive/2026basic/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}])
-(./chapters/part1_single_choice.tex [3
-
-] [4] [5] [6] [7] [8] [9] [10] [11]
-[12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26]
-[27]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-339.
- (/usr/local/texlive/2026basic/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [28]
-[29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43]
-[44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58]
-[59] [60] [61] [62] [63] [64] [65] [66]
-Underfull \hbox (badness 1043) in paragraph at lines 3325--3326
-[]\T1/lmr/bx/n/10 (+20) Concept & Ra-tio-nale: \T1/lmr/m/n/10 (+20) In Huawei f
-ire-walls, ex-e-cut-ing \T1/lmtt/m/n/10 hrp track interface <interface-type>
- []
-
-[67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81]
-[82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93]
-Underfull \hbox (badness 10000) in paragraph at lines 4626--4627
-[]\T1/lmr/m/n/10 (+20) To re-strict the search query to spe-cific ob-ject class
-es and at-tributes (e.g.,
- []
-
-[94] [95] [96] [97] [98]
-
-! LaTeX Error: Unicode character ^^G (U+0007)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4906 ...aller key sizes (e.g., 256-bit ECC \$^^G
-                                                  pprox\$ 3072-bit RSA), res...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-[99] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109] [110] [111]
-[112]
-Underfull \hbox (badness 1383) in paragraph at lines 5591--5592
-[]\T1/lmr/m/n/10 (+20) A Base64-encoded ASCII text for-mat de-lim-ited by heade
-r and footer lines (e.g., \T1/lmtt/m/n/10 -----BEGIN
- []
-
-[113] [114] [115] [116] [117] [118] [119] [120] [121] [122] [123] [124]
-[125] [126] [127]) [128] (./chapters/part2_multi_choice.tex [129
-
-] [130]
-[131] [132] [133] [134] [135] [136] [137] [138] [139] [140] [141] [142]
-[143] [144] [145] [146]
-Underfull \hbox (badness 1496) in paragraph at lines 975--976
-[]\T1/lmr/bx/n/10 (+20) Concept & Ra-tio-nale: \T1/lmr/m/n/10 (+20) Stan-dard s
-can-ning meth-ods in-clude TCP Con-nect, TCP SYN, TCP
- []
-
-[147] [148] [149] [150] [151] [152] [153] [154] [155] [156] [157] [158]
-[159] [160] [161] [162] [163] [164] [165] [166] [167] [168]
-Underfull \hbox (badness 10000) in paragraph at lines 2127--2128
-\T1/lmtt/m/n/10 display firewall server-map\T1/lmr/m/n/10 (+20) , and \T1/lmtt/
-m/n/10 display firewall session table verbose\T1/lmr/m/n/10 (+20) . \T1/lmtt/m/
-n/10 reset
- []
-
-[169] [170] [171] [172] [173] [174] [175] [176] [177] [178] [179] [180]
-[181] [182] [183] [184] [185] [186] [187] [188] [189] [190] [191] [192]
-Underfull \hbox (badness 2443) in paragraph at lines 3427--3428
-[]\T1/lmr/bx/n/10 (+20) Concept & Ra-tio-nale: \T1/lmr/m/n/10 (+20) HW-TA-CACS 
-de-fines sep-a-rate mes-sage struc-tures for Au-then-ti-ca-tion
- []
-
-[193] [194] [195] [196] [197]
-Underfull \hbox (badness 5504) in paragraph at lines 3675--3676
-[]\T1/lmr/bx/n/10 (+20) Concept & Ra-tio-nale: \T1/lmr/m/n/10 (+20) AAA di-ag-n
-os-tics use \T1/lmtt/m/n/10 display user-manage online-user\T1/lmr/m/n/10 (+20)
- , \T1/lmtt/m/n/10 display
- []
-
-[198] [199] [200] [201] [202] [203] [204] [205] [206] [207] [208] [209]
-[210] [211] [212] [213] [214] [215] [216] [217] [218] [219] [220] [221])
-[222] (./chapters/part3_true_false.tex [223
-
-] [224] [225] [226] [227] [228]
-[229] [230] [231] [232] [233] [234] [235] [236] [237] [238] [239] [240]
-[241] [242] [243] [244] [245] [246] [247] [248] [249] [250] [251] [252]
-[253] [254] [255] [256] [257] [258] [259] [260] [261] [262] [263] [264]
-[265] [266] [267] [268] [269] [270] [271] [272] [273] [274] [275] [276]
-[277] [278] [279] [280] [281] [282] [283] [284] [285] [286] [287] [288]
-[289] [290] [291] [292] [293] [294] [295] [296]) [297]
-(./chapters/quick_answer_key.tex
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 2.
-
-
-Overfull \hbox (98.80368pt too wide) in alignment at lines 8--12
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (98.80368pt too wide) in alignment at lines 12--56
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-ignored: Infinite glue shrinkage found in box being split [298
-
-] [299]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2 on input line 131.
-
-
-ignored: Infinite glue shrinkage found in box being split [300
-
-] [301]
-Overfull \hbox (98.80368pt too wide) in alignment at lines 136--140
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (115.05383pt too wide) in alignment at lines 140--173
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3 on input line 173.
-
-) [302
-
-]
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(./main.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
- ***********
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  AC81A1B5E4438BA255C3BFA37C39C26B;11233.
- ) 
-Here is how much of TeX's memory you used:
- 32819 strings out of 469006
- 576540 string characters out of 5454813
- 1000465 words of memory out of 5000000
- 56786 multiletter control sequences out of 15000+600000
- 711866 words of font info for 210 fonts, out of 8000000 for 9000
- 319 hyphenation exceptions out of 8191
- 121i,13n,124p,1001b,628s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></u
-sr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
-cal/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/te
-xlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texliv
-e/2026basic/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026
-basic/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026basic/t
-exmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2026basic/texmf-
-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/
-fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/
-type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (303 pages, 1477306 bytes).
-PDF statistics:
- 5938 PDF objects out of 6186 (max. 8388607)
- 5556 compressed objects within 56 object streams
- 4036 named destinations out of 4296 (max. 500000)
- 45581 words of extra memory for PDF output out of 51595 (max. 10000000)
-
+l.31 ..

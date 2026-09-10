@@ -136,7 +136,7 @@ def write_exam_blueprint(ch_stats, out_path):
     ]
     tot_s, tot_m, tot_t, tot_all = 0, 0, 0, 0
     for s in ch_stats:
-        lines.append(f"{s['num']} & {s['title']} & {s['single']} & {s['multi']} & {s['tf']} & {s['total']} \\\\")
+        lines.append(f"{s['num']} & {escape_latex(s['title'])} & {s['single']} & {s['multi']} & {s['tf']} & {s['total']} \\\\")
         tot_s += s['single']
         tot_m += s['multi']
         tot_t += s['tf']
@@ -225,20 +225,20 @@ def write_quick_answer_key(all_single, all_multi, all_tf, out_path):
         r"",
         r"\subsection*{Part 1: Single Choice Answers (Q1 -- Q420)}",
         r"\small",
-        r"\begin{longtable}{cc|cc|cc|cc|cc|cc|cc|cc|cc|cc}",
+        r"\begin{longtable}{cc|cc|cc|cc|cc}",
         r"\toprule",
-        r"\textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} \\",
+        r"\textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} \\",
         r"\midrule",
         r"\endhead"
     ]
 
-    # Format Single Choice: 10 per row
-    for i in range(0, len(all_single), 10):
-        chunk = all_single[i:i+10]
+    # Format Single Choice: 5 per row
+    for i in range(0, len(all_single), 5):
+        chunk = all_single[i:i+5]
         row_items = []
         for q in chunk:
             row_items.append(f"{q['qid']} & {q['answer']}")
-        while len(row_items) < 10:
+        while len(row_items) < 5:
             row_items.append("&")
         lines.append(" & ".join(row_items) + r" \\")
 
@@ -273,21 +273,21 @@ def write_quick_answer_key(all_single, all_multi, all_tf, out_path):
         r"\clearpage",
         r"\subsection*{Part 3: True / False Answers (Q741 -- Q1050)}",
         r"\small",
-        r"\begin{longtable}{cc|cc|cc|cc|cc|cc|cc|cc|cc|cc}",
+        r"\begin{longtable}{cc|cc|cc|cc|cc}",
         r"\toprule",
-        r"\textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} \\",
+        r"\textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} & \textbf{Q\#} & \textbf{Ans} \\",
         r"\midrule",
         r"\endhead"
     ])
 
-    # Format True/False: 10 per row, show T or F
-    for i in range(0, len(all_tf), 10):
-        chunk = all_tf[i:i+10]
+    # Format True/False: 5 per row, show T or F
+    for i in range(0, len(all_tf), 5):
+        chunk = all_tf[i:i+5]
         row_items = []
         for q in chunk:
-            tf_str = "T" if q['answer'] == "A" else "F"
+            tf_str = "True" if q['answer'] == "A" else "False"
             row_items.append(f"{q['qid']} & {tf_str}")
-        while len(row_items) < 10:
+        while len(row_items) < 5:
             row_items.append("&")
         lines.append(" & ".join(row_items) + r" \\")
 
