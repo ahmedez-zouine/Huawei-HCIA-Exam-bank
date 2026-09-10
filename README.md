@@ -43,7 +43,9 @@ Every single question comes with a **simple and clear explanation** so you can u
 Here is how the first page of our PDF guide looks:
 
 <p align="center">
-  <img src="assets/cover_page_preview.png" alt="Master 2I2S Cover Page" width="55%" style="border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);">
+  <a href="HCIA_Security_1050_Questions_Master_Guide.pdf">
+    <img src="assets/cover_preview.png" alt="Master 2I2S Cover Page Preview" width="55%" style="border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);">
+  </a>
 </p>
 
 ---
@@ -120,7 +122,7 @@ The complete PDF book is compiled and ready to read:
 │
 ├── assets/
 │   ├── um5r_logo.png                              # Official UM5R University logo
-│   ├── cover_page_preview.png                     # Preview of the cover page
+│   ├── cover_preview.png                          # Preview of the cover page
 │   ├── sample_single_choice.png                   # Single-choice question preview
 │   ├── sample_multi_choice.png                    # Multiple-choice question preview
 │   ├── sample_true_false.png                      # True/False question preview
