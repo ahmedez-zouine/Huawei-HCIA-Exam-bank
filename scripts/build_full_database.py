@@ -116,6 +116,7 @@ def build_all_questions():
 
     return all_single, all_multi, all_tf, ch_stats
 
+def write_exam_blueprint(ch_stats, out_path):
     lines = [
         r"\phantomsection",
         r"\section*{HCIA-Security V3.0 Exam Blueprint \& Question Distribution}",
