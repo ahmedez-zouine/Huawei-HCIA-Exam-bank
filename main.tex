@@ -1,0 +1,102 @@
+\documentclass[10pt,a4paper]{article}
+\input{preamble.tex}
+
+\begin{document}
+
+% =========================================================================
+% COVER / TITLE PAGE
+% =========================================================================
+\begin{titlepage}
+    \centering
+    \vspace*{1.2cm}
+    
+    {\Huge\bfseries\color{hblue} HCIA-Security V3.0\\[0.3em]}
+    {\LARGE\bfseries\color{darkslate} Comprehensive Exam Preparation Guide\\[0.2em]
+    \large\textit{Master Question Bank with In-Depth Conceptual Rationale}\\[1.2cm]}
+    
+    \begin{tcolorbox}[
+        colback=qbg,
+        colframe=hblue,
+        arc=2.5mm,
+        boxrule=1.2pt,
+        leftrule=5pt,
+        width=0.92\textwidth,
+        halign=center
+    ]
+        \vspace{0.3em}
+        {\large\textbf{\color{hblue} Complete 1,050-Question Examination Syllabus}}\\[0.8em]
+        \color{darkslate}
+        \begin{tabular}{rl}
+            \textbf{Target Certification:} & Huawei Certified ICT Associate -- Security (Exam H12-711) \\
+            \textbf{Curriculum Alignment:} & HCIA-Security V3.0 (11 Comprehensive Chapters) \\
+            \textbf{Total Question Volume:} & \textbf{1,050 Fully Annotated Questions} \\
+            \textbf{Part 1 (Single Choice):} & 420 Questions (Q1 -- Q420) \\
+            \textbf{Part 2 (Multiple Choice):} & 320 Questions (Q421 -- Q740) \\
+            \textbf{Part 3 (True / False):} & 310 Questions (Q741 -- Q1050) \\
+            \textbf{Feature Highlight:} & Complete Conceptual Explanation for Every Single Question \\
+            \textbf{Quick Reference:} & Unified Master Answer Key Matrix \\
+        \end{tabular}
+        \vspace{0.3em}
+    \end{tcolorbox}
+    
+    \vspace{1.5cm}
+    
+    \begin{tcolorbox}[
+        colback=ansbg,
+        colframe=ansgreen,
+        arc=2mm,
+        boxrule=0.8pt,
+        width=0.92\textwidth,
+        halign=center
+    ]
+        \color{ansgreen!80!black}
+        \textbf{Curriculum Coverage:} Network Security Concepts $\cdot$ Network Basics $\cdot$ Common Network Threats $\cdot$ Firewall Architecture \& State Inspection $\cdot$ Security Policies \& NAT $\cdot$ Dual-System Hot Standby (VRRP \& VGMP) $\cdot$ AAA \& User Authentication $\cdot$ Intrusion Prevention (IPS) $\cdot$ Cryptography Foundations $\cdot$ PKI Certificates $\cdot$ VPN Technologies (IPsec, IKEv1/v2, L2TP, SSL VPN)
+    \end{tcolorbox}
+    
+    \vfill
+    
+    {\small\color{darkslate!70}
+    Compiled and Typeset for Huawei ICT Certification Candidates and Security Professionals\\[0.3em]
+    Huawei Certified ICT Associate $\cdot$ Security Track $\cdot$ Exam Preparation Edition
+    }
+\end{titlepage}
+
+% =========================================================================
+% TABLE OF CONTENTS
+% =========================================================================
+\tableofcontents
+\clearpage
+
+% =========================================================================
+% EXAM BLUEPRINT & SYLLABUS OVERVIEW
+% =========================================================================
+\input{chapters/exam_blueprint.tex}
+
+% =========================================================================
+% PART 1: SINGLE-ANSWER QUESTIONS (Q1 - Q420)
+% =========================================================================
+\part{Single-Answer Questions (Q1 -- Q420)}
+\input{chapters/part1_single_choice.tex}
+\clearpage
+
+% =========================================================================
+% PART 2: MULTIPLE-ANSWER QUESTIONS (Q421 - Q740)
+% =========================================================================
+\part{Multiple-Answer Questions (Q421 -- Q740)}
+\input{chapters/part2_multi_choice.tex}
+\clearpage
+
+% =========================================================================
+% PART 3: TRUE / FALSE QUESTIONS (Q741 - Q1050)
+% =========================================================================
+\part{True / False Questions (Q741 -- Q1050)}
+\input{chapters/part3_true_false.tex}
+\clearpage
+
+% =========================================================================
+% PART 4: QUICK REFERENCE ANSWER KEY
+% =========================================================================
+\part{Complete Answer Key \& Quick Reference}
+\input{chapters/quick_answer_key.tex}
+
+\end{document}

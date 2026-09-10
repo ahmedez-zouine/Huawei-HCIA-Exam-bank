@@ -1,0 +1,4051 @@
+\section{Chapter 1: Network Security Concepts and Specifications}
+
+\begin{qcard}{741}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} ISO 27002 Certification \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+ISO/IEC 27002 can be used directly to certify an enterprise's information security management system (ISMS).
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. ISO/IEC 27001 is the normative specification used for ISMS certification. ISO/IEC 27002 is an advisory code of practice providing guidance on implementing security controls and cannot be certified against directly.
+\end{explainbox}
+
+\begin{qcard}{742}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Confidentiality and Plaintext \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+If an attacker intercepts an encrypted ciphertext message across the Internet but cannot decrypt it, confidentiality has been successfully preserved.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Confidentiality ensures that unauthorized entities cannot access the plaintext meaning of the information. Intercepting encrypted ciphertext without the key preserves confidentiality.
+\end{explainbox}
+
+\begin{qcard}{743}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Availability and Hardware Redundancy \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Deploying redundant power supplies and clustered firewalls helps safeguard the Availability attribute of the CIA triad.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Hardware redundancy, uninterruptible power supplies (UPS), and dual-system firewall clustering ensure that services continue running reliably without disruption, directly protecting Availability.
+\end{explainbox}
+
+\begin{qcard}{744}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Communication Security Era Focus \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In the 1940s Communication Security era, information security primarily focused on software-defined wide area network (SD-WAN) encryption.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. In the 1940s, modern computer networks did not exist. Information security was restricted to physical security and basic cipher communications (such as manual stream ciphers for telegraph and radio).
+\end{explainbox}
+
+\begin{qcard}{745}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Non-repudiation with Symmetric Keys \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Symmetric key encryption alone provides non-repudiation because both communication parties share the exact same key.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Because both sender and receiver share the identical secret symmetric key, either party could have generated the message. Therefore, symmetric encryption cannot mathematically prove which party originated the data, failing to provide non-repudiation.
+\end{explainbox}
+
+\begin{qcard}{746}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Classified Protection 2.0 Scope \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Cybersecurity Classified Protection 2.0 applies only to traditional isolated PC workstations and excludes cloud computing, IoT, and industrial control systems.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Classified Protection 2.0 (MLPS 2.0) significantly expanded its scope beyond traditional networks to explicitly cover Cloud Computing, Mobile Internet, Internet of Things (IoT), Industrial Control Systems (ICS), and Big Data.
+\end{explainbox}
+
+\begin{qcard}{747}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} TCSEC Division D \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In TCSEC (Orange Book), Division D represents systems that have been evaluated and verified to provide the highest cryptographic security.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. In TCSEC, Division D is labeled 'Minimal Protection' and represents systems that have failed security evaluation or provide no effective security controls. Division A is the highest verified tier.
+\end{explainbox}
+
+\begin{qcard}{748}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Zero Trust Perimeter Assumption \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Zero Trust model assumes that internal corporate networks are inherently safe and free from threat actors.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The core assumption of Zero Trust is 'Assume Breach'. It posits that threats already exist inside the perimeter and that no user, device, or packet should be trusted by default.
+\end{explainbox}
+
+\begin{qcard}{749}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SDP Architecture Model \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Software-Defined Perimeter (SDP) makes server infrastructure completely invisible to unauthorized users until mutual identity authentication is completed.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. SDP enforces a 'Black Cloud' / invisible infrastructure model where gateway ports remain closed to the public Internet and open only after the centralized controller authenticates the connecting user and device.
+\end{explainbox}
+
+\begin{qcard}{750}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Classified Protection Level 5 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Level 5 in Classified Protection 2.0 is termed 'Special Control Protection' and is applied to systems critical to national security with the highest protection requirements.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Level 5 is the maximum classification under MLPS 2.0, reserved for systems vital to state sovereignty, national defense, and critical national security infrastructure.
+\end{explainbox}
+
+\begin{qcard}{751}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Integrity and Hashing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A cryptographic hash function can guarantee confidentiality because the hash value cannot be reversed to derive the original plaintext.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A cryptographic hash function guarantees Integrity (tamper detection), not confidentiality. While hashes are irreversible one-way functions, hashing is not an encryption mechanism because the original plaintext cannot be recovered from the digest.
+\end{explainbox}
+
+\begin{qcard}{752}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} APT Attack Stealth \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+APT attacks frequently utilize zero-day vulnerabilities and customized malware to remain undetected inside enterprise networks for months or years.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. A hallmark of Advanced Persistent Threats is stealthy persistence, leveraging zero-day exploits, living-off-the-land techniques, and custom backdoors to evade signature-based detection.
+\end{explainbox}
+
+\begin{qcard}{753}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Cybersecurity Sovereignty Principle \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Under the principle of cyberspace sovereignty, an enterprise operates completely outside the jurisdiction of domestic laws when handling digital data.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Cyberspace sovereignty establishes that state laws and regulatory authority extend directly over all cyber infrastructure, data processing, and digital operations conducted within national boundaries.
+\end{explainbox}
+
+\begin{qcard}{754}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Risk Avoidance Definition \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Disconnecting a vulnerable legacy server from the corporate network and decommissioning its service is an example of Risk Avoidance.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Risk Avoidance involves eliminating the risk by completely terminating or avoiding the activity, system, or process that gives rise to the risk.
+\end{explainbox}
+
+\begin{qcard}{755}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Risk Transfer via Insurance \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Purchasing cyber insurance completely eliminates all technical vulnerabilities from an organization's network infrastructure.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Cyber insurance is a financial Risk Transfer mechanism that offsets monetary liabilities and recovery costs; it does not repair technical vulnerabilities or prevent network attacks.
+\end{explainbox}
+
+\begin{qcard}{756}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Security Awareness and Humans \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Human error and credential phishing remain among the most frequent initial entry vectors for corporate cyber breaches.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Industry statistics consistently confirm that social engineering, phishing, and human errors account for the majority of initial security compromises, making ongoing security training essential.
+\end{explainbox}
+
+\begin{qcard}{757}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} ISO 27001 PDCA Applicability \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Plan-Do-Check-Act (PDCA) model in ISO 27001 means security policies are written once and never require subsequent audit or revision.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The PDCA model requires continuous, iterative improvement: Plan (design ISMS), Do (implement controls), Check (monitor and review effectiveness), and Act (maintain and optimize continuously).
+\end{explainbox}
+
+\begin{qcard}{758}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Physical Access Danger \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An attacker who obtains direct physical access to an enterprise server chassis can easily bypass operating system authentication by booting from external media.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Physical possession allows attackers to boot alternative operating systems, extract unencrypted hard drives, clear firmware passwords, or attach hardware sniffers, completely bypassing OS-level logical controls.
+\end{explainbox}
+
+\begin{qcard}{759}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Classified Protection Level 1 Certification \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Information systems classified at Level 1 under Classified Protection 2.0 require mandatory annual third-party audits and supervision by national regulatory bodies.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Level 1 is 'User Autonomy Protection'. Organizations can autonomously design and maintain their systems without mandatory periodic government audits. Regulatory supervision begins at Level 3.
+\end{explainbox}
+
+\begin{qcard}{760}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Social Engineering Defense \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Technical firewalls and antivirus software alone are sufficient to protect an enterprise against all social engineering attacks.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Social engineering targets human psychology (authority, fear, curiosity). While technical filters block some phishing links, educating employees is critical to thwarting social manipulation.
+\end{explainbox}
+
+\begin{qcard}{761}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Controllability and Auditing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A system where administrators have no ability to view user activity logs or enforce access policies complies fully with the Controllability principle.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Controllability requires the capability to supervise, monitor, and regulate information flows and user actions. Without logging or access enforcement, Controllability is entirely lost.
+\end{explainbox}
+
+\begin{qcard}{762}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Residual Risk Tolerance \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An organization can achieve zero residual risk across all business systems if sufficient security budget is allocated.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Zero risk is practically impossible in complex connected environments. Residual risk always remains due to unknown vulnerabilities, emerging threat vectors, and human factors; organizations must manage risk within acceptable thresholds.
+\end{explainbox}
+
+\begin{qcard}{763}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} TCSEC Class C1 DAC \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In TCSEC Class C1, Discretionary Access Control allows object owners to determine which users can read or modify their files.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Discretionary Access Control (DAC) permits the owner or creator of a file/object to grant or restrict access permissions to other users at their own discretion.
+\end{explainbox}
+
+\begin{qcard}{764}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Cyberspace Engineered Domain \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Unlike land, sea, and air, cyberspace was entirely designed and constructed by human beings.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Cyberspace is the only operational domain created artificially through computer engineering, telecommunications, microprocessors, and software protocols.
+\end{explainbox}
+
+\begin{qcard}{765}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Threat Intelligence Value \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Subscribing to real-time threat intelligence feeds allows border firewalls to automatically block known command-and-control (C2) IP addresses and malicious domains.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Modern firewalls dynamically consume threat intelligence feeds to block traffic associated with known botnet controllers, phishing domains, and malicious IP addresses before attacks succeed.
+\end{explainbox}
+
+\begin{qcard}{766}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Narrow vs Broad Network Security \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In a narrow sense, network security focuses on network security devices and architectures (such as firewalls and VPNs) protecting enterprise networks.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. In a narrow sense, network security encompasses technical products and defensive solutions (firewalls, IDS/IPS, VPNs) ensuring the secure operation of enterprise data networks, as taught in HCIA-Security.
+\end{explainbox}
+
+\section{Chapter 2: Network Basics}
+
+\begin{qcard}{767}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Layer 2 Frame PDU \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Protocol Data Unit (PDU) at the Data Link layer of the OSI model is called a packet.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The PDU at the Data Link layer is called a Frame. A Packet is the PDU at Layer 3 (Network layer).
+\end{explainbox}
+
+\begin{qcard}{768}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Ethernet MAC Length \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An Ethernet MAC address consists of 48 bits, typically displayed as 12 hexadecimal characters.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Ethernet MAC addresses are 48-bit (6-byte) physical hardware identifiers, typically written as six pairs of hexadecimal digits (e.g., 00:e0:fc:12:34:56).
+\end{explainbox}
+
+\begin{qcard}{769}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPv4 Header Options \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The minimum length of an IPv4 header is 20 bytes, but it can expand up to 60 bytes if optional fields are included.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. With no options, IHL=5 (20 bytes). The 4-bit IHL field maximum value is 15 (15 * 4 = 60 bytes), allowing up to 40 bytes of optional parameters.
+\end{explainbox}
+
+\begin{qcard}{770}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPv4 Protocol Number 6 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In the IPv4 header, a Protocol field value of 6 specifies that the encapsulated payload is UDP.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Protocol number 6 designates TCP. UDP is designated by Protocol number 17.
+\end{explainbox}
+
+\begin{qcard}{771}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Loopback IP Routing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Packets addressed to 127.0.0.1 are transmitted out onto the physical local area network media before returning.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Loopback packets are handled entirely within the host's internal software networking stack and are never transmitted out of physical network interfaces.
+\end{explainbox}
+
+\begin{qcard}{772}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Usable Hosts /24 Subnet \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A standard Class C /24 subnet provides 256 usable IP addresses for assigning to host network interfaces.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A /24 subnet contains 256 total addresses (2\textasciicircum{}8), but 2 addresses are reserved: the network address (.0) and directed broadcast address (.255). This leaves 254 usable host IP addresses.
+\end{explainbox}
+
+\begin{qcard}{773}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} ARP Request Broadcast \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An initial ARP Request packet is sent as a Layer 2 unicast frame directed exclusively to the destination host's MAC address.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Because the sender does not yet know the destination MAC address, the ARP Request is broadcast to MAC FF:FF:FF:FF:FF:FF so all hosts on the segment receive and process it.
+\end{explainbox}
+
+\begin{qcard}{774}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Gratuitous ARP Conflict Check \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Gratuitous ARP is used by a device to verify that its newly configured IP address does not conflict with another device on the network.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. By broadcasting an ARP Request for its own IP address, a host detects IP address conflicts if another device replies, preventing duplicate IP assignments.
+\end{explainbox}
+
+\begin{qcard}{775}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} ICMP Protocol Number \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+ICMP messages are encapsulated directly inside IPv4 datagrams using Protocol number 1.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. ICMP is encapsulated directly within IP packets with the Protocol field set to 1.
+\end{explainbox}
+
+\begin{qcard}{776}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Ping Echo Reply Type \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An ICMP Echo Reply packet uses Type 8 and Code 0.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. An ICMP Echo Request uses Type 8, Code 0. An ICMP Echo Reply uses Type 0, Code 0.
+\end{explainbox}
+
+\begin{qcard}{777}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Traceroute TTL Mechanism \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Traceroute relies on intermediate routers decrementing the IP TTL to zero and returning ICMP Type 11 Time Exceeded messages.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Traceroute sends packets with incrementing TTL values. Each router that decrements TTL to 0 drops the packet and responds with an ICMP Type 11 message, identifying the hop.
+\end{explainbox}
+
+\begin{qcard}{778}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} TCP Reliable Delivery \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+TCP guarantees reliable, ordered, and error-checked delivery of a stream of octets between applications.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. TCP employs sequence numbers, acknowledgments, checksums, and retransmission mechanisms to provide reliable, ordered stream delivery.
+\end{explainbox}
+
+\begin{qcard}{779}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} TCP 3-Way Handshake First Step \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The first segment sent during a TCP 3-way handshake is an ACK segment sent from server to client.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The client initiates the 3-way handshake by transmitting a SYN segment (with its initial sequence number) to the server.
+\end{explainbox}
+
+\begin{qcard}{780}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} TCP TIME\_WAIT Duration \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The TCP TIME\_WAIT state lasts for twice the Maximum Segment Lifetime (2 MSL) to ensure that delayed segments from the previous connection dissipate.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. 2 MSL allows late-arriving duplicate segments to expire in the network so they cannot interfere with a subsequent connection using the same socket pair.
+\end{explainbox}
+
+\begin{qcard}{781}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} TCP RST Graceful Close \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A TCP RST (Reset) segment is used to negotiate a polite, graceful shutdown of a bidirectional session.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Graceful connection termination is performed using FIN segments. An RST segment immediately aborts an abnormal connection without waiting for outstanding data.
+\end{explainbox}
+
+\begin{qcard}{782}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} UDP Checksum Mandatory IPv4 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In standard IPv4 datagrams, calculating and verifying the UDP checksum is strictly mandatory for all implementations.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. In IPv4, the UDP checksum field is optional (if not computed, it is filled with all zeros). In IPv6, however, computing the UDP checksum is mandatory.
+\end{explainbox}
+
+\begin{qcard}{783}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} DNS Port TCP 53 Usage \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+DNS servers use TCP port 53 exclusively for all standard name lookup queries from desktop web browsers.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Standard desktop DNS queries use UDP port 53 for speed. TCP port 53 is used for DNS zone transfers between servers and when query responses exceed 512 bytes.
+\end{explainbox}
+
+\begin{qcard}{784}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HTTPS Encryption Layer \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+HTTPS operates by executing the HTTP protocol directly over a Transport Layer Security (TLS) encrypted session.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. HTTPS is not a separate application protocol; it is standard HTTP layered over an encrypted TLS/SSL transport channel (default TCP port 443).
+\end{explainbox}
+
+\begin{qcard}{785}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Active FTP Server Data Port \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In Active FTP mode, the FTP server initiates data connections to the client from TCP port 20.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. In Active FTP, the server uses TCP port 20 as the source port when connecting outbound to the client's negotiated high data port.
+\end{explainbox}
+
+\begin{qcard}{786}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Passive FTP Client Initiation \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In Passive FTP mode, the client initiates both the control connection and the data connection.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. In Passive FTP (PASV), the server opens an unprivileged high listening port and sends it to the client. The client then initiates the outbound data connection to that port.
+\end{explainbox}
+
+\begin{qcard}{787}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Telnet Password Sniffing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Because Telnet transmits data in plaintext, an attacker capturing traffic on an intermediate switch can view administrative passwords in cleartext.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Telnet lacks encryption; usernames, passwords, and command keystrokes are transmitted as unencrypted ASCII characters, vulnerable to network sniffing.
+\end{explainbox}
+
+\begin{qcard}{788}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} DHCP Discover Broadcast \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A newly booted DHCP client sends its initial DHCP Discover message as an IP broadcast to 255.255.255.255.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Because the client does not yet possess an IP address or know the server's IP, it broadcasts the DHCP Discover packet to 255.255.255.255 with source 0.0.0.0.
+\end{explainbox}
+
+\begin{qcard}{789}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} DHCP Server Default Port \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A DHCP server listens for incoming client requests on UDP port 68.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The DHCP server listens on UDP port 67. The DHCP client receives server messages on UDP port 68.
+\end{explainbox}
+
+\begin{qcard}{790}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} DHCP Relay Broadcast Forwarding \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A router configured as a DHCP Relay agent forwards DHCP Discover packets as Layer 2 broadcasts across all its interfaces.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A DHCP Relay converts the incoming broadcast Discover message into a Layer 3 unicast packet and forwards it directly to the designated DHCP server IP.
+\end{explainbox}
+
+\begin{qcard}{791}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} VLAN 802.1Q Tag Location \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The IEEE 802.1Q tag is inserted between the Source MAC address and the EtherType/Length field in an Ethernet frame.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. An 802.1Q tag (4 bytes) is inserted immediately after the Source MAC address, with TPID 0x8100 indicating the presence of the VLAN tag.
+\end{explainbox}
+
+\begin{qcard}{792}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPv4 DF Flag Dropping \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+If a packet with the DF (Don't Fragment) bit set encounters a router link where MTU is smaller than packet size, the router fragments the packet anyway.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. If DF=1 and the packet exceeds the link MTU, the router must drop the packet and return an ICMP Type 3 Code 4 (Fragmentation Needed) error message.
+\end{explainbox}
+
+\begin{qcard}{793}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Private IP Internet Routing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+RFC 1918 private IP addresses are globally routed across public Internet service provider backbones without NAT.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. RFC 1918 private addresses are strictly non-routable on the public Internet. Internet routers filter and discard private IP ranges; NAT is required for Internet access.
+\end{explainbox}
+
+\begin{qcard}{794}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Default Gateway Role \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A host uses its configured default gateway only when transmitting packets destined to IP addresses located outside its local subnet.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. For hosts on the local subnet, the sender delivers packets directly using local ARP. For destinations on different subnets, packets are addressed to the default gateway's MAC address.
+\end{explainbox}
+
+\begin{qcard}{795}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} TCP Sliding Window Flow Control \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+TCP uses the sliding window mechanism primarily to protect the receiver's buffer from being overwhelmed by a fast sender.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The receiver advertises its available buffer space (Receive Window, rwnd) in TCP acknowledgments, enabling flow control by restricting the sender's unacknowledged data volume.
+\end{explainbox}
+
+\begin{qcard}{796}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Proxy ARP Disables Routing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Proxy ARP replaces the need for IP routing tables on enterprise core routers.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Proxy ARP only helps hosts resolve MAC addresses when they lack default gateways; routers still rely completely on IP routing tables to forward packets across interfaces.
+\end{explainbox}
+
+\begin{qcard}{797}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} TCP Sequence Numbers Counting \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+TCP sequence numbers count the number of segments transmitted rather than the number of data bytes.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. TCP sequence numbers are byte-oriented; each sequence number corresponds to a specific byte in the data stream, not the segment count.
+\end{explainbox}
+
+\begin{qcard}{798}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Ethernet FCS Error Detection \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Frame Check Sequence (FCS) at the end of an Ethernet frame uses a 32-bit Cyclic Redundancy Check (CRC-32) to detect transmission errors.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The 4-byte FCS field contains a CRC-32 checksum calculated across the frame. If the receiving NIC computes a mismatched CRC, the corrupted frame is dropped.
+\end{explainbox}
+
+\section{Chapter 3: Common Network Security Threats and Threat Prevention}
+
+\begin{qcard}{799}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Virus vs Worm Replication \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Unlike a computer virus, a computer worm does not require a host file and can replicate autonomously across network connections.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Worms are standalone malicious programs that replicate across networks independently by exploiting vulnerabilities, whereas viruses attach to host files and require human execution.
+\end{explainbox}
+
+\begin{qcard}{800}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Trojan Self-Replication \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Trojan horse is designed to replicate itself aggressively across all computers on a local area network like a worm.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Trojans do not self-replicate. They rely on social engineering, deception, or bundling with legitimate utilities to trick users into installing them.
+\end{explainbox}
+
+\begin{qcard}{801}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Ransomware Key Recovery \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+If ransomware uses strong AES-256 and RSA-2048 encryption, victims can easily decrypt their files in seconds using simple mathematical tools without the private key.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Modern asymmetric and symmetric cryptography is computationally infeasible to break via brute-force; without the private key held by the attacker or an implementation flaw, decryption is impossible.
+\end{explainbox}
+
+\begin{qcard}{802}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Rootkit Detection Ease \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Because rootkits modify kernel-level data structures to hide their presence, standard Task Manager and basic antivirus tools can always detect them immediately.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Rootkits hook system APIs and kernel structures precisely to hide their processes, drivers, and open ports, making them invisible to standard operating system utilities and basic scanners.
+\end{explainbox}
+
+\begin{qcard}{803}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Port Scanning Legality \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Port scanning sends packets to target ports and is used both by network administrators for security audits and by attackers for vulnerability reconnaissance.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Port scanning is a dual-use technique. Administrators use tools like Nmap to audit open services and firewall rules, while adversaries use them to discover exploitable services.
+\end{explainbox}
+
+\begin{qcard}{804}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} TCP SYN Scan Completion \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In a TCP SYN port scan, the scanning host completes the full 3-way handshake by sending a final ACK segment before logging out.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A TCP SYN scan is a half-open scan. If a SYN-ACK is received, the scanner sends an RST segment to tear down the connection immediately, intentionally avoiding full handshake completion.
+\end{explainbox}
+
+\begin{qcard}{805}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} UDP Port Scan Response \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When a UDP port scan probes an open UDP port, the target host is required by RFC standards to return an ICMP Echo Reply.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. ICMP Echo Replies are responses to ICMP Echo Requests. For an open UDP port, the target application either responds with an application-specific UDP response or produces no response (open|filtered).
+\end{explainbox}
+
+\begin{qcard}{806}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Switch Hub Failover in MAC Flooding \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When an attacker exhausts a switch's CAM table via MAC flooding, many switches default to broadcasting incoming unicast frames out all ports, allowing the attacker to sniff traffic.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. When the MAC table memory is full, the switch cannot learn new addresses. Incoming frames with unknown destination MACs are flooded out all ports in the VLAN (fail-open mode), enabling sniffing.
+\end{explainbox}
+
+\begin{qcard}{807}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} ARP Protocol Authentication \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The standard Address Resolution Protocol (ARP) includes built-in cryptographic authentication to ensure ARP replies come from legitimate devices.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. ARP (RFC 826) was developed without security authentication. Hosts accept and update their cache with unsolicited ARP replies, leaving the protocol vulnerable to ARP spoofing and poisoning.
+\end{explainbox}
+
+\begin{qcard}{808}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Gratuitous ARP Poisoning \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Attackers can exploit Gratuitous ARP to silently poison the ARP caches of all hosts across a subnet simultaneously.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. By broadcasting a Gratuitous ARP packet claiming ownership of an IP address (such as the default gateway), an attacker overwrites the ARP tables of all listening hosts in the broadcast domain.
+\end{explainbox}
+
+\begin{qcard}{809}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} DHCP Snooping Role \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+DHCP Snooping prevents rogue DHCP servers by allowing DHCP reply messages (Offer/ACK) to enter the switch only through designated 'trusted' ports.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. DHCP Snooping classifies switch ports into trusted and untrusted. Only trusted ports can send DHCP server messages (Offer, ACK); untrusted ports are blocked from sending them, neutralizing rogue DHCP servers.
+\end{explainbox}
+
+\begin{qcard}{810}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SYN Flood Memory Exhaustion \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A TCP SYN flood attacks a server's bandwidth rather than its memory connection tables.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. While high-volume SYN floods consume bandwidth, their primary kill mechanism is exhausting the server's half-open connection backlog queue (memory allocated for TCP control blocks).
+\end{explainbox}
+
+\begin{qcard}{811}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SYN Cookie Memory Allocation \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When SYN Cookie defense is active, a server allocates full connection memory buffers immediately upon receiving the initial SYN packet.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. SYN Cookies prevent memory allocation during the SYN\_RECEIVED state. State is encoded into the SYN-ACK sequence number, and memory is allocated only after the client returns a valid ACK.
+\end{explainbox}
+
+\begin{qcard}{812}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Land Attack IP Match \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In a Land attack, the source IP address and source port are forged to match the destination IP address and destination port of the victim.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The defining feature of a Land attack is setting Source IP = Destination IP and Source Port = Destination Port, tricking the target into opening a connection with itself and freezing.
+\end{explainbox}
+
+\begin{qcard}{813}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Smurf Attack UDP Protocol \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Smurf attack uses UDP port 7 packets to flood an amplifying network.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A Smurf attack uses ICMP Echo Requests. The Fraggle attack is the counterpart that uses UDP datagrams (typically port 7).
+\end{explainbox}
+
+\begin{qcard}{814}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Ping of Death Legality \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Ping of Death attack exploits the fact that the IPv4 specification permits packets to exceed 1 megabyte in size.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The maximum legal size of an IPv4 datagram is 65,535 bytes. A Ping of Death creates fragmented packets whose total reassembled size illegally exceeds 65,535 bytes, crashing unpatched systems.
+\end{explainbox}
+
+\begin{qcard}{815}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Teardrop Offset Overlap \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Teardrop attack crashes vulnerable systems by crafting packet fragments with overlapping and contradictory fragment offset values.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Teardrop manipulates the Fragment Offset and Length fields so that fragments overlap during reassembly, triggering buffer overflows or system crashes in unpatched kernels.
+\end{explainbox}
+
+\begin{qcard}{816}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} CC Attack Target Layer \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Challenge Collapsar (CC) attack targets Layer 2 MAC address tables on core enterprise switches.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A CC attack is a Layer 7 (Application Layer) HTTP/HTTPS flood designed to overwhelm web server CPUs and database backends by repeatedly requesting complex web pages.
+\end{explainbox}
+
+\begin{qcard}{817}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Slowloris Bandwidth Need \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Slowloris requires massive gigabit-level bandwidth to crash enterprise web servers.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Slowloris is a low-bandwidth attack that sends incomplete HTTP headers very slowly, occupying server threads until the maximum connection limit is reached, requiring minimal attacker bandwidth.
+\end{explainbox}
+
+\begin{qcard}{818}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NTP Monlist Amplification \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+NTP amplification attacks exploit the 'monlist' command to generate responses that are hundreds of times larger than the original request.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The NTP 'monlist' command returns the addresses of the last 600 systems that communicated with the server, providing massive bandwidth amplification (over 500x) against a spoofed victim IP.
+\end{explainbox}
+
+\begin{qcard}{819}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IP Spoofing for TCP Downloads \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An attacker can successfully use a spoofed source IP address to download confidential files from a remote FTP server without any other access.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. TCP requires a bidirectional 3-way handshake. If the attacker spoofs the source IP, the server sends SYN-ACK to the spoofed IP, not the attacker. The attacker cannot complete the handshake or receive downloaded data.
+\end{explainbox}
+
+\begin{qcard}{820}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Anti-DDoS Traffic Diversion \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+During a DDoS attack, traffic diversion redirects incoming traffic destined for the victim to a scrubbing center using mechanisms like BGP routing updates.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Anti-DDoS diversion announces more specific BGP routes or adjusts DNS to route traffic to specialized scrubbing centers for filtering before legitimate traffic is reinjected.
+\end{explainbox}
+
+\begin{qcard}{821}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Logic Bomb Triggering \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A logic bomb executes its payload immediately upon entering a computer system, regardless of dates or events.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A logic bomb remains dormant until a specific trigger condition is met (such as a calendar date, account deletion, or specific event).
+\end{explainbox}
+
+\begin{qcard}{822}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SQL Injection Impact \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+SQL injection attacks occur because web applications improperly concatenate untrusted user input directly into executable SQL statements.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. SQL injection is caused by lack of input validation and failure to use parameterized queries (prepared statements), allowing user inputs to alter SQL query logic.
+\end{explainbox}
+
+\begin{qcard}{823}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} XSS Execution Context \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Cross-Site Scripting (XSS) attacks execute malicious code within the victim user's web browser rather than directly on the web server's operating system.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. In an XSS attack, the injected script executes inside the client's browser, enabling the attacker to steal cookies, hijack user sessions, or manipulate the webpage appearance.
+\end{explainbox}
+
+\begin{qcard}{824}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Zero-Day Signature Protection \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Traditional signature-based antivirus software provides immediate 100\% protection against previously unknown zero-day exploits.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Signature-based antivirus relies on known hashes and patterns. Because zero-day exploits are previously unknown, signatures do not exist, making behavioral analysis and sandboxing necessary.
+\end{explainbox}
+
+\section{Chapter 4: Firewall Security Policies}
+
+\begin{qcard}{825}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Local Zone Priority Fixed \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In Huawei firewalls, the priority of the predefined Local security zone is fixed at 100 and cannot be modified by the administrator.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The Local zone priority is permanently fixed at 100, representing the firewall itself.
+\end{explainbox}
+
+\begin{qcard}{826}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Untrust Zone Priority Value \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The default priority of the Untrust security zone is 85.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The Untrust zone priority is 5. The Trust zone priority is 85.
+\end{explainbox}
+
+\begin{qcard}{827}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} DMZ Zone Priority Value \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The default priority of the DMZ security zone is 50.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The DMZ zone has a fixed default priority of 50.
+\end{explainbox}
+
+\begin{qcard}{828}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Interface Zone Exclusivity \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A single physical Ethernet interface on a Huawei firewall can be assigned to multiple security zones simultaneously.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. An interface can belong to only one security zone at a time.
+\end{explainbox}
+
+\begin{qcard}{829}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Inter-Zone Traffic Default Allow \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+By default, inter-zone traffic between different security zones is permitted without any security policy configuration.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Inter-zone traffic is denied by default; explicit security policy rules with the action 'Permit' must be configured to allow communication.
+\end{explainbox}
+
+\begin{qcard}{830}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Intra-Zone Traffic Default Allow \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Traffic between two interfaces assigned to the same security zone is permitted by default on Huawei firewalls.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Intra-zone traffic is permitted by default, though administrators can configure intra-zone policies to restrict it if required.
+\end{explainbox}
+
+\begin{qcard}{831}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Outbound Direction Definition \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Traffic flowing from the Trust zone (85) to the Untrust zone (5) is classified as Inbound traffic.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Traffic flowing from higher priority (85) to lower priority (5) is Outbound traffic.
+\end{explainbox}
+
+\begin{qcard}{832}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Default Policy Deletion \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Administrators can delete the predefined 'default' security policy rule to optimize firewall performance.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The predefined default rule cannot be deleted or reordered; it is permanently situated at the bottom of the policy list.
+\end{explainbox}
+
+\begin{qcard}{833}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Security Policy Top-Down Matching \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Huawei firewalls match security policy rules sequentially from top to bottom, stopping evaluation as soon as the first matching rule is found.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Rule matching is top-down and terminates on the first match (first-match-wins principle).
+\end{explainbox}
+
+\begin{qcard}{834}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Session Table Fast-Forwarding \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Once a session is established on a stateful firewall, subsequent packets in that connection match the session table directly, bypassing security policy re-evaluation.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Fast-path forwarding utilizes the session table to forward packets without re-matching the entire security policy rulebase.
+\end{explainbox}
+
+\begin{qcard}{835}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Session Aging Timer Memory Reclaim \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The primary purpose of session aging timers is to prevent stale or inactive sessions from permanently exhausting firewall memory.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Aging timers automatically flush dead or idle sessions to maintain available connection capacity.
+\end{explainbox}
+
+\begin{qcard}{836}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} TCP Established vs SYN Timer \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+On Huawei firewalls, the default aging timer for a TCP connection in the ESTABLISHED state is much shorter than the timer for a TCP SYN packet.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. TCP SYN aging timers are short (e.g., 20 seconds) to resist SYN floods, whereas ESTABLISHED timers are long (e.g., 10,000 seconds / \textasciitilde{}20 minutes) to sustain idle business sessions.
+\end{explainbox}
+
+\begin{qcard}{837}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} ASPF Multi-Channel Support \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+ASPF dynamically generates temporary Server-Map entries to allow dynamic secondary data channels for protocols like FTP active mode.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. ASPF inspects application-layer payloads and dynamically opens temporary Server-Map pinholes for secondary data connections.
+\end{explainbox}
+
+\begin{qcard}{838}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Server-Map vs Session Table \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Server-Map entry is identical to a Session table entry and never expires.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A Server-Map entry is a temporary pre-allocation pinhole. Once matching traffic arrives and establishes a standard session entry, the dynamic server-map entry expires.
+\end{explainbox}
+
+\begin{qcard}{839}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} First Generation Stateless Inspection \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+First-generation packet filtering firewalls track the connection state of every packet in a dynamic session table.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. First-generation packet filters are stateless; they inspect packets in isolation against 5-tuple ACLs without tracking connection states.
+\end{explainbox}
+
+\begin{qcard}{840}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NGFW Port Independence \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Next-Generation Firewalls can identify application types (e.g. BitTorrent, SSL) even when they communicate over non-standard or unusual port numbers.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. NGFWs utilize deep packet inspection (DPI) and protocol signature analysis to identify applications independent of transport port numbers.
+\end{explainbox}
+
+\begin{qcard}{841}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Custom Security Zone Overlap \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A custom security zone can be configured with the exact same priority value as an already existing security zone without restriction.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Priority values must be unique per security zone; two active security zones on the same firewall cannot share the identical priority value.
+\end{explainbox}
+
+\begin{qcard}{842}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Security Policy Rule Order Significance \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Placing an overly broad 'Permit Any Any' rule at the top of the security policy list renders all subsequent specific deny rules ineffective.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Because evaluation stops on the first match, placing a broad permit rule at the top matches all traffic immediately, preventing subsequent specific deny rules from ever being evaluated.
+\end{explainbox}
+
+\begin{qcard}{843}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Local Zone Transit Traffic \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Traffic traveling from an internal client in Trust (85) to an external web server in Untrust (5) passes through the Local zone (100).
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Transit traffic passes directly from Trust to Untrust. The Local zone is involved only when traffic originates from or terminates on the firewall itself.
+\end{explainbox}
+
+\begin{qcard}{844}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Security Policy Schedule Control \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Associating a Time Range with a security policy rule ensures that the rule is active and enforced only during specified time windows.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Schedules restrict policy rule activation to specified recurring days, hours, or absolute date ranges.
+\end{explainbox}
+
+\begin{qcard}{845}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Address Object Set Maintenance \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Modifying an Address Set object automatically updates all security policies referencing that object without needing to edit each policy individually.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Address Sets provide modular abstraction; modifying the object dynamically updates all referencing security policies.
+\end{explainbox}
+
+\begin{qcard}{846}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Security Profile Binding \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Security profiles (such as IPS and Antivirus) can be attached to rules whose action is configured as 'Deny'.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Security profiles perform deep packet inspection on allowed traffic and can only be bound to rules whose action is 'Permit'.
+\end{explainbox}
+
+\begin{qcard}{847}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Stateful Firewall Asymmetric Drop \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+If return traffic enters a stateful firewall that has no existing session entry for that flow, the firewall drops the return packets by default.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. A stateful firewall expects return traffic to match an existing session. Unsolicited return packets violate stateful checks and are discarded.
+\end{explainbox}
+
+\begin{qcard}{848}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Disabling Stateful Inspection Behavior \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When stateful inspection is disabled on a firewall interface, administrators must write explicit security policy rules for both forward and return traffic flows.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Without session state tracking, the firewall behaves like a stateless packet filter, requiring explicit policy rules in both directions.
+\end{explainbox}
+
+\begin{qcard}{849}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Session Table Capacity Exhaustion \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When a firewall's session table reaches maximum hardware capacity, the firewall automatically shuts down all its physical power supplies.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The firewall remains powered on, but it cannot allocate new session entries, causing new incoming connection requests to be dropped.
+\end{explainbox}
+
+\begin{qcard}{850}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Display Session Table Command \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The command \texttt{display firewall session table} is used in Huawei VRP to inspect active connection sessions on the firewall.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. \texttt{display firewall session table} is the standard VRP command for viewing active session entries.
+\end{explainbox}
+
+\begin{qcard}{851}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Service Object Port Customization \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Administrators can create custom Service Objects to define non-standard TCP or UDP port numbers used by proprietary enterprise applications.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Custom Service Objects allow administrators to define specific protocol types and port ranges for internal business software.
+\end{explainbox}
+
+\begin{qcard}{852}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Hit Counter Policy Troubleshooting \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Monitoring security policy hit counters helps administrators detect unused or obsolete rules that never match real traffic.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Zero hit counts over an extended period indicate that a rule may be shadowed, misconfigured, or obsolete, aiding rulebase cleanup.
+\end{explainbox}
+
+\begin{qcard}{853}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Firewall Transparent Mode Subnetting \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Deploying a Huawei firewall in Transparent Mode requires re-addressing all servers and reconfiguring the existing IP subnets.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Transparent Mode functions as a Layer 2 bridge ('bump in the wire'), filtering traffic without modifying existing IP addressing or subnet configurations.
+\end{explainbox}
+
+\begin{qcard}{854}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Management Access via Interface Settings \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Administrative access services (such as SSH, HTTPS, and Ping) on a firewall interface can be controlled directly through interface service configuration.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Huawei firewalls allow administrators to enable or disable specific management services (Ping, SSH, HTTPS) directly on individual interfaces via \texttt{service-manage} commands.
+\end{explainbox}
+
+\section{Chapter 5: Firewall NAT Technologies}
+
+\begin{qcard}{855}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT No-PAT Port Multiplexing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+NAT No-PAT translates transport layer port numbers to allow multiple internal hosts to share a single public IP address.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. NAT No-PAT does NOT translate port numbers; it performs 1-to-1 IP translation without port multiplexing.
+\end{explainbox}
+
+\begin{qcard}{856}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAPT Port Multiplexing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+NAPT translates both IP addresses and transport layer port numbers, enabling thousands of hosts to share a single public IP address.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. NAPT (Network Address Port Translation) multiplexes connections over TCP/UDP ports, maximizing public IP utilization.
+\end{explainbox}
+
+\begin{qcard}{857}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Easy IP Address Pool \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Easy IP requires the administrator to manually configure a dedicated address group containing at least two public IP addresses.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Easy IP uses the public IP address configured directly on the firewall's egress interface, requiring no address group pool.
+\end{explainbox}
+
+\begin{qcard}{858}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Smart NAT Fallback \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Smart NAT operates in No-PAT mode initially and automatically falls back to NAPT using a reserved IP when public pool addresses are exhausted.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Smart NAT combines No-PAT and NAPT, using a designated reserved IP to perform NAPT for subsequent connections when pool IPs are depleted.
+\end{explainbox}
+
+\begin{qcard}{859}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT Server Inbound Publishing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The NAT Server feature is used to publish internal intranet servers so that external Internet users can access them.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. NAT Server maps public IP addresses and ports to private server addresses and ports, enabling inbound Internet access to internal services.
+\end{explainbox}
+
+\begin{qcard}{860}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Static Server-Map Generation \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Configuring a \texttt{nat server} rule on a Huawei firewall automatically generates a static Server-Map table entry.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. \texttt{nat server} creates a permanent, static Server-Map entry that defines the translation between public and private socket parameters.
+\end{explainbox}
+
+\begin{qcard}{861}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Bidirectional NAT Definition \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Bidirectional NAT translates both the Source IP address and the Destination IP address of the same packet simultaneously.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Bidirectional NAT applies Source NAT and Destination NAT concurrently on the same packet flow.
+\end{explainbox}
+
+\begin{qcard}{862}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT Hairpinning Issue \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Without Source NAT, intranet clients accessing intranet servers via public IP addresses experience connection failures because server replies bypass the firewall.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The server replies directly to the client's private IP across the local switch; the client drops the packet because it expects a reply from the public IP.
+\end{explainbox}
+
+\begin{qcard}{863}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT ALG Payload Inspection \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+NAT ALG is required for multi-channel protocols like FTP active mode because standard NAT does not inspect or translate IP addresses embedded inside application payloads.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Standard NAT rewrites only L3/L4 headers. ALG inspects application payloads (e.g. PORT commands) and rewrites embedded IP/port information.
+\end{explainbox}
+
+\begin{qcard}{864}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT Blackhole Route Function \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A NAT blackhole route prevents routing loops between the firewall and upstream routers for unused IP addresses in a NAT address pool.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Pointing unused pool IPs to NULL0 terminates unassigned traffic at the firewall, preventing routing loops with the ISP gateway.
+\end{explainbox}
+
+\begin{qcard}{865}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} No-NAT Policy Use Case \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A 'no-nat' policy rule is commonly used to exempt site-to-site IPsec VPN traffic from undergoing Internet Source NAT.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. VPN traffic between branch private subnets must preserve original private IP addresses and must not be translated by Internet Source NAT.
+\end{explainbox}
+
+\begin{qcard}{866}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Inbound Security Policy Matching IP \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When external traffic accesses a server published via NAT Server, the security policy must permit traffic using the server's private IP address.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Because destination translation occurs before security policy evaluation, the security policy rule must match the server's translated private IP address.
+\end{explainbox}
+
+\begin{qcard}{867}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Outbound Security Policy Matching IP \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When internal clients access the Internet via Source NAT, the security policy evaluates traffic using the translated public IP address.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. On outbound traffic, the security policy is evaluated against the original private source IP before Source NAT rewrites the packet header.
+\end{explainbox}
+
+\begin{qcard}{868}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT Table Capacity Unlimited \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A firewall's NAPT translation table has unlimited capacity and can support an infinite number of simultaneous connections.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. NAT table capacity is bounded by firewall memory and available 16-bit transport layer port numbers (\textasciitilde{}60,000 ports per public IP).
+\end{explainbox}
+
+\begin{qcard}{869}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} AH Incompatibility with NAT \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The IPsec Authentication Header (AH) protocol operates seamlessly across standard NAT devices without any issues.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. AH integrity checks include the outer IP header. When NAT modifies the IP address, the AH checksum verification fails, causing the packet to be dropped.
+\end{explainbox}
+
+\begin{qcard}{870}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT-T UDP Port 4500 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+NAT Traversal (NAT-T) encapsulates IPsec ESP packets inside UDP datagrams using port 4500 to traverse NAT devices.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. NAT-T encapsulates ESP into UDP port 4500, enabling standard NAPT devices to translate the port header without corrupting the IPsec payload.
+\end{explainbox}
+
+\begin{qcard}{871}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Dynamic Server-Map Expiration \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Dynamic Server-Map entries generated by ASPF or NAT No-PAT expire and are deleted automatically when their aging timer elapses.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Dynamic Server-Map entries are temporary pinholes with aging timers, unlike static Server-Map entries generated by NAT Server.
+\end{explainbox}
+
+\begin{qcard}{872}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT Address Pool Subnet Requirement \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A NAT address group must always reside on the exact same IP subnet as the firewall's egress interface.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Address pools can reside on different subnets, provided upstream routers route the pool prefix to the firewall and blackhole routes are configured.
+\end{explainbox}
+
+\begin{qcard}{873}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Display Server-Map Command \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The command \texttt{display firewall server-map} displays active static and dynamic Server-Map entries on a Huawei firewall.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. \texttt{display firewall server-map} is the standard VRP command to inspect active Server-Map entries.
+\end{explainbox}
+
+\begin{qcard}{874}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Easy IP for Dynamic PPPoE \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Easy IP is especially suitable for WAN connections where the public IP address is dynamically assigned via PPPoE or DHCP.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Easy IP dynamically tracks the IP address of the egress interface, eliminating the need to update address pools when WAN IPs change.
+\end{explainbox}
+
+\begin{qcard}{875}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Multiple Servers on One Public IP \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An enterprise can publish both a Web server (port 80) and a Mail server (port 25) on the same public IP address using port-based NAT Server.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. By mapping distinct public port numbers on the same public IP, multiple internal servers can be published simultaneously.
+\end{explainbox}
+
+\begin{qcard}{876}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT Policy First Match Rule \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Huawei NAT policy rules are evaluated from bottom to top, prioritizing the default rule.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. NAT policies are evaluated sequentially from top to bottom, stopping at the first matching rule.
+\end{explainbox}
+
+\begin{qcard}{877}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Static 1-to-1 NAT Port Mapping \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Static 1-to-1 NAT allows multiple internal hosts to share one public IP address by translating port numbers.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Static 1-to-1 NAT maps one private IP to one public IP without port translation; it does not multiplex multiple hosts.
+\end{explainbox}
+
+\begin{qcard}{878}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT No-PAT Host Tracking \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In NAT No-PAT, once a public IP is allocated to an internal host, other hosts cannot use that public IP until all sessions of the first host terminate.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. No-PAT allocates the entire public IP exclusively to one host at a time because port multiplexing is disabled.
+\end{explainbox}
+
+\begin{qcard}{879}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SIP Protocol and NAT \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+SIP VoIP traffic requires NAT ALG on firewalls because SIP embeds private IP addresses and dynamic RTP media ports inside its message payload.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. SIP SDP payloads carry private IP and port parameters; without SIP ALG, voice/video RTP streams fail to establish across NAT.
+\end{explainbox}
+
+\begin{qcard}{880}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Twice NAT Source and Dest \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Twice NAT is another term for Bidirectional NAT, where both source and destination addresses are translated simultaneously.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. 'Twice NAT' and 'Bidirectional NAT' are synonymous terms in network security engineering.
+\end{explainbox}
+
+\begin{qcard}{881}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT Prevents External Inbound \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+By default, Source NAT prevents external Internet hosts from initiating unsolicited connections directly to internal client PCs.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. External hosts cannot initiate connections to private internal IPs unless explicit inbound port mappings (NAT Server) or pinholes exist.
+\end{explainbox}
+
+\begin{qcard}{882}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Blackhole Route Next-Hop Interface \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A NAT blackhole route uses the NULL0 virtual interface as its next hop to silently discard matching packets.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Routes pointing to interface NULL0 discard packets immediately without generating ICMP error replies or forwarding loops.
+\end{explainbox}
+
+\begin{qcard}{883}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT Overlapping Address Pools \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Assigning overlapping IP address ranges to two distinct NAT address groups is recommended as best practice.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Overlapping pools cause address allocation conflicts, routing ambiguity, and unpredictable translation behavior.
+\end{explainbox}
+
+\begin{qcard}{884}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Verbose Session Table NAT Indicator \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In the output of \texttt{display firewall session table verbose}, the symbol \texttt{--\textgreater{}} indicates the post-NAT translated socket information.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Huawei firewalls use the arrow notation \texttt{--\textgreater{}} in verbose session displays to show original vs translated IP addresses and port numbers.
+\end{explainbox}
+
+\section{Chapter 6: Firewall Hot Standby Technologies}
+
+\begin{qcard}{885}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Five Nines Availability \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+'Five nines' availability represents 99.999\% network uptime, equating to less than 6 minutes of unscheduled downtime annually.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. 99.999\% availability translates to approximately 5.26 minutes of downtime per year, the gold standard for carrier-grade network availability.
+\end{explainbox}
+
+\begin{qcard}{886}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} VRRP Virtual MAC Byte 6 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In the VRRP Virtual MAC address \texttt{00-00-5E-00-01-XX}, the last byte \texttt{XX} represents the VRID in hexadecimal.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The last octet of the VRRP virtual MAC address corresponds directly to the Virtual Router Identifier (VRID) in hexadecimal.
+\end{explainbox}
+
+\begin{qcard}{887}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} VRRP Priority 255 Assignment \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An administrator can manually configure a priority value of 255 on a router that does not own the physical IP matching the Virtual IP.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Priority 255 is strictly reserved for the IP address owner. Administrators can configure priorities only between 1 and 254.
+\end{explainbox}
+
+\begin{qcard}{888}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} VRRP Multicast 224.0.0.18 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+VRRP Advertisement packets are sent to the IPv4 multicast address 224.0.0.18.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. VRRP uses the dedicated multicast address 224.0.0.18 (IP Protocol 112) for master advertisement broadcasts.
+\end{explainbox}
+
+\begin{qcard}{889}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Standalone VRRP Independence Issue \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Standard standalone VRRP groups on multi-interface firewalls automatically coordinate state changes across different interfaces without any additional protocols.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Standalone VRRP groups operate independently per interface. A failure on an uplink interface does not trigger a downlink VRRP state change, creating routing black holes.
+\end{explainbox}
+
+\begin{qcard}{890}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} VGMP Proprietary Protocol \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+VGMP is a Huawei proprietary protocol developed specifically to coordinate state synchronization across multiple VRRP groups on firewalls.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. VGMP is Huawei proprietary technology that unifies multi-interface VRRP group failovers on USG firewalls.
+\end{explainbox}
+
+\begin{qcard}{891}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} VGMP Default Priority 65000 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The default initial priority of both the Active and Standby VGMP management groups on Huawei firewalls is 65000.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Both Active and Standby VGMP groups are initialized with a default priority value of 65000.
+\end{explainbox}
+
+\begin{qcard}{892}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} VGMP Unified State Transition \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When a firewall's VGMP group switches from Active to Standby, all VRRP groups associated with it switch from Master to Backup simultaneously.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. VGMP forces all member VRRP groups to transition states simultaneously, preventing routing black holes.
+\end{explainbox}
+
+\begin{qcard}{893}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HRP Heartbeat UDP 18514 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+HRP heartbeat packets and synchronization data are transmitted over UDP port 18514.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. HRP encapsulates its control messages and synchronization records in UDP datagrams using destination port 18514.
+\end{explainbox}
+
+\begin{qcard}{894}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Session Synchronization Importance \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Without real-time session synchronization by HRP, all active TCP connections are dropped when a firewall hot standby failover occurs.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Stateful firewalls require session entries to forward traffic. Without session replication, the new active firewall drops established connections, forcing clients to reconnect.
+\end{explainbox}
+
+\begin{qcard}{895}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HRP Real-Time vs Batch \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+HRP Real-Time Backup synchronizes session entries immediately as they are created, whereas Batch Backup bulk-synchronizes tables upon initial peer connection or manual trigger.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Real-time backup replicates states dynamically per-session, while batch backup performs full synchronization on boot, recovery, or manual command.
+\end{explainbox}
+
+\begin{qcard}{896}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Quick Session Backup in Active/Active \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Quick Session Backup is designed for Active/Active load-balancing mode to prevent packet drops caused by asymmetric routing.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Quick session backup immediately replicates sessions so that return packets taking asymmetric paths on the peer firewall match active sessions and are forwarded.
+\end{explainbox}
+
+\begin{qcard}{897}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Active/Standby Traffic Forwarding \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In Active/Standby mode, both firewalls actively forward user service traffic under normal operating conditions.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. In Active/Standby mode, only the active unit forwards user traffic; the standby firewall remains idle, ready to take over upon failure.
+\end{explainbox}
+
+\begin{qcard}{898}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Active/Active Dual VRRP Groups \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In Load-Balancing mode, dual firewalls typically act as Master for alternate VRRP groups to distribute traffic across subnets.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. FW1 is Master for Group 1 (backing up Group 2), and FW2 is Master for Group 2 (backing up Group 1), balancing traffic loads.
+\end{explainbox}
+
+\begin{qcard}{899}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Dedicated Heartbeat Link Best Practice \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+It is recommended to run HRP heartbeat communications over a dedicated point-to-point link or link-aggregated Eth-Trunk.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Dedicated point-to-point links isolate heartbeat traffic and prevent split-brain conditions caused by intermediate switch failures.
+\end{explainbox}
+
+\begin{qcard}{900}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HRP Enable Command Syntax \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The command \texttt{hrp enable} activates HRP hot standby functionality in Huawei VRP system view.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. \texttt{hrp enable} is the master command that initializes the HRP process on Huawei firewalls.
+\end{explainbox}
+
+\begin{qcard}{901}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Standby Configuration Lock \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Directly configuring security policies and NAT rules on the Standby firewall is permitted and recommended by Huawei.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Configuration edits are locked on the standby unit to prevent policy divergence; configurations must be made on the active unit and replicated via HRP.
+\end{explainbox}
+
+\begin{qcard}{902}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Preemption Delay Convergence \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A preemption delay allows routing protocols and physical links on a recovered primary firewall to stabilize before reclaiming active traffic forwarding.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Preemption delay prevents premature traffic switchback while OSPF, BGP, and interfaces are still converging.
+\end{explainbox}
+
+\begin{qcard}{903}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Split-Brain Dual Master State \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In a Split-Brain condition, both firewalls promote themselves to the Active state, causing IP and MAC conflicts on the virtual gateway addresses.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. When heartbeat connectivity is severed, both units assume the other has failed, promoting themselves to Active and creating severe IP/MAC conflicts.
+\end{explainbox}
+
+\begin{qcard}{904}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Display HRP State Command Output \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The command \texttt{display hrp state} provides information regarding VGMP group priorities, active/standby roles, and heartbeat link status.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. \texttt{display hrp state} is the primary diagnostic command for inspecting firewall clustering health and roles.
+\end{explainbox}
+
+\begin{qcard}{905}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPsec SA Replication \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+HRP synchronizes IPsec Security Associations (SAs) so that VPN tunnels do not need to renegotiate when a firewall failover occurs.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Replicating IPsec SAs allows the standby firewall to decrypt and encrypt ongoing VPN traffic immediately upon takeover.
+\end{explainbox}
+
+\begin{qcard}{906}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Server-Map Replication \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Server-Map table entries are not synchronized by HRP because they are purely local to each physical firewall.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Server-Map entries (for FTP data channels and NAT Server) are synchronized by HRP to preserve active services across failovers.
+\end{explainbox}
+
+\begin{qcard}{907}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Interface IP Synchronization Exclusion \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+HRP automatically synchronizes interface IP addresses so that both firewalls have identical physical IP addresses on their interfaces.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Interface physical IP addresses must remain unique to each firewall and are intentionally excluded from HRP configuration synchronization.
+\end{explainbox}
+
+\begin{qcard}{908}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IP-Link Remote Monitoring \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+IP-Link allows a firewall to monitor upstream gateway reachability through ICMP probes and trigger VGMP priority reduction if the gateway fails.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. IP-Link detects remote link failures across intermediate switches, enabling VGMP to initiate failover even when local interfaces remain physically UP.
+\end{explainbox}
+
+\begin{qcard}{909}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HRP Authentication Key Security \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Configuring an HRP key (\texttt{hrp key}) secures heartbeat communication by verifying packet authenticity between clustered firewalls.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. HRP authentication keys prevent unauthorized devices from injecting forged heartbeat packets or disrupting the cluster.
+\end{explainbox}
+
+\begin{qcard}{910}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Asymmetric Routing Drop on Stateful Firewalls \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A stateful firewall will drop return traffic packets if it has no matching session entry and stateful inspection is enabled.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Stateful firewalls require return packets to correspond to an existing session entry; unsolicited return packets are discarded as invalid state violations.
+\end{explainbox}
+
+\begin{qcard}{911}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Gratuitous ARP on Failover \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When a standby firewall becomes Master, it sends Gratuitous ARP packets to update MAC tables on connected Layer 2 switches.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Gratuitous ARPs notify connected switches to redirect frames destined for the Virtual MAC to the new Master's switch port.
+\end{explainbox}
+
+\begin{qcard}{912}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} BFD Sub-Second Detection \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Integrating BFD with VGMP enables millisecond-level fault detection, significantly accelerating failover speed compared to standard keepalive timeouts.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. BFD provides rapid sub-second failure detection, triggering near-instantaneous VGMP priority adjustment and failover.
+\end{explainbox}
+
+\section{Chapter 7: Firewall IPS}
+
+\begin{qcard}{913}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IDS Inline Deployment \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An Intrusion Detection System (IDS) is deployed in-line in the traffic forwarding path to actively block malicious packets.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. An IDS is deployed out-of-path via port mirroring or TAPs; it cannot actively drop packets in-line. An IPS is deployed in-line to actively block threats.
+\end{explainbox}
+
+\begin{qcard}{914}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPS Real-Time Dropping \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Because an IPS sits in-line directly in the traffic path, it can inspect packets and drop malicious flows before they reach target servers.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Inline positioning enables an IPS to analyze packets and actively drop or reset malicious connections in real time.
+\end{explainbox}
+
+\begin{qcard}{915}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Signature Zero-Day Detection \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Signature-based intrusion detection can reliably detect novel zero-day attacks without requiring any signature updates.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Signature detection relies on known attack patterns; novel zero-day exploits lack pre-existing signatures and bypass signature inspection.
+\end{explainbox}
+
+\begin{qcard}{916}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Anomaly Detection Zero-Day Advantage \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Anomaly-based intrusion detection can detect unknown zero-day attacks by identifying statistical deviations from established normal network behavior baselines.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. By monitoring baseline traffic patterns and flagging unusual deviations, anomaly detection can catch novel attacks that lack signatures.
+\end{explainbox}
+
+\begin{qcard}{917}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Anomaly False Positive Rate \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A significant challenge of anomaly-based detection is that unusual but legitimate business traffic can be incorrectly flagged as an attack (false positive).
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Dynamic business environments generate legitimate traffic spikes and non-standard flows that anomaly detection models may misidentify as malicious.
+\end{explainbox}
+
+\begin{qcard}{918}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Predefined Signatures Cloud Update \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Predefined IPS signatures on Huawei firewalls are maintained and updated via Huawei Security Intelligence Center online feeds.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Huawei continually updates its predefined signature database to provide protection against newly discovered vulnerabilities and exploits.
+\end{explainbox}
+
+\begin{qcard}{919}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} User-Defined Custom Signatures \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Administrators can write User-Defined IPS signatures using custom regular expressions to protect proprietary enterprise applications.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Huawei firewalls allow administrators to create custom user-defined signatures tailored to internal systems and specific threat patterns.
+\end{explainbox}
+
+\begin{qcard}{920}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPS Action Alert Behavior \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When an IPS signature's action is set to 'Alert', the firewall drops the packet and resets the TCP connection.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The 'Alert' action generates a security log entry but allows the packet to pass through to the destination without blocking.
+\end{explainbox}
+
+\begin{qcard}{921}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Flow-Based AV Line Rate Throughput \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Flow-based antivirus scans data streams in real time as packets transit the firewall without caching entire files in memory, delivering high throughput.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Flow-based AV evaluates packet streams on the fly, avoiding memory exhaustion and delivering low-latency, multi-gigabit inspection.
+\end{explainbox}
+
+\begin{qcard}{922}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} File-Based AV Full Reassembly \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+File-based antivirus scanning reconstructs the entire file in memory before scanning, which can cause significant latency on large file transfers.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Buffering complete multi-megabyte files in firewall RAM introduces substantial latency and can exhaust memory buffers under high concurrency.
+\end{explainbox}
+
+\begin{qcard}{923}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Antivirus Protocol Coverage \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Huawei firewall Antivirus can inspect file transfers across HTTP, FTP, SMTP, POP3, IMAP, and SMB protocols.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Huawei NGFW AV provides comprehensive coverage across web, file transfer, and mail protocols.
+\end{explainbox}
+
+\begin{qcard}{924}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Antivirus Declare Action \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The 'Declare' action in Huawei Antivirus allows an infected email to be delivered while inserting a warning notification to alert the recipient.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. 'Declare' permits email delivery but alerts the user by modifying the subject line or body with a warning notification.
+\end{explainbox}
+
+\begin{qcard}{925}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} URL Whitelist Precedence \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+On Huawei firewalls, a URL matching the configured Whitelist is permitted immediately, taking precedence over blacklists and category rules.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Whitelists have top evaluation priority in URL filtering, ensuring trusted business domains are never blocked.
+\end{explainbox}
+
+\begin{qcard}{926}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} URL Blacklist Precedence \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A URL matching the configured URL Blacklist is immediately blocked, taking precedence over category-based filtering rules.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Blacklists have absolute blocking priority over standard category rules; matching requests are dropped immediately.
+\end{explainbox}
+
+\begin{qcard}{927}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} File Filtering True File Type \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Huawei File Filtering identifies true file types by analyzing internal file header magic bytes rather than relying merely on file extension names.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. File filtering reads binary header magic numbers, preventing attackers from disguising executable binaries (\texttt{.exe}) as text or image files.
+\end{explainbox}
+
+\begin{qcard}{928}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Content Filtering Keyword Matching \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Content Filtering inspects application payloads (such as web form submissions and email text) to detect and block confidential keywords.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Content filtering performs deep text inspection to prevent sensitive data exfiltration (e.g. credit card numbers, intellectual property).
+\end{explainbox}
+
+\begin{qcard}{929}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPS Exception Signature Override \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Configuring an Exception in an IPS profile allows an administrator to change the action of a specific signature (e.g. from Block to Alert) without disabling the entire profile.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Exceptions permit granular rule overrides for specific signatures to eliminate false positives on critical business systems.
+\end{explainbox}
+
+\begin{qcard}{930}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Protocol Anomaly RFC Compliance \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Protocol Anomaly Detection verifies that network traffic conforms to official RFC specifications, detecting malformed headers and illegal field lengths.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Protocol anomaly checking enforces strict RFC standard compliance, catching protocol fuzzing, header overflows, and malformed exploit vectors.
+\end{explainbox}
+
+\begin{qcard}{931}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPS Profile Security Policy Binding \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An IPS profile is activated on a Huawei firewall by binding it to a Security Policy rule whose action is configured as 'Permit'.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Security profiles are applied to traffic permitted by security policy rules for deep Layer 7 threat inspection.
+\end{explainbox}
+
+\begin{qcard}{932}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Daily AV Database Updates \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Maintaining automated daily updates of the antivirus signature database is critical because thousands of new malware strains emerge every day.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Daily signature updates ensure the firewall can detect the latest ransomware, trojans, and polymorphic malware variants.
+\end{explainbox}
+
+\begin{qcard}{933}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HTTPS Encryption Inspection Challenge \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Without SSL Decryption, an IPS or Antivirus engine cannot inspect encrypted payload data inside HTTPS web connections.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. TLS encryption conceals payload contents; an SSL proxy / decryption policy is required to decrypt and inspect HTTPS payloads for threats.
+\end{explainbox}
+
+\begin{qcard}{934}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} False Positive Definition Check \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A False Positive occurs when an IPS correctly detects and blocks an actual malware attack.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A False Positive occurs when benign, legitimate traffic is incorrectly flagged and blocked as an attack.
+\end{explainbox}
+
+\begin{qcard}{935}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} False Negative Definition Check \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A False Negative occurs when an IPS fails to detect a real attack and allows the malicious packet to pass through to the target.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. False negatives represent missed attacks that evade detection, passing through defenses unhindered.
+\end{explainbox}
+
+\begin{qcard}{936}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Directional File Filtering \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Huawei firewalls allow File Filtering rules to be applied specifically to Uploads (outbound) or Downloads (inbound).
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Directional controls enable separate policies for inbound malware prevention (downloads) and outbound data loss prevention (uploads).
+\end{explainbox}
+
+\begin{qcard}{937}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Single-Pass Architecture Parallelism \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Huawei's Single-Pass architecture evaluates packets in parallel across IPS, Antivirus, and URL filtering engines simultaneously in a single scan.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Single-pass inspection parses packet streams once and evaluates multiple threat engines in parallel, minimizing latency.
+\end{explainbox}
+
+\begin{qcard}{938}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Hardware Bypass Fail-Open \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An external optical bypass switch allows traffic to pass uninterrupted across a physical link if the inline IPS firewall suffers a complete power loss.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Hardware bypass switches provide fail-open reliability, bridging physical links during power failures to ensure business continuity.
+\end{explainbox}
+
+\begin{qcard}{939}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Display Logbuffer Threat Viewing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The command \texttt{display logbuffer} can be used on a Huawei firewall to inspect recent security event logs and IPS signature alerts.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. \texttt{display logbuffer} displays operational logs, including real-time threat detection alerts and security policy hits.
+\end{explainbox}
+
+\begin{qcard}{940}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPS Tuning Alert-Only Phase \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Best practice for deploying IPS in production networks involves running in Alert-only mode initially to detect false positives before switching to Block mode.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Running in Alert mode initially allows administrators to observe traffic, identify false positives, configure exceptions, and ensure business applications run smoothly before enforcing blocks.
+\end{explainbox}
+
+\section{Chapter 8: Firewall User Management Technologies}
+
+\begin{qcard}{941}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Authentication Definition \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Authentication in the AAA framework verifies the identity claimed by an entity, answering the question 'Who are you?'.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Authentication establishes identity verification through credentials like passwords, tokens, or digital certificates.
+\end{explainbox}
+
+\begin{qcard}{942}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Authorization Definition \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Authorization is responsible for calculating network bandwidth usage and billing information for user accounts.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Calculating usage and billing is the role of Accounting. Authorization determines which services and permissions the user is permitted to access.
+\end{explainbox}
+
+\begin{qcard}{943}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Local User Storage Location \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Local user accounts are stored directly within the internal database of the Huawei firewall.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Local users reside on the local storage of the firewall, requiring no external authentication server.
+\end{explainbox}
+
+\begin{qcard}{944}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} RADIUS Transport UDP \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The standard RADIUS protocol operates over TCP transport using destination port 49.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. RADIUS operates over UDP (ports 1812 and 1813). HWTACACS / TACACS+ operates over TCP port 49.
+\end{explainbox}
+
+\begin{qcard}{945}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} RADIUS Password Only Encryption \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Standard RADIUS encrypts the entire packet including usernames and accounting attributes.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. RADIUS encrypts only the User-Password attribute using MD5; usernames and other attributes are transmitted in cleartext.
+\end{explainbox}
+
+\begin{qcard}{946}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} RADIUS Bundled Auth and Authz \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+RADIUS bundles Authentication and Authorization together in the single \texttt{Access-Accept} response packet.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. RADIUS delivers authorization attributes (VLAN, user group, ACL) alongside authentication acceptance in the \texttt{Access-Accept} message.
+\end{explainbox}
+
+\begin{qcard}{947}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HWTACACS Transport TCP 49 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+HWTACACS utilizes TCP port 49 to provide reliable communication between the client NAS and the server.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. HWTACACS runs over reliable connection-oriented TCP transport on port 49.
+\end{explainbox}
+
+\begin{qcard}{948}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HWTACACS Full Body Encryption \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+HWTACACS encrypts the entire body of the packet following the 12-byte header, protecting usernames and commands from network sniffing.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. HWTACACS encrypts all payload data, ensuring usernames, command strings, and authorization attributes are confidential.
+\end{explainbox}
+
+\begin{qcard}{949}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HWTACACS AAA Separation \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+HWTACACS strictly separates Authentication, Authorization, and Accounting into distinct, independent exchanges.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. HWTACACS separates all three AAA phases, allowing independent server assignments and per-command authorization.
+\end{explainbox}
+
+\begin{qcard}{950}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} LDAP Standard Ports \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Standard unencrypted LDAP uses TCP port 389, while encrypted LDAPS uses TCP port 636.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. LDAP operates over TCP port 389, and LDAPS (over TLS/SSL) uses TCP port 636.
+\end{explainbox}
+
+\begin{qcard}{951}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Active Directory Integration via LDAP \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Huawei firewalls can query Microsoft Active Directory domain controllers using the LDAP protocol to authenticate domain users.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Huawei firewalls use LDAP/LDAPS queries to validate domain user credentials and synchronize Active Directory user groups.
+\end{explainbox}
+
+\begin{qcard}{952}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} User-Based Policy IP Independence \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+User-based security policies allow access control rules to follow the user dynamically, regardless of changes to their assigned DHCP IP address.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. User-aware policies bind permissions to identity rather than volatile IP addresses, ensuring consistent access across mobile and roaming devices.
+\end{explainbox}
+
+\begin{qcard}{953}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Portal Captive Redirection \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Portal authentication intercepts unauthenticated HTTP requests and redirects users to a captive web login page.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Captive portal authentication intercepts initial HTTP/HTTPS traffic and redirects the browser to a login portal for credential verification.
+\end{explainbox}
+
+\begin{qcard}{954}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} AD SSO Event ID 4624 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Active Directory SSO can monitor Event ID 4624 (Successful Logon) on domain controllers to transparently learn user-to-IP mappings.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Event ID 4624 records successful domain logons with username and workstation IP, which AD SSO monitors to create transparent user mappings.
+\end{explainbox}
+
+\begin{qcard}{955}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} RADIUS SSO Accounting Snooping \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+RADIUS SSO learns user IP mappings by snooping RADIUS Accounting-Request packets exchanged between network access devices and the RADIUS server.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. RADIUS SSO monitors accounting start/update packets to extract assigned IPs and usernames without requiring separate user authentication prompts.
+\end{explainbox}
+
+\begin{qcard}{956}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Local User Password Plaintext Best Practice \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Configuring passwords using \texttt{local-user password plain} is recommended as best practice for enterprise production networks.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Using \texttt{plain} stores passwords in readable cleartext in configuration files. Best practice mandates using \texttt{cipher} or irreversible cryptographic hashes.
+\end{explainbox}
+
+\begin{qcard}{957}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} User Group Hierarchical Inheritance \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+On Huawei NGFWs, child user groups inherit security policies and permissions assigned to their parent user groups.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Hierarchical group modeling allows child groups to inherit parent policies, simplifying multi-level departmental access management.
+\end{explainbox}
+
+\begin{qcard}{958}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Guest Account Auto-Expiration \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Guest user accounts can be configured to automatically expire and deactivate after a specific duration, such as 8 hours.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Automatic expiration ensures temporary visitor credentials do not remain valid indefinitely, closing security risks.
+\end{explainbox}
+
+\begin{qcard}{959}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Policy Logical AND for IP and User \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+If a security policy rule specifies both a source IP address range and a user group, matching traffic must satisfy BOTH criteria simultaneously.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Policy conditions are evaluated using logical AND; matching packets must originate from the specified IP range AND belong to the specified user group.
+\end{explainbox}
+
+\begin{qcard}{960}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Display Online User Command \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The command \texttt{display user-manage online-user} displays active online users and their mapped IP addresses on a Huawei firewall.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. \texttt{display user-manage online-user} is the standard VRP command to view currently authenticated online users and their session bindings.
+\end{explainbox}
+
+\begin{qcard}{961}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Authentication Domain Definition \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An Authentication Domain in Huawei VRP links authentication schemes, authorization schemes, and server templates together.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Authentication Domains encapsulate complete AAA service pipelines for specific user communities.
+\end{explainbox}
+
+\begin{qcard}{962}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Default Domain Usage \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When a user logs in without typing a domain suffix (e.g., logging in simply as 'alice'), the firewall processes the login using the default domain.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Logins lacking an explicit \texttt{@domain} suffix are automatically routed to the designated default authentication domain.
+\end{explainbox}
+
+\begin{qcard}{963}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Interim Accounting Purpose \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Interim accounting updates are sent periodically by the NAS to verify ongoing session activity and report cumulative volume usage.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Interim accounting updates prevent orphaned sessions and provide periodic billing and bandwidth telemetry.
+\end{explainbox}
+
+\begin{qcard}{964}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} MFA Two-Factor Requirement \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Multi-Factor Authentication (MFA) requires presenting two or more credentials belonging to completely independent authentication factor categories.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. True MFA mandates combining distinct categories (knowledge, possession, inherence), such as a password plus an SMS OTP or hardware token.
+\end{explainbox}
+
+\begin{qcard}{965}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Online User Idle Timeout Aging \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When an authenticated user remains idle with no active traffic for longer than the idle timeout, their entry is automatically removed from the online user table.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Idle timers flush inactive mappings to free connection resources and force re-authentication upon return.
+\end{explainbox}
+
+\begin{qcard}{966}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HWTACACS Per-Command Authorization Capability \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+HWTACACS allows an enterprise to authorize or deny individual administrative CLI commands entered by an operator in real time.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Per-command authorization intercepts each typed command and queries the HWTACACS server before execution.
+\end{explainbox}
+
+\begin{qcard}{967}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Account Lockout Brute Force Defense \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Enabling account lockout policies on local user accounts protects the firewall against automated password brute-force guessing attacks.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Account lockout temporarily disables accounts after consecutive failed attempts, thwarting automated password guessing.
+\end{explainbox}
+
+\begin{qcard}{968}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IoT Device Web Portal Authentication \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Headless IoT endpoints such as network printers and CCTV cameras can easily navigate complex web portal captive login pages.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Headless devices lack web browsers and cannot complete portal logins; they require MAC Authentication Bypass (MAB) or certificate-based 802.1X.
+\end{explainbox}
+
+\section{Chapter 9: Fundamentals of Encryption and Decryption Technologies}
+
+\begin{qcard}{969}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Kerckhoffs's Principle Secrecy \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Kerckhoffs's Principle states that a cryptosystem must be kept secret and proprietary to ensure maximum security.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Kerckhoffs's Principle asserts that a cryptosystem's security should rely solely on keeping the key secret, assuming the algorithm is public knowledge.
+\end{explainbox}
+
+\begin{qcard}{970}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Symmetric Key Shared \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In symmetric encryption, the sender and the receiver use the exact same secret key for both encryption and decryption.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Symmetric cryptography is defined by the use of an identical shared secret key (\$K\_e = K\_d\$) for both operations.
+\end{explainbox}
+
+\begin{qcard}{971}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Symmetric Speed Advantage \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Symmetric encryption algorithms are generally much faster and less computationally intensive than asymmetric encryption algorithms.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Symmetric algorithms rely on fast hardware-friendly bitwise operations, making them orders of magnitude faster than asymmetric algorithms.
+\end{explainbox}
+
+\begin{qcard}{972}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} DES 56-Bit Key Insecurity \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The effective key length of DES is 56 bits, which is considered cryptographically insecure today due to brute-force vulnerability.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. A 56-bit key can be exhaustively brute-forced in hours with modern hardware, rendering single DES obsolete.
+\end{explainbox}
+
+\begin{qcard}{973}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} AES 128-Bit Block Size \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The block size of the AES algorithm is fixed at 128 bits, regardless of whether a 128-bit, 192-bit, or 256-bit key is used.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Under FIPS 197, AES has a fixed block size of 128 bits across all supported key lengths (128, 192, 256 bits).
+\end{explainbox}
+
+\begin{qcard}{974}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Asymmetric Key Pair Roles \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In asymmetric cryptography, a message encrypted with an entity's Public Key can only be decrypted by the matching Private Key.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The mathematical relationship ensures that data encrypted with the public key can be decrypted exclusively by the corresponding private key.
+\end{explainbox}
+
+\begin{qcard}{975}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Asymmetric Key Count Formula \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A network of 100 users utilizing asymmetric cryptography requires 100 * 99 / 2 = 4,950 total keys across the system.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Asymmetric systems require \$2N\$ keys (one public and one private key per user), totaling \$2 \textbackslash\{\}times 100 = 200\$ keys. \$N(N-1)/2\$ applies to symmetric ciphers.
+\end{explainbox}
+
+\begin{qcard}{976}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Diffie-Hellman Direct Encryption \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Diffie-Hellman algorithm can be used directly to encrypt large database files and generate digital signatures.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Diffie-Hellman is strictly a key agreement protocol; it cannot directly encrypt data or produce digital signatures.
+\end{explainbox}
+
+\begin{qcard}{977}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Diffie-Hellman MitM Risk \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Unauthenticated Diffie-Hellman key exchange is vulnerable to Man-in-the-Middle (MitM) attacks.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Without authentication (via pre-shared keys or digital certificates), an attacker can intercept and establish separate keys with both endpoints.
+\end{explainbox}
+
+\begin{qcard}{978}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Hash Reversibility \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A cryptographic hash function can be easily inverted using a private key to recover the original plaintext message.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Hash functions are strictly one-way mathematical reductions; they do not have keys and cannot be inverted to recover original data.
+\end{explainbox}
+
+\begin{qcard}{979}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Avalanche Effect Bit Change \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The avalanche effect ensures that changing a single bit in the input message completely alters the resulting hash digest.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The avalanche effect guarantees that small input changes produce radical, unpredictable changes across the entire output digest.
+\end{explainbox}
+
+\begin{qcard}{980}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} MD5 Collision Vulnerability \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+MD5 is still recommended for generating secure digital signatures because no collisions have ever been found in MD5.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. MD5 has been completely broken by practical collision attacks and is strictly deprecated for digital signatures and security certificates.
+\end{explainbox}
+
+\begin{qcard}{981}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SHA-256 Digest Length \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The SHA-256 hash algorithm produces a fixed-length output digest of 256 bits.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. SHA-256 (part of the SHA-2 family) consistently outputs a 256-bit (32-byte) digest.
+\end{explainbox}
+
+\begin{qcard}{982}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} HMAC Shared Key Authentication \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An HMAC provides data integrity AND origin authentication because only parties possessing the shared secret key can generate a valid MAC.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. By combining a shared key with a hash function, HMAC confirms that data was not altered and was generated by a holder of the secret key.
+\end{explainbox}
+
+\begin{qcard}{983}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Digital Signature Signing Key Check \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A digital signature is created by encrypting the message hash using the RECIPIENT'S public key.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A digital signature is generated by encrypting the hash with the SENDER'S private key, proving the sender's identity.
+\end{explainbox}
+
+\begin{qcard}{984}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Digital Signature Verification Key Check \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A recipient verifies a digital signature using the SENDER'S public key.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The sender's public key decrypts the signature to extract the original digest for comparison against the newly computed hash.
+\end{explainbox}
+
+\begin{qcard}{985}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Digital Signature Confidentiality \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Digitally signing an email ensures that unauthorized eavesdroppers cannot read the plaintext content of the email.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A digital signature provides authenticity and integrity, not confidentiality. Plaintext remains readable unless separate encryption is applied.
+\end{explainbox}
+
+\begin{qcard}{986}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Non-Repudiation Sender Denial \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Non-repudiation prevents the sender of a signed document from falsely denying that they created and transmitted the document.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Because only the sender possesses their unique private key, a valid digital signature provides indisputable proof of authorship.
+\end{explainbox}
+
+\begin{qcard}{987}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Hybrid Cryptosystem Performance \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Hybrid cryptosystems use asymmetric ciphers for secure key exchange and symmetric ciphers for high-speed bulk data encryption.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Hybrid architectures leverage asymmetric algorithms for key distribution and fast symmetric ciphers for line-rate data encryption.
+\end{explainbox}
+
+\begin{qcard}{988}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Symmetric Cipher Non-Repudiation \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Symmetric key encryption alone provides legal non-repudiation because the key is secret.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Because both sender and receiver share the identical symmetric key, either party could have created the ciphertext, failing non-repudiation.
+\end{explainbox}
+
+\begin{qcard}{989}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} ECC Key Length Efficiency \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A 256-bit ECC key provides cryptographic strength roughly comparable to a 3072-bit RSA key.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Elliptic Curve Cryptography provides equivalent security with dramatically shorter key lengths than RSA.
+\end{explainbox}
+
+\begin{qcard}{990}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Block Cipher ECB Mode Security \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Electronic Codebook (ECB) mode is considered secure for encrypting complex images because it hides all visual patterns.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. ECB encrypts identical plaintext blocks into identical ciphertext blocks, preserving visual patterns and structural data, making it insecure.
+\end{explainbox}
+
+\begin{qcard}{991}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} CBC Mode IV Requirement \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Cipher Block Chaining (CBC) mode requires an Initialization Vector (IV) to ensure identical plaintext blocks produce different ciphertext blocks.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. An IV randomizes the initial block, ensuring that identical plaintexts yield completely different ciphertexts.
+\end{explainbox}
+
+\begin{qcard}{992}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} RC4 Stream Cipher Deprecation \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+RC4 is officially deprecated across modern security standards due to discovered vulnerabilities and keystream biases.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. RC4 is prohibited by IETF RFCs and modern TLS specifications due to statistical biases and plaintext recovery attacks.
+\end{explainbox}
+
+\begin{qcard}{993}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Salted Hash Password Storage \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Adding a unique cryptographic 'salt' to passwords before hashing prevents attackers from using precomputed rainbow tables to crack passwords.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Salting introduces unique random strings per user, invalidating precomputed rainbow tables and forcing attackers to brute-force each password individually.
+\end{explainbox}
+
+\section{Chapter 10: PKI Certificate System}
+
+\begin{qcard}{994}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} PKI Public Key Binding \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A primary function of PKI is to securely bind an identity (Subject) to its public key using a digitally signed certificate.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. PKI establishes identity verification by linking public keys to verified entities through signed X.509 certificates.
+\end{explainbox}
+
+\begin{qcard}{995}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Private Key in Certificate \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An X.509 digital certificate contains both the subject's Public Key and their secret Private Key.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A digital certificate contains ONLY the Public Key. The Private Key must remain strictly confidential and is never stored in a certificate.
+\end{explainbox}
+
+\begin{qcard}{996}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} CA Signs with Private Key \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Certificate Authority signs issued digital certificates using its own CA Private Key.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The CA uses its private key to generate the digital signature on certificates, which clients verify using the CA's public key.
+\end{explainbox}
+
+\begin{qcard}{997}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Registration Authority Signing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Registration Authority (RA) is responsible for signing certificates with its own root private key.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The RA verifies applicant identities and approves requests; the Certificate Authority (CA) signs and issues certificates.
+\end{explainbox}
+
+\begin{qcard}{998}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} X.509 Serial Number Uniqueness \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Under the X.509 standard, a CA must assign a unique serial number to every certificate it issues.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. RFC 5280 requires that each certificate issued by a CA possess a unique positive serial number within that CA's domain.
+\end{explainbox}
+
+\begin{qcard}{999}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Certificate Lifespan Validity \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A certificate is considered valid only when the current system time falls between its \texttt{Not Before} and \texttt{Not After} timestamps.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Certificates are valid strictly within the designated validity period; before \texttt{Not Before} or after \texttt{Not After}, validation fails.
+\end{explainbox}
+
+\begin{qcard}{1000}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Basic Constraints CA Flag \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Basic Constraints extension in an end-entity server certificate typically has \texttt{cA = TRUE}.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. End-entity certificates have \texttt{cA = FALSE} (not a CA). Only Root and Intermediate CAs have \texttt{cA = TRUE} allowing them to sign other certificates.
+\end{explainbox}
+
+\begin{qcard}{1001}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SAN Multi-Domain Support \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Subject Alternative Name (SAN) extension allows a single certificate to protect multiple distinct domain names and IP addresses.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. SAN binds multiple hostnames, subdomains, and IP addresses to a single certificate.
+\end{explainbox}
+
+\begin{qcard}{1002}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} CRL Periodic Publishing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Certificate Revocation List (CRL) is published periodically by the CA to list certificates that have been revoked before expiration.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. CRLs are signed lists published at regular intervals cataloging serial numbers of revoked certificates.
+\end{explainbox}
+
+\begin{qcard}{1003}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} OCSP Real-Time Query \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+OCSP provides real-time certificate status checks by sending a lightweight query to an OCSP responder for a specific certificate serial number.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. OCSP queries verify status on the fly with tiny packets, eliminating large CRL download overhead.
+\end{explainbox}
+
+\begin{qcard}{1004}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} OCSP Stapling Server Role \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In OCSP Stapling, the web server queries the OCSP responder and attaches the signed OCSP response directly into the TLS handshake.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. OCSP stapling delivers a cached, signed OCSP response from the server during the handshake, improving client speed and privacy.
+\end{explainbox}
+
+\begin{qcard}{1005}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Root CA Self-Signed Anchor \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Root CA certificate is self-signed, meaning its Issuer field is identical to its Subject field.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Root CAs are self-signed trust anchors where Issuer and Subject distinguished names match.
+\end{explainbox}
+
+\begin{qcard}{1006}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Intermediate CA Offline Requirement \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Best security practice mandates keeping Intermediate CAs offline in an air-gapped vault while the Root CA is online 24/7.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. The Root CA is kept offline for maximum security, while Intermediate CAs remain online to handle routine certificate issuance.
+\end{explainbox}
+
+\begin{qcard}{1007}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Certificate Chain Verification Top-Down \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Clients verify certificate chains by establishing mathematical trust links from the server certificate up to a trusted Root CA anchor.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Path validation verifies digital signatures sequentially up the chain to a pre-installed trusted root anchor.
+\end{explainbox}
+
+\begin{qcard}{1008}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Private Key Compromise Revocation \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+If a server's private key is stolen, the administrator must immediately request certificate revocation from the CA.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Private key theft compromises data confidentiality and authentication; immediate revocation prevents impersonation.
+\end{explainbox}
+
+\begin{qcard}{1009}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} CSR Private Key Cleartext \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Certificate Signing Request (CSR) file sent to a commercial CA contains the applicant's unencrypted private key.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. A CSR contains the public key and subject details, signed by the private key as proof of possession. Private keys are NEVER transmitted in a CSR!
+\end{explainbox}
+
+\begin{qcard}{1010}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} PKCS\#12 Encrypted Container \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A PKCS\#12 file (\texttt{.pfx} or \texttt{.p12}) can package a private key and its corresponding digital certificate inside a password-protected archive.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. PKCS\#12 archives bundle certificates and private keys securely using symmetric password encryption.
+\end{explainbox}
+
+\begin{qcard}{1011}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} PEM ASCII Base64 Encoding \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+PEM format certificates are Base64-encoded ASCII text files framed by \texttt{-----BEGIN CERTIFICATE-----} headers.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. PEM is a standardized ASCII Base64 encoding format widely used across open systems.
+\end{explainbox}
+
+\begin{qcard}{1012}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Key Usage Digital Signature \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Key Usage extension can restrict a public key to digital signatures only, prohibiting it from being used for key encipherment.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Key Usage enforces least privilege for cryptographic keys, separating signing capabilities from encryption capabilities.
+\end{explainbox}
+
+\begin{qcard}{1013}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} CDP Extension URI \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The CRL Distribution Points (CDP) extension provides URIs where clients can download updated CRLs.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The CDP extension guides client software to HTTP or LDAP locations where the issuing CA publishes CRLs.
+\end{explainbox}
+
+\begin{qcard}{1014}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} AIA Missing Intermediate Fetching \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The AIA extension enables validating clients to automatically download missing intermediate CA certificates from specified URLs.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. AIA provides pointers to issuing CA certificates, allowing clients to reconstruct incomplete certificate chains.
+\end{explainbox}
+
+\begin{qcard}{1015}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Expired Certificate Warning \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Web browsers ignore certificate expiration dates if the website's domain name matches the certificate Subject CN.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Browsers enforce strict validity checks; an expired certificate triggers immediate security warning pages regardless of domain match.
+\end{explainbox}
+
+\begin{qcard}{1016}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Wildcard Certificate Subdomain Matching \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A wildcard certificate issued for \texttt{*.example.com} automatically protects multi-level subdomains like \texttt{dev.mail.example.com}.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Standard wildcard certificates protect only a single subdomain level (e.g. \texttt{mail.example.com}), not nested multi-level subdomains (\texttt{dev.mail.example.com}).
+\end{explainbox}
+
+\begin{qcard}{1017}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Cross-Certification Mutual Trust \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Cross-certification enables two separate PKI hierarchies to trust each other's certificates without creating a new shared Root CA.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Mutual cross-certification creates trust bridges between distinct organizations' existing PKI domains.
+\end{explainbox}
+
+\begin{qcard}{1018}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Hardware Security Module (HSM) Key Export \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A certified Hardware Security Module (HSM) allows anyone on the local network to export CA root private keys in cleartext.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. HSMs enforce physical tamper resistance and strictly prevent private keys from being extracted in cleartext.
+\end{explainbox}
+
+\section{Chapter 11: Encryption Technology Applications (IPsec \& SSL VPN)}
+
+\begin{qcard}{1019}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} VPN Public Infrastructure \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A Virtual Private Network (VPN) builds a logical private network on top of a shared public network infrastructure.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. VPN leverages public shared transmission networks (such as the Internet) to establish logically isolated, private, and encrypted communication tunnels.
+\end{explainbox}
+
+\begin{qcard}{1020}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} GRE Encryption Capability \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Standard Generic Routing Encapsulation (GRE) natively provides strong AES-256 encryption to protect payload data.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Standard GRE provides no native encryption or integrity protection whatsoever. All passenger data inside standard GRE tunnels is transmitted in cleartext.
+\end{explainbox}
+
+\begin{qcard}{1021}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} GRE Multicast Support \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+GRE tunnels support encapsulating multicast and broadcast packets, enabling dynamic routing protocols like OSPF to establish neighbor relationships across the tunnel.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Unlike raw IPsec tunnels, GRE can encapsulate broadcast, multicast, and non-IP protocols, making it suitable for running dynamic routing protocols over WAN links.
+\end{explainbox}
+
+\begin{qcard}{1022}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} AH Header Encryption \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Authentication Header (AH) protocol encrypts the packet payload so that unauthorized eavesdroppers cannot inspect the data.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. AH does not provide any encryption (confidentiality). Its function is strictly limited to data origin authentication, data integrity verification (via ICV), and anti-replay protection.
+\end{explainbox}
+
+\begin{qcard}{1023}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} AH and NAT Conflict \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Deploying the AH protocol across a Network Address Translation (NAT) router will result in packet drop because NAT modifies the IP header, causing ICV integrity check failure at the receiver.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. AH computes its ICV over the immutable fields of the IP header. When NAT translates IP addresses, the header changes, causing the receiver's ICV verification to fail and drop the packet.
+\end{explainbox}
+
+\begin{qcard}{1024}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} ESP Header Encryption \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The ESP protocol can encrypt user data and optionally authenticate both the payload and the outer IP header.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. ESP encrypts the payload and can authenticate the payload and ESP header, but ESP NEVER authenticates the outer IP header. Authenticating the outer IP header is an AH feature.
+\end{explainbox}
+
+\begin{qcard}{1025}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPsec Transport Mode Outer Header \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In IPsec Transport Mode, the gateway generates and prepends a new outer IP header in front of the AH or ESP header.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Transport mode does NOT add a new IP header; it keeps the original IP header and inserts the AH/ESP header between the IP header and the transport payload.
+\end{explainbox}
+
+\begin{qcard}{1026}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPsec Tunnel Mode Scope \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In IPsec Tunnel Mode, the entire original IP packet, including its original IP header and payload, is encapsulated and protected.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Tunnel mode encapsulates the complete original IP packet inside an AH/ESP header and prepends a brand-new outer IP header for routing across the intermediate transit network.
+\end{explainbox}
+
+\begin{qcard}{1027}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IPsec SA Directionality \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+An IPsec Security Association (SA) is bidirectional, meaning a single SA handles both inbound and outbound traffic between two peers.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. IPsec SAs are strictly unidirectional (simplex). Bidirectional communication requires at least two distinct SAs: one inbound and one outbound.
+\end{explainbox}
+
+\begin{qcard}{1028}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SPI Uniqueness \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Security Parameter Index (SPI) is a 32-bit identifier in the AH/ESP header that helps the receiver identify the appropriate inbound Security Association.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The SPI, combined with the destination IP address and security protocol (AH/ESP), uniquely indexes the exact inbound SA in the receiver's Security Association Database (SADB).
+\end{explainbox}
+
+\begin{qcard}{1029}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IKE Port Number \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The Internet Key Exchange (IKE) protocol negotiates Security Associations over UDP port 500 by default.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. IKE uses UDP port 500 for standard message negotiations. (It switches to UDP port 4500 when NAT Traversal is engaged).
+\end{explainbox}
+
+\begin{qcard}{1030}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IKEv1 Phase Count \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+IKEv1 negotiation is divided into two distinct phases: Phase 1 establishes the IKE SA, and Phase 2 establishes the IPsec SAs.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. IKEv1 strictly divides negotiation into Phase 1 (establishing a secure IKE SA control channel) and Phase 2 (negotiating the actual data-protecting IPsec SAs via Quick Mode).
+\end{explainbox}
+
+\begin{qcard}{1031}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IKEv1 Main Mode Packet Total \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+IKEv1 Phase 1 Main Mode exchanges exactly four packets to complete negotiation.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. IKEv1 Phase 1 Main Mode strictly requires 6 packets (3 pairs of request/response messages) to negotiate proposals, perform DH exchange, and verify encrypted identities.
+\end{explainbox}
+
+\begin{qcard}{1032}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IKEv1 Main Mode Identity Privacy \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In IKEv1 Main Mode, peer identity information is protected by encryption during transmission.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. In Main Mode, identity information is exchanged in messages 5 and 6, which are encrypted using the session key derived during messages 3 and 4.
+\end{explainbox}
+
+\begin{qcard}{1033}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IKEv1 Aggressive Mode Packet Total \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+IKEv1 Phase 1 Aggressive Mode completes its negotiation using only three packets.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Aggressive Mode completes Phase 1 in 3 messages: Message 1 (initiator to responder), Message 2 (responder to initiator), and Message 3 (initiator confirmation).
+\end{explainbox}
+
+\begin{qcard}{1034}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IKEv1 Aggressive Mode Privacy \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+IKEv1 Aggressive Mode encrypts the peer identity information in the first message.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. In Aggressive Mode, peer identities are sent in cleartext in the first two messages because the shared secret has not yet been computed.
+\end{explainbox}
+
+\begin{qcard}{1035}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IKEv1 Quick Mode Function \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+IKEv1 Phase 2 Quick Mode is used to negotiate IPsec SAs and user data encryption parameters under the protection of the Phase 1 IKE SA.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Quick Mode operates inside the encrypted Phase 1 tunnel to negotiate IPsec SAs, proxy IDs (ACLs), and session keys for user data protection.
+\end{explainbox}
+
+\begin{qcard}{1036}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Perfect Forward Secrecy Benefit \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Perfect Forward Secrecy (PFS) ensures that if an attacker compromises an IKE Phase 1 key in the future, past and future IPsec Phase 2 session keys cannot be decrypted.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. PFS forces an independent Diffie-Hellman exchange during Phase 2 Quick Mode, breaking the mathematical link between Phase 1 keys and Phase 2 data keys.
+\end{explainbox}
+
+\begin{qcard}{1037}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IKEv2 Packet Efficiency \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+IKEv2 requires only 4 messages in its initial exchange to establish both the IKE SA and the initial IPsec Child SA.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. IKEv2 consolidates Phase 1 and Phase 2 into two 2-message exchanges: IKE\_SA\_INIT (negotiating IKE SA) and IKE\_AUTH (authenticating identity and creating the first Child SA).
+\end{explainbox}
+
+\begin{qcard}{1038}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} IKEv2 Main and Aggressive Modes \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+IKEv2 retains the separate Main Mode and Aggressive Mode negotiation options from IKEv1.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. IKEv2 completely eliminated the confusing distinction between Main Mode and Aggressive Mode, replacing them with a unified initial exchange.
+\end{explainbox}
+
+\begin{qcard}{1039}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} NAT-T UDP Port 4500 \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+When NAT Traversal (NAT-T) is active, ESP packets are encapsulated within UDP packets using destination port 4500.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. NAT-T wraps ESP packets in a UDP header using port 4500, enabling stateful PAT routers to translate and track the session using UDP port mappings.
+\end{explainbox}
+
+\begin{qcard}{1040}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} Dead Peer Detection Keepalives \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Dead Peer Detection (DPD) sends keepalive probes to confirm the operational status of the remote IPsec gateway.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. DPD actively monitors the responsiveness of the peer gateway, cleaning up stale SAs and initiating failover if the remote peer stops responding.
+\end{explainbox}
+
+\begin{qcard}{1041}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} L2TP Native Encryption \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+L2TP protocol natively includes strong symmetric data encryption algorithms such as 3DES and AES.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. L2TP only provides Layer 2 frame tunneling and user authentication; it has no native encryption. Data confidentiality must be provided by pairing it with IPsec (L2TP over IPsec).
+\end{explainbox}
+
+\begin{qcard}{1042}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SSL VPN Port Traversal \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+SSL VPN primarily operates over TCP port 443 (HTTPS), allowing it to easily pass through most corporate firewalls and NAT gateways without modifying port forwarding rules.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Because HTTPS (TCP 443) is almost universally permitted through enterprise firewalls and proxy servers, SSL VPN traffic traverses intermediate networks with minimal friction.
+\end{explainbox}
+
+\begin{qcard}{1043}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SSL VPN Web Proxy Client Requirement \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The SSL VPN Web Proxy service requires users to install a dedicated software client with administrator privileges on their local computers.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B (False)}
+\textbf{Concept \& Rationale:} False. Web Proxy is clientless; remote users access internal web servers entirely through standard web browsers without installing local software or needing administrator privileges.
+\end{explainbox}
+
+\begin{qcard}{1044}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SSL VPN File Sharing Protocols \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The SSL VPN File Sharing service enables users to access SMB/CIFS and NFS shares via a web browser interface.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. The USG firewall converts browser requests into internal SMB/CIFS or NFS file transactions, displaying files and folders directly in the user's web browser.
+\end{explainbox}
+
+\begin{qcard}{1045}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SSL VPN Port Forwarding Scope \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+The SSL VPN Port Forwarding service is designed to forward static, TCP-based enterprise applications such as Telnet, SSH, and RDP.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Port Forwarding intercepts and forwards connections for preconfigured TCP client-server applications via local port listening.
+\end{explainbox}
+
+\begin{qcard}{1046}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SSL VPN Network Extension IP Assignment \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+In SSL VPN Network Extension mode, the remote client receives a virtual IP address from a private address pool configured on the SSL VPN virtual gateway.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Network Extension operates at Layer 3, installing a virtual NIC and leasing an internal private IP address to the remote endpoint to enable full intranet routing.
+\end{explainbox}
+
+\begin{qcard}{1047}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SSL VPN Split Tunneling Bandwidth \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Split Tunnel mode in SSL VPN Network Extension sends only enterprise-bound intranet traffic through the VPN tunnel, conserving corporate gateway bandwidth.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Under Split Tunneling, only packets destined for corporate subnets traverse the SSL VPN tunnel; regular Internet traffic exits directly via the user's local ISP connection.
+\end{explainbox}
+
+\begin{qcard}{1048}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SSL VPN Full Tunnel Security \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+Full Tunnel mode in SSL VPN Network Extension forces all user network traffic, including public Internet browsing, through the enterprise SSL VPN gateway.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Full Tunneling ensures all outbound traffic passes through corporate firewalls for unified security inspection, DLP auditing, and content filtering.
+\end{explainbox}
+
+\begin{qcard}{1049}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} SSL VPN Virtual Gateway Multi-Tenancy \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+A single Huawei USG physical firewall can be partitioned into multiple independent SSL VPN Virtual Gateways to serve distinct user groups or tenant organizations.
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. Huawei USG firewalls support virtual gateways, allowing multiple isolated virtual VPN instances on a single physical appliance with independent branding, user bases, and security policies.
+\end{explainbox}
+
+\begin{qcard}{1050}{tfcol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} GRE over IPsec Multicast Routing \hfill \textbf{Type:} True/False}\vspace{0.4em}\par
+GRE over IPsec combines the routing flexibility of GRE (multicast and dynamic routing support) with the security features of IPsec (encryption and authentication).
+\begin{qoptions}
+\item True
+\item False
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{A (True)}
+\textbf{Concept \& Rationale:} True. GRE over IPsec encapsulates multicast/dynamic routing traffic inside GRE, which is then encrypted by IPsec, achieving both routing capability and high-grade data protection.
+\end{explainbox}
