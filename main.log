@@ -1072,4 +1072,118 @@ can-ning meth-ods in-clude TCP Con-nect, TCP SYN, TCP
 [159] [160] [161] [162] [163] [164] [165] [166] [167] [168]
 Underfull \hbox (badness 10000) in paragraph at lines 2127--2128
 \T1/lmtt/m/n/10 display firewall server-map\T1/lmr/m/n/10 (+20) , and \T1/lmtt/
-m/n/10
+m/n/10 display firewall session table verbose\T1/lmr/m/n/10 (+20) . \T1/lmtt/m/
+n/10 reset
+ []
+
+[169] [170] [171] [172] [173] [174] [175] [176] [177] [178] [179] [180]
+[181] [182] [183] [184] [185] [186] [187] [188] [189] [190] [191] [192]
+Underfull \hbox (badness 2443) in paragraph at lines 3427--3428
+[]\T1/lmr/bx/n/10 (+20) Concept & Ra-tio-nale: \T1/lmr/m/n/10 (+20) HW-TA-CACS 
+de-fines sep-a-rate mes-sage struc-tures for Au-then-ti-ca-tion
+ []
+
+[193] [194] [195] [196] [197]
+Underfull \hbox (badness 5504) in paragraph at lines 3675--3676
+[]\T1/lmr/bx/n/10 (+20) Concept & Ra-tio-nale: \T1/lmr/m/n/10 (+20) AAA di-ag-n
+os-tics use \T1/lmtt/m/n/10 display user-manage online-user\T1/lmr/m/n/10 (+20)
+ , \T1/lmtt/m/n/10 display
+ []
+
+[198] [199] [200] [201] [202] [203] [204] [205] [206] [207] [208] [209]
+[210] [211] [212] [213] [214] [215] [216] [217] [218] [219] [220] [221])
+[222] (./chapters/part3_true_false.tex [223
+
+] [224] [225] [226] [227] [228]
+[229] [230] [231] [232] [233] [234] [235] [236] [237] [238] [239] [240]
+[241] [242] [243] [244] [245] [246] [247] [248] [249] [250] [251] [252]
+[253] [254] [255] [256] [257] [258] [259] [260] [261] [262] [263] [264]
+[265] [266] [267] [268] [269] [270] [271] [272] [273] [274] [275] [276]
+[277] [278] [279] [280] [281] [282] [283] [284] [285] [286] [287] [288]
+[289] [290] [291] [292] [293] [294] [295] [296]) [297]
+(./chapters/quick_answer_key.tex
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 2.
+
+
+Overfull \hbox (98.80368pt too wide) in alignment at lines 8--12
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (98.80368pt too wide) in alignment at lines 12--56
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [298
+
+] [299]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 2 on input line 131.
+
+
+ignored: Infinite glue shrinkage found in box being split [300
+
+] [301]
+Overfull \hbox (98.80368pt too wide) in alignment at lines 136--140
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (115.05383pt too wide) in alignment at lines 140--173
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3 on input line 173.
+
+) [302
+
+]
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+(./main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  AC81A1B5E4438BA255C3BFA37C39C26B;11233.
+ ) 
+Here is how much of TeX's memory you used:
+ 32819 strings out of 469006
+ 576540 string characters out of 5454813
+ 1000465 words of memory out of 5000000
+ 56786 multiletter control sequences out of 15000+600000
+ 711866 words of font info for 210 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 121i,13n,124p,1001b,628s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></u
+sr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
+cal/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/te
+xlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texliv
+e/2026basic/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026
+basic/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026basic/t
+exmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2026basic/texmf-
+dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/
+fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/
+type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (303 pages, 1477306 bytes).
+PDF statistics:
+ 5938 PDF objects out of 6186 (max. 8388607)
+ 5556 compressed objects within 56 object streams
+ 4036 named destinations out of 4296 (max. 500000)
+ 45581 words of extra memory for PDF output out of 51595 (max. 10000000)
+
