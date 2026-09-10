@@ -1683,6 +1683,9 @@ TYPE_LABELS = {
     'tf': 'True / False',
 }
 
+# Note: preamble.tex defines qcard (2 args: #1=num, #2=color),
+# qoptions (option list), and explainbox (1 arg: answer).
+
 
 def write_latex(filename='HCIA_Security_Question_Bank.tex'):
     with open(filename, 'w', encoding='utf-8') as f:
@@ -1758,18 +1761,18 @@ def write_latex(filename='HCIA_Security_Question_Bank.tex'):
 def write_question(f, q, idx):
     color = TYPE_COLORS[q.qtype]
     label = TYPE_LABELS[q.qtype]
-    f.write(r'\begin{questioncard}{' + str(idx) + '}{' + color + '}' + '\n')
-    f.write(r'\qtypebadge{' + color + '}{' + label + r'} \hfill \textcolor{darkslate!70}{\small Topic: ' + tex_escape(q.topic) + '}' + '\n\n')
+    # qcard title shows Question # and badge text via fbox inside title
+    title_inner = r'\color{white}\textbf{Question ' + str(idx) + r'} \hfill \small ' + label + r' \textbar{} Topic: ' + tex_escape(q.topic)
+    f.write(r'\begin{qcard}{' + title_inner + '}{' + color + '}' + '\n')
     f.write(tex_escape(q.question) + '\n\n')
-    f.write(r'\begin{optlist}' + '\n')
+    f.write(r'\begin{qoptions}' + '\n')
     for opt in q.options:
         f.write(r'\item ' + tex_escape(opt) + '\n')
-    f.write(r'\end{optlist}' + '\n')
-    f.write(r'\begin{explainbox}{}' + '\n')
-    f.write(r'\textbf{Correct Answer: ' + tex_escape(q.answer) + r'}\\[0.3em]' + '\n')
+    f.write(r'\end{qoptions}' + '\n')
+    f.write(r'\begin{explainbox}{' + tex_escape(q.answer) + '}' + '\n')
     f.write(r'\textbf{Concept:} ' + tex_escape(q.explanation) + '\n')
     f.write(r'\end{explainbox}' + '\n')
-    f.write(r'\end{questioncard}' + '\n\n')
+    f.write(r'\end{qcard}' + '\n\n')
 
 
 if __name__ == '__main__':
