@@ -2,65 +2,50 @@
 ### Comprehensive 1,050-Question Certification Preparation Guide & Conceptual Walkthrough
 
 <p align="center">
-  <img src="assets/hcia_exam_banner.jpg" alt="HCIA-Security Banner" width="100%">
+  <img src="assets/cover_page_preview.png" alt="HCIA-Security Guide Cover" width="55%" style="border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
 </p>
 
 <p align="center">
   <a href="https://e.huawei.com/en/talent/#/cert/product-details?target=_blank&category=1&certId=14">
-    <img src="https://img.shields.io/badge/Huawei%20Certification-HCIA--Security%20V3.0-blue?style=for-the-badge&logo=huawei" alt="Huawei Certification">
+    <img src="https://img.shields.io/badge/Huawei%20Certification-HCIA--Security%20V3.0-1E3A8A?style=for-the-badge&logo=huawei" alt="Huawei Certification">
   </a>
-  <img src="https://img.shields.io/badge/Exam%20Code-H12--711-red?style=for-the-badge" alt="Exam Code">
+  <img src="https://img.shields.io/badge/Exam%20Code-H12--711-DC2626?style=for-the-badge" alt="Exam Code">
   <a href="data/full_question_bank.json">
-    <img src="https://img.shields.io/badge/Question%20Bank-1%2C050%20Questions-green?style=for-the-badge" alt="Question Bank">
+    <img src="https://img.shields.io/badge/Question%20Bank-1%2C050%20Questions-0D9488?style=for-the-badge" alt="Question Bank">
   </a>
   <a href="HCIA_Security_1050_Questions_Master_Guide.pdf">
-    <img src="https://img.shields.io/badge/PDF%20Book-305%20Pages%20(1.4%20MB)-purple?style=for-the-badge&logo=adobe-acrobat-reader" alt="PDF Book">
+    <img src="https://img.shields.io/badge/PDF%20Book-305%20Pages%20(1.5%20MB)-6D28D9?style=for-the-badge&logo=adobe-acrobat-reader" alt="PDF Book">
   </a>
-  <img src="https://img.shields.io/badge/Typeset%20with-LaTeX%20%2F%20TeX%20Live-brightgreen?style=for-the-badge&logo=latex" alt="LaTeX">
+  <img src="https://img.shields.io/badge/Typeset%20with-LaTeX%20%2F%20TikZ-047857?style=for-the-badge&logo=latex" alt="LaTeX">
 </p>
 
 ---
 
-<p align="center">
-  <img src="assets/hcia_security_badge.jpg" alt="HCIA-Security Emblem" width="180px">
-  <br>
-  <strong>Official-Grade HCIA-Security V3.0 Exam Preparation Resource</strong>
-</p>
-
-An authoritative, publication-ready examination guide engineered for network security engineers, IT professionals, and students preparing for the **Huawei Certified ICT Associate in Security (HCIA-Security V3.0, Exam Code: H12-711)** certification.
+A publication-grade examination preparation guide for engineers, security practitioners, and students preparing for the **Huawei Certified ICT Associate in Security (HCIA-Security V3.0, Exam Code: H12-711)** certification.
 
 ---
 
-## 📑 Quick Navigation
-- [Book Cover Preview](#-book-cover-preview)
-- [Key Features](#-key-features)
+## 📑 Table of Contents
+- [Key Highlights](#-key-highlights)
 - [Curriculum & Question Distribution](#-curriculum-syllabus--question-distribution)
-- [Visual Design & Sample Pages](#-visual-design--sample-pages)
+- [Sample Pages & Visual Design](#-sample-pages--visual-design)
 - [Repository Structure](#-repository-structure)
 - [Compilation & Build Guide](#-compilation--build-guide)
-- [Exam Overview & Strategy](#-exam-overview--strategy)
+- [Exam Information & Strategy](#-exam-information--strategy)
 - [License & Disclaimer](#-license--disclaimer)
 
 ---
 
-## 🎨 Book Cover Preview
+## 🌟 Key Highlights
 
-<p align="center">
-  <img src="assets/cover_page_preview.png" alt="HCIA-Security Cover Page" width="65%" style="box-shadow: 0 4px 14px rgba(0,0,0,0.15); border-radius: 6px;">
-</p>
-
----
-
-## 🌟 Key Features
-
-- **1,050 High-Yield Practice Questions**:
+- **1,050 High-Yield Questions**:
   - **Part 1 (Single-Answer Questions)**: 420 Questions (Q1 – Q420)
   - **Part 2 (Multiple-Answer Questions)**: 320 Questions (Q421 – Q740)
   - **Part 3 (True / False Questions)**: 310 Questions (Q741 – Q1050)
-- **Comprehensive Conceptual Explanations**: Every question includes a dedicated explanation card detailing *why* the correct answer is right, why distractors are wrong, and explaining the fundamental Huawei security principles.
-- **100% Official Curriculum Coverage**: Exhaustive coverage across all 11 modules in the official 499-page Huawei courseware (`HCiA.pdf`).
-- **Master Quick-Reference Answer Key**: High-density 5-column answer matrices at the back of the book (Pages 300–305) for rapid scoring of mock exams.
-- **Publication-Ready LaTeX Formatting**: Dual-card structure built with `tcolorbox`, distinct color badges per question type, clear typographic hierarchy, and interactive PDF hyperlinks.
+- **Deep Conceptual Explanations**: Every single question is paired with an in-depth technical explanation box detailing *why* the correct answer is right, why other options are invalid, and the underlying Huawei protocol logic.
+- **100% Official Curriculum Coverage**: Exhaustive coverage across all 11 modules of the official 499-page courseware (`HCiA.pdf`).
+- **Master Quick-Reference Answer Key**: Compact 5-column answer matrices at the end of the book (Pages 300–305) for rapid mock exam scoring.
+- **Pure LaTeX & TikZ Vector Design**: Clean, modern book typography with custom `tcolorbox` cards, distinct category color themes, and interactive PDF hyperlinks.
 
 ---
 
@@ -83,22 +68,22 @@ An authoritative, publication-ready examination guide engineered for network sec
 
 ---
 
-## 📸 Visual Design & Sample Pages
+## 📸 Sample Pages & Visual Design
 
 ### 1. Part 1: Single-Choice Questions (Teal Theme `#0D9488`)
-Each question card features syllabus topic tags, question stems, standardized options, and an accompanying green explanation box.
+Each question card features syllabus topic tags, standardized options, and an accompanying green explanation box.
 
 <p align="center">
-  <img src="assets/sample_single_choice.png" alt="Single Choice Sample Page" width="70%">
+  <img src="assets/sample_single_choice.png" alt="Single Choice Sample Page" width="65%">
 </p>
 
 ---
 
 ### 2. Part 2: Multiple-Choice Questions (Purple Theme `#6D28D9`)
-Multiple-choice questions feature a purple theme with all correct options listed in the explanation header and complete conceptual rationale.
+Multiple-choice questions feature a royal purple theme with all correct options indicated in the explanation header and concepts dissected in depth.
 
 <p align="center">
-  <img src="assets/sample_multi_choice.png" alt="Multiple Choice Sample Page" width="70%">
+  <img src="assets/sample_multi_choice.png" alt="Multiple Choice Sample Page" width="65%">
 </p>
 
 ---
@@ -107,7 +92,7 @@ Multiple-choice questions feature a purple theme with all correct options listed
 True/False questions use an amber banner with explicit True/False verdicts and technical justifications.
 
 <p align="center">
-  <img src="assets/sample_true_false.png" alt="True/False Sample Page" width="70%">
+  <img src="assets/sample_true_false.png" alt="True/False Sample Page" width="65%">
 </p>
 
 ---
@@ -116,7 +101,7 @@ True/False questions use an amber banner with explicit True/False verdicts and t
 High-density 5-pair table matrices (Pages 300–305) provide candidates with instant mock exam grading.
 
 <p align="center">
-  <img src="assets/sample_answer_key.png" alt="Answer Key Sample Page" width="70%">
+  <img src="assets/sample_answer_key.png" alt="Answer Key Sample Page" width="65%">
 </p>
 
 ---
@@ -125,13 +110,11 @@ High-density 5-pair table matrices (Pages 300–305) provide candidates with ins
 
 ```text
 ├── HCIA_Security_1050_Questions_Master_Guide.pdf  # Final Compiled 305-Page Master PDF Book
-├── main.tex                                       # Main LaTeX source document
-├── preamble.tex                                   # Layout, typography, colors & tcolorbox cards
+├── main.tex                                       # Main LaTeX root document
+├── preamble.tex                                   # Layout, typography, colors, TikZ & tcolorbox
 ├── HCiA.pdf                                       # Official 499-page Courseware reference
 │
-├── assets/                                        # Visual Assets & Screenshots
-│   ├── hcia_exam_banner.jpg                       # High-tech panoramic header banner
-│   ├── hcia_security_badge.jpg                    # High-resolution certification emblem
+├── assets/                                        # Visual Previews
 │   ├── cover_page_preview.png                     # PDF cover page rendering
 │   ├── sample_single_choice.png                   # Part 1 page preview
 │   ├── sample_multi_choice.png                    # Part 2 page preview
@@ -151,7 +134,7 @@ High-density 5-pair table matrices (Pages 300–305) provide candidates with ins
 ├── scripts/                                       # Python Question Generators & Build Pipeline
 │   ├── build_full_database.py                     # Aggregator & LaTeX export pipeline
 │   ├── generate_ch01_to_ch03.py                   # Chapter 1 generator
-│   ├── generate_ch2.py to generate_ch11.py        # Chapters 2 through 11 generators
+│   └── generate_ch2.py ... generate_ch11.py       # Chapters 2 through 11 generators
 │
 └── .gitignore                                     # Clean filter for LaTeX/Python artifacts
 ```
@@ -161,8 +144,8 @@ High-density 5-pair table matrices (Pages 300–305) provide candidates with ins
 ## 🛠️ Compilation & Build Guide
 
 ### Direct Access
-The compiled volume is ready to read:
-- **[`HCIA_Security_1050_Questions_Master_Guide.pdf`](HCIA_Security_1050_Questions_Master_Guide.pdf)** (305 pages, 1.4 MB)
+The compiled book is ready to read:
+- **[`HCIA_Security_1050_Questions_Master_Guide.pdf`](HCIA_Security_1050_Questions_Master_Guide.pdf)** (305 pages, 1.5 MB)
 
 ### Recompiling with LaTeX
 To re-compile the book from LaTeX source, ensure you have TeX Live / MacTeX installed:
@@ -185,18 +168,18 @@ python3 scripts/build_full_database.py
 
 ---
 
-## 🎓 Exam Overview & Strategy
+## 🎓 Exam Information & Strategy
 
 | Parameter | Specification |
 |:---|:---|
 | **Certification Name** | Huawei Certified ICT Associate - Security |
 | **Exam Code** | **H12-711** |
 | **Exam Format** | Single Choice, Multiple Choice, True / False |
-| **Question Count** | ~60 questions (in actual live exam) |
+| **Question Count** | ~60 questions (in live exam) |
 | **Exam Duration** | 90 Minutes |
 | **Total Score** | 1,000 Points |
 | **Passing Score** | **600 Points** (60%) |
-| **Recommended Strategy** | Review each question card first; self-assess using the Answer Key, and thoroughly study the Explanation Box for any incorrect answers to solidify the core principles. |
+| **Recommended Strategy** | Work through each chapter sequentially. Self-assess using the Master Answer Key (Pages 300–305), and read the Explanation Box for any missed questions to solidify core concepts. |
 
 ---
 
