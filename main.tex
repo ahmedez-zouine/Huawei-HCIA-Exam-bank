@@ -8,57 +8,90 @@
 % =========================================================================
 \begin{titlepage}
     \centering
-    \vspace*{1.2cm}
+    \vspace*{0.2cm}
     
-    {\Huge\bfseries\color{hblue} HCIA-Security V3.0\\[0.3em]}
-    {\LARGE\bfseries\color{darkslate} Comprehensive Exam Preparation Guide\\[0.2em]
-    \large\textit{Master Question Bank with In-Depth Conceptual Rationale}\\[1.2cm]}
+    % Top Brand Ribbon
+    \begin{tcolorbox}[
+        colback=hblue!6!white,
+        colframe=hblue,
+        arc=1.5mm,
+        boxrule=0.8pt,
+        leftrule=4pt,
+        width=0.96\textwidth,
+        halign=center,
+        top=4pt,
+        bottom=4pt
+    ]
+        \small\textbf{\color{hblue}\MakeUppercase{Huawei Certified ICT Associate $\cdot$ Official Certification Curriculum}}
+    \end{tcolorbox}
     
+    \vspace{0.4cm}
+    
+    % Certification Emblem Badge
+    \includegraphics[width=4.3cm]{assets/hcia_security_badge.jpg}\par
+    \vspace{0.4cm}
+    
+    % Grand Title & Subtitles
+    {\fontsize{26}{31}\selectfont\bfseries\color{hblue} HCIA-Security V3.0\par}
+    \vspace{0.3em}
+    {\fontsize{17}{21}\selectfont\bfseries\color{darkslate} Master Certification Exam Guide\par}
+    \vspace{0.3em}
+    {\large\bfseries\color{hred} 1,050 High-Yield Practice Questions with Deep Conceptual Rationale\par}
+    
+    \vspace{0.5cm}
+    
+    % Specification Table Card
     \begin{tcolorbox}[
         colback=qbg,
         colframe=hblue,
         arc=2.5mm,
-        boxrule=1.2pt,
+        boxrule=1pt,
         leftrule=5pt,
-        width=0.92\textwidth,
-        halign=center
+        width=0.96\textwidth,
+        halign=left,
+        top=7pt,
+        bottom=7pt
     ]
-        \vspace{0.3em}
-        {\large\textbf{\color{hblue} Complete 1,050-Question Examination Syllabus}}\\[0.8em]
-        \color{darkslate}
-        \begin{tabular}{rl}
-            \textbf{Target Certification:} & Huawei Certified ICT Associate -- Security (Exam H12-711) \\
-            \textbf{Curriculum Alignment:} & HCIA-Security V3.0 (11 Comprehensive Chapters) \\
-            \textbf{Total Question Volume:} & \textbf{1,050 Fully Annotated Questions} \\
-            \textbf{Part 1 (Single Choice):} & 420 Questions (Q1 -- Q420) \\
-            \textbf{Part 2 (Multiple Choice):} & 320 Questions (Q421 -- Q740) \\
-            \textbf{Part 3 (True / False):} & 310 Questions (Q741 -- Q1050) \\
-            \textbf{Feature Highlight:} & Complete Conceptual Explanation for Every Single Question \\
-            \textbf{Quick Reference:} & Unified Master Answer Key Matrix \\
+        \centering
+        {\large\textbf{\color{hblue} Comprehensive Examination Syllabus \& Specification}}\\[0.5em]
+        \color{darkslate}\small
+        \begin{tabular}{r@{\hspace{0.8em}}l}
+            \textbf{Target Certification:} & Huawei Certified ICT Associate -- Security (Exam Code: \textbf{H12-711}) \\
+            \textbf{Curriculum Standard:} & HCIA-Security V3.0 (All 11 Official Courseware Modules) \\
+            \textbf{Total Question Volume:} & \textbf{1,050 Questions} (420 Single Choice $\cdot$ 320 Multiple Choice $\cdot$ 310 True/False) \\
+            \textbf{Pedagogical Design:} & Exhaustive Conceptual Explanation \& Rationale for Every Question \\
+            \textbf{Quick Assessment:} & Master Answer Key Matrix (Pages 300--305) for Rapid Scoring \\
+            \textbf{Passing Benchmark:} & 600 / 1000 Points (60\% Passing Score Threshold) \\
         \end{tabular}
-        \vspace{0.3em}
     \end{tcolorbox}
     
-    \vspace{1.5cm}
+    \vspace{0.4cm}
     
+    % Domain Badges Ribbon
     \begin{tcolorbox}[
         colback=ansbg,
         colframe=ansgreen,
         arc=2mm,
-        boxrule=0.8pt,
-        width=0.92\textwidth,
-        halign=center
+        boxrule=0.7pt,
+        width=0.96\textwidth,
+        halign=center,
+        top=5pt,
+        bottom=5pt
     ]
-        \color{ansgreen!80!black}
-        \textbf{Curriculum Coverage:} Network Security Concepts $\cdot$ Network Basics $\cdot$ Common Network Threats $\cdot$ Firewall Architecture \& State Inspection $\cdot$ Security Policies \& NAT $\cdot$ Dual-System Hot Standby (VRRP \& VGMP) $\cdot$ AAA \& User Authentication $\cdot$ Intrusion Prevention (IPS) $\cdot$ Cryptography Foundations $\cdot$ PKI Certificates $\cdot$ VPN Technologies (IPsec, IKEv1/v2, L2TP, SSL VPN)
+        \small\color{ansgreen!85!black}\textbf{Core Technical Domains Covered:}\\
+        \footnotesize\color{darkslate!90}
+        Network Security Fundamentals $\cdot$ TCP/IP \& Routing $\cdot$ Attack Prevention $\cdot$ Next-Gen Firewalls\\
+        Security Policies \& NAT $\cdot$ Dual-System Hot Standby (VRRP/VGMP) $\cdot$ AAA User Management\\
+        Intrusion Prevention (IPS) $\cdot$ Cryptography \& PKI $\cdot$ IPsec VPN $\cdot$ SSL VPN
     \end{tcolorbox}
     
     \vfill
     
-    {\small\color{darkslate!70}
-    Compiled and Typeset for Huawei ICT Certification Candidates and Security Professionals\\[0.3em]
-    Huawei Certified ICT Associate $\cdot$ Security Track $\cdot$ Exam Preparation Edition
+    {\small\color{darkslate!75}
+    \textbf{Huawei ICT Academy Examination Resource Edition}\\[0.2em]
+    Typeset in \LaTeX{} $\cdot$ Formatted for High-Yield Self-Study and Institutional Training $\cdot$ 2026 Edition
     }
+    \vspace*{0.2cm}
 \end{titlepage}
 
 % =========================================================================
