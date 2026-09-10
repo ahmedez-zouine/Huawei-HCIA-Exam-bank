@@ -219,10 +219,10 @@ def write_part_file(questions, filename, accent_col, part_title):
 
 def write_quick_answer_key(all_single, all_multi, all_tf, out_path):
     lines = [
-        r"\section*{Quick Reference Answer Key}",
-        r"\addcontentsline{toc}{section}{Quick Reference Answer Key}",
+        r"\phantomsection",
+        r"\section*{Master Examination Answer Key Matrices}",
         r"",
-        r"Use these quick-reference matrices to rapidly cross-check your mock exam responses.",
+        r"Use these high-density reference matrices to rapidly cross-check your mock exam responses and verify test scores.",
         r"",
         r"\subsection*{Part 1: Single Choice Answers (Q1 -- Q420)}",
         r"\small",
