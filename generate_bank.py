@@ -1259,3 +1259,140 @@ bulk_tf_2 = [
 
 for topic, q, ans, exp in bulk_tf_2:
     add('tf', topic, q, ['True', 'False'], ans, exp)
+
+
+# =============================================================================
+# FINAL BULK POOL - MIXED REVIEW QUESTIONS
+# =============================================================================
+
+final_single = [
+    # Mixed concepts
+    ('Network Security Concepts', 'The broad definition of network security is closest to:', ['Cybersecurity', 'Firewall configuration', 'Antivirus deployment', 'Physical security'], 'A', 'Broadly, network security equates to cybersecurity covering national and societal cyberspace protection.'),
+    ('Network Security Concepts', 'The narrow definition of network security focuses on:', ['National laws only', 'Enterprise network protection solutions', 'Social media policies', 'Hardware warranties'], 'B', 'Narrowly, network security means vendor solutions and measures that keep enterprise networks secure.'),
+    ('Network Security Concepts', 'During which period did communication cipher security emerge?', ['Cyberspace security period', 'Communication security period', 'Information assurance period', 'Cloud security period'], 'B', 'Stream ciphers and communication confidentiality appeared during the communication security period.'),
+    ('Network Security Concepts', 'The information security period added which goal to the earlier communication security focus?', ['Availability', 'Confidentiality, integrity, and availability', 'Non-repudiation only', 'Controllability only'], 'B', 'The information security period formalized confidentiality, integrity, and availability as core goals.'),
+    ('Network Security Concepts', 'Controllability and non-repudiation became prominent during:', ['Communication security period', 'Information security period', 'Information assurance period', 'Cloud computing period'], 'C', 'The information assurance period expanded security to include monitoring and proof of actions.'),
+    ('Network Security Standards', 'Which standard is used to certify an ISMS?', ['ISO 27001', 'ISO 27002', 'ISO 9001', 'ISO 14001'], 'A', 'ISO 27001 contains the certifiable requirements for an ISMS.'),
+    ('Network Security Standards', 'ISO 27002 is primarily a:', ['Certification standard', 'Code of practice for security controls', 'Risk assessment methodology', 'Networking protocol'], 'B', 'ISO 27002 provides best-practice controls but is not itself a certification standard.'),
+    ('Network Security Standards', 'Classified Protection 2.0 compliance is primarily relevant in:', ['China', 'United States only', 'European Union only', 'Every country equally'], 'A', 'Classified Protection 2.0 is a Chinese national cybersecurity compliance framework.'),
+    ('Network Security Standards', 'Which is the highest protection level in Classified Protection 2.0?', ['Level 1', 'Level 3', 'Level 5', 'Level 10'], 'C', 'Classified Protection defines five levels, with Level 5 being the most stringent.'),
+    ('Network Security Standards', 'Expert review is required for Classified Protection levels starting at:', ['Level 1', 'Level 2', 'Level 3', 'Level 4'], 'B', 'For Level 2 and above, expert review and approval are required.'),
+    ('Network Fundamentals', 'The OSI model layer closest to the physical medium is:', ['Data link', 'Physical', 'Network', 'Transport'], 'B', 'The physical layer deals with bits, cables, and signals.'),
+    ('Network Fundamentals', 'TCP is considered reliable because it uses:', ['Sequence numbers and acknowledgments', 'Broadcasting', 'No connection setup', 'Fixed ports only'], 'A', 'TCP uses sequence numbers, acknowledgments, and retransmissions for reliability.'),
+    ('Network Fundamentals', 'UDP is preferred for:', ['Reliable file transfer', 'Real-time streaming and low-latency applications', 'Email delivery', 'Web browsing requiring guaranteed delivery'], 'B', 'UDP low overhead and lack of retransmission make it suitable for real-time traffic.'),
+    ('Network Fundamentals', 'DNS primarily uses:', ['TCP port 53', 'UDP port 53', 'TCP port 80', 'UDP port 161'], 'B', 'DNS queries primarily use UDP port 53.'),
+    ('Network Fundamentals', 'A Layer 3 switch combines functions of a:', ['Hub and repeater', 'Switch and router', 'Firewall and IDS', 'Modem and gateway'], 'B', 'Layer 3 switches perform both Layer 2 switching and Layer 3 routing.'),
+    ('Enterprise Security Threats', 'A SYN flood is a type of:', ['Denial of Service attack', 'Phishing attack', 'Data exfiltration', 'Physical attack'], 'A', 'SYN floods exhaust server connection resources with half-open TCP connections.'),
+    ('Enterprise Security Threats', 'ARP spoofing is used to:', ['Intercept traffic on a local network', 'Encrypt files', 'Speed up routing', 'Authenticate users'], 'A', 'Attackers use forged ARP messages to redirect local traffic through themselves.'),
+    ('Enterprise Security Threats', 'The principle of least privilege aims to:', ['Give everyone admin rights', 'Limit user access to the minimum necessary', 'Disable all logging', 'Remove firewalls'], 'B', 'Least privilege reduces risk by restricting access to only what is needed.'),
+    ('Enterprise Security Threats', 'A SIEM system is primarily used for:', ['Centralized log analysis and threat detection', 'Assigning IP addresses', 'Switching frames', 'Manufacturing cables'], 'A', 'SIEM aggregates and analyzes security events and logs.'),
+    ('Firewall Basics', 'In Huawei firewalls, the default priority of Trust is:', ['5', '50', '85', '100'], 'C', 'Trust zone default priority is 85.'),
+    ('Firewall Basics', 'Traffic from a low-priority zone to a high-priority zone is considered:', ['Outbound', 'Inbound', 'Blocked by default', 'Always permitted'], 'B', 'Traffic entering a higher-priority zone from a lower-priority zone is inbound.'),
+    ('Firewall Basics', 'The default security policy action is:', ['Permit', 'Deny', 'Log', 'Redirect'], 'B', 'Huawei firewalls deny traffic by default unless explicitly permitted.'),
+    ('Firewall Basics', 'Stateful inspection relies on:', ['Session tables', 'MAC tables only', 'DNS records', 'DHCP leases'], 'A', 'Session tables track connection state for stateful inspection.'),
+    ('Firewall Basics', 'ASPF helps firewalls handle:', ['Multi-channel protocols', 'Static routing', 'MAC learning', 'DHCP relay'], 'A', 'ASPF inspects protocols that negotiate dynamic secondary channels.'),
+    ('NAT', 'NAPT is also known as:', ['PAT', 'Static NAT', 'NAT Server', 'Bridge NAT'], 'A', 'Port Address Translation (PAT) is another name for NAPT.'),
+    ('NAT', 'Static NAT is most often used when:', ['A server must always use the same public IP', 'Many hosts share one IP', 'Ports must be preserved', 'Outbound only traffic exists'], 'A', 'Static NAT provides a consistent one-to-one public-to-private mapping.'),
+    ('NAT', 'Destination NAT is commonly used to:', ['Allow internal hosts to browse the web', 'Publish internal services to external users', 'Encrypt VPN traffic', 'Assign IP addresses'], 'B', 'Destination NAT maps external destinations to internal servers.'),
+    ('NAT', 'Which feature rewrites IP addresses inside application payloads?', ['NAT ALG', 'NAPT', 'Static NAT', 'Route lookup'], 'A', 'NAT ALG handles protocols that embed address information in payloads.'),
+    ('Firewall Hot Standby', 'VRRP master election is based primarily on:', ['Priority value', 'Router hostname', 'Number of interfaces', 'Uptime only'], 'A', 'The router with the highest priority becomes the VRRP master.'),
+    ('Firewall Hot Standby', 'VGMP group management prevents:', ['Split-brain VRRP states', 'NAT exhaustion', 'DNS failures', 'DHCP conflicts'], 'A', 'VGMP ensures VRRP groups fail over consistently.'),
+    ('Firewall Hot Standby', 'HRP is used to synchronize:', ['Session and configuration data', 'Email messages', 'Web pages', 'Printer drivers'], 'A', 'HRP synchronizes sessions, NAT, server-map entries, and configurations.'),
+    ('Firewall Hot Standby', 'In active/standby mode, the standby firewall:', ['Does not forward traffic until failover', 'Forwards half the traffic', 'Processes all traffic', 'Acts as a switch'], 'A', 'The standby firewall remains ready but inactive until failover.'),
+    ('Intrusion Prevention and Antivirus', 'An IPS differs from an IDS mainly because an IPS can:', ['Block traffic', 'Only log events', 'Operate out-of-band only', 'Never generate alerts'], 'A', 'IPS can take active blocking actions, while IDS primarily detects.'),
+    ('Intrusion Prevention and Antivirus', 'Signature-based detection cannot easily detect:', ['Known attacks', 'Zero-day attacks', 'Old malware', 'Common exploits'], 'B', 'Zero-day attacks have no known signatures.'),
+    ('Intrusion Prevention and Antivirus', 'Sandboxing helps detect malware by:', ['Observing behavior in an isolated environment', 'Matching signatures', 'Comparing file sizes', 'Checking file names'], 'A', 'Sandboxing executes suspicious files safely to observe malicious behavior.'),
+    ('Intrusion Prevention and Antivirus', 'Antivirus engines require regular updates to:', ['Recognize new malware variants', 'Improve routing', 'Increase bandwidth', 'Disable firewalls'], 'A', 'Signature and detection databases must be updated to detect emerging threats.'),
+    ('AAA and User Authentication', 'The first A in AAA stands for:', ['Authentication', 'Authorization', 'Accounting', 'Auditing'], 'A', 'AAA stands for Authentication, Authorization, and Accounting.'),
+    ('AAA and User Authentication', 'RADIUS commonly runs over:', ['UDP', 'TCP', 'SCTP', 'ICMP'], 'A', 'RADIUS typically uses UDP ports 1812/1813.'),
+    ('AAA and User Authentication', 'TACACS+ commonly runs over:', ['UDP', 'TCP', 'HTTP', 'FTP'], 'B', 'TACACS+ uses TCP port 49.'),
+    ('AAA and User Authentication', 'Portal authentication is typically used for:', ['Web-based guest access', 'Cable modem registration', 'Switch MAC learning', 'DNS resolution'], 'A', 'Portal authentication presents a web login page.'),
+    ('AAA and User Authentication', '802.1X authentication occurs at:', ['Layer 2 port level', 'Application layer only', 'Physical layer only', 'Transport layer only'], 'A', '802.1X provides port-based network access control at Layer 2.'),
+    ('Cryptography and PKI', 'AES is an example of:', ['Symmetric encryption', 'Asymmetric encryption', 'Hashing', 'Steganography'], 'A', 'AES uses a single shared key for encryption and decryption.'),
+    ('Cryptography and PKI', 'RSA is an example of:', ['Asymmetric encryption', 'Symmetric encryption', 'Hash algorithm', 'Compression algorithm'], 'A', 'RSA uses public and private key pairs.'),
+    ('Cryptography and PKI', 'A hash function produces:', ['A fixed-length digest', 'The original input', 'An encrypted file', 'A random key'], 'A', 'Hash functions map variable input to a fixed-size digest.'),
+    ('Cryptography and PKI', 'MD5 is considered insecure because:', ['Collision vulnerabilities exist', 'It is too slow', 'It produces too long output', 'It requires a public key'], 'A', 'MD5 collision attacks make it unsuitable for security purposes.'),
+    ('Cryptography and PKI', 'A digital certificate binds a public key to:', ['An identity', 'A password', 'A MAC address', 'A VLAN'], 'A', 'Certificates associate a public key with an entity identity.'),
+    ('Cryptography and PKI', 'Certificate revocation status can be checked using:', ['CRL or OCSP', 'DNS only', 'DHCP only', 'SNMP only'], 'A', 'CRLs and OCSP provide revocation status information.'),
+    ('VPN', 'The main goal of a VPN is to provide:', ['Secure communication over public networks', 'Faster Internet speed', 'Free public Wi-Fi', 'Unencrypted remote access'], 'A', 'VPNs create secure encrypted tunnels over untrusted networks.'),
+    ('VPN', 'GRE protocol number is:', ['47', '50', '51', '89'], 'A', 'GRE is encapsulated using IP protocol 47.'),
+    ('VPN', 'IPsec ESP provides:', ['Encryption and authentication', 'Only routing', 'Only NAT', 'Only compression'], 'A', 'ESP provides confidentiality, integrity, and authentication.'),
+    ('VPN', 'IPsec AH provides:', ['Authentication and integrity without encryption', 'Encryption only', 'Compression only', 'Key exchange'], 'A', 'AH authenticates and protects integrity but does not encrypt.'),
+    ('VPN', 'IKE negotiates:', ['Security associations and keys for IPsec', 'DHCP leases', 'DNS records', 'MAC addresses'], 'A', 'IKE handles key exchange and SA negotiation.'),
+    ('VPN', 'SSL VPN commonly uses port:', ['80', '443', '22', '1701'], 'B', 'SSL VPN uses HTTPS/TCP 443.'),
+    ('VPN', 'L2TP is commonly paired with which protocol for encryption?', ['IPsec', 'GRE', 'OSPF', 'BGP'], 'A', 'L2TP provides tunneling and is paired with IPsec for encryption.'),
+]
+
+for topic, q, opts, ans, exp in final_single:
+    add('single', topic, q, opts, ans, exp)
+
+
+final_multi = [
+    ('Network Security Concepts', 'Which are core information security properties? (Choose all that apply)', ['Confidentiality', 'Integrity', 'Availability', 'Controllability', 'Non-repudiation'], 'A,B,C,D,E', 'Network security includes confidentiality, integrity, availability, controllability, and non-repudiation.'),
+    ('Network Security Standards', 'Which belong to the Classified Protection lifecycle? (Choose all that apply)', ['Classification', 'Filing', 'Construction and rectification', 'Level assessment', 'Supervision and inspection'], 'A,B,C,D,E', 'The full lifecycle includes classification, filing, construction, level assessment, and supervision.'),
+    ('Network Security Standards', 'Which are ISO 27000 family standards? (Choose all that apply)', ['ISO 27001', 'ISO 27002', 'ISO 27005', 'ISO 9001'], 'A,B,C', 'ISO 27001, 27002, and 27005 are information security standards; ISO 9001 is quality management.'),
+    ('Network Fundamentals', 'Which are OSI layers? (Choose all that apply)', ['Physical', 'Data link', 'Network', 'Transport', 'Application'], 'A,B,C,D,E', 'The OSI model includes these layers plus session and presentation.'),
+    ('Network Fundamentals', 'Which are TCP/IP equivalent model layers? (Choose all that apply)', ['Application', 'Transport', 'Network', 'Data link', 'Physical'], 'A,B,C,D,E', 'The TCP/IP equivalent model includes all five layers.'),
+    ('Network Fundamentals', 'Which protocols use TCP? (Choose all that apply)', ['HTTP', 'FTP', 'SMTP', 'SSH'], 'A,B,C,D', 'HTTP, FTP, SMTP, and SSH all use TCP.'),
+    ('Network Fundamentals', 'Which devices operate at Layer 2? (Choose all that apply)', ['Switch', 'Bridge', 'Router', 'Hub'], 'A,B', 'Switches and bridges operate at the data link layer.'),
+    ('Enterprise Security Threats', 'Which are malware types? (Choose all that apply)', ['Virus', 'Worm', 'Trojan', 'Ransomware'], 'A,B,C,D', 'All listed are categories of malware.'),
+    ('Enterprise Security Threats', 'Which are denial-of-service attacks? (Choose all that apply)', ['SYN flood', 'DDoS', 'Ping of death', 'Smurf attack'], 'A,B,C,D', 'These attacks aim to disrupt service availability.'),
+    ('Firewall Basics', 'Which are default Huawei security zones? (Choose all that apply)', ['Trust', 'Untrust', 'DMZ', 'Local'], 'A,B,C,D', 'Huawei firewalls provide Trust, Untrust, DMZ, and Local zones by default.'),
+    ('Firewall Basics', 'Which can be matched in security policies? (Choose all that apply)', ['Source zone', 'Destination zone', 'Source IP', 'Destination port', 'User'], 'A,B,C,D,E', 'Policies can match zones, addresses, ports, users, services, applications, and time.'),
+    ('NAT', 'Which are NAT types? (Choose all that apply)', ['Source NAT', 'Destination NAT', 'Bidirectional NAT', 'NAT Server'], 'A,B,C,D', 'Huawei firewalls support all four NAT types.'),
+    ('NAT', 'Which source NAT modes exist? (Choose all that apply)', ['NAT No-PAT', 'NAPT', 'Easy-IP', 'NAT Server'], 'A,B,C', 'NAT Server is not a source NAT mode.'),
+    ('Firewall Hot Standby', 'Which are HRP synchronization contents? (Choose all that apply)', ['Session table', 'NAT entries', 'Server-map entries', 'Configuration'], 'A,B,C,D', 'HRP synchronizes all these items between peers.'),
+    ('Firewall Hot Standby', 'Which are VRRP states? (Choose all that apply)', ['Master', 'Backup', 'Initialize', 'Failover'], 'A,B,C', 'VRRP states include master, backup, and initialize.'),
+    ('Intrusion Prevention and Antivirus', 'Which are IPS deployment modes? (Choose all that apply)', ['Inline', 'Tap/SPAN', 'Out-of-band', 'Bridge'], 'A,B,C', 'IPS can be inline, tapped, or out-of-band.'),
+    ('Intrusion Prevention and Antivirus', 'Which are antivirus detection methods? (Choose all that apply)', ['Signature-based', 'Heuristic', 'Sandboxing', 'Behavioral analysis'], 'A,B,C,D', 'Modern antivirus uses all these techniques.'),
+    ('AAA and User Authentication', 'Which are AAA components? (Choose all that apply)', ['Authentication', 'Authorization', 'Accounting', 'Auditing'], 'A,B,C', 'AAA consists of authentication, authorization, and accounting.'),
+    ('AAA and User Authentication', 'Which can authenticate users on a Huawei firewall? (Choose all that apply)', ['Local database', 'RADIUS', 'HWTACACS', 'LDAP'], 'A,B,C,D', 'Firewalls support all these authentication sources.'),
+    ('Cryptography and PKI', 'Which are symmetric algorithms? (Choose all that apply)', ['AES', 'DES', '3DES', 'RSA'], 'A,B,C', 'AES, DES, and 3DES are symmetric; RSA is asymmetric.'),
+    ('Cryptography and PKI', 'Which are hash algorithms? (Choose all that apply)', ['MD5', 'SHA-256', 'SHA-1', 'SHA-3'], 'A,B,C,D', 'These are all hash algorithms, though MD5 and SHA-1 are deprecated for security use.'),
+    ('Cryptography and PKI', 'Which are PKI components? (Choose all that apply)', ['CA', 'RA', 'Repository', 'CRL/OCSP'], 'A,B,C,D', 'PKI includes certificate authorities, registration authorities, repositories, and revocation systems.'),
+    ('VPN', 'Which are VPN types? (Choose all that apply)', ['Site-to-site', 'Remote-access', 'Intranet', 'Extranet'], 'A,B,C,D', 'VPNs can be categorized by these deployment models.'),
+    ('VPN', 'Which are IPsec protocols? (Choose all that apply)', ['AH', 'ESP', 'IKE', 'GRE'], 'A,B,C', 'AH, ESP, and IKE are IPsec protocols; GRE is separate.'),
+    ('VPN', 'Which are SSL VPN access modes? (Choose all that apply)', ['Web proxy', 'File sharing', 'Network extension', 'Port forwarding'], 'A,B,C,D', 'SSL VPN commonly supports all these modes.'),
+]
+
+for topic, q, opts, ans, exp in final_multi:
+    add('multi', topic, q, opts, ans, exp)
+
+
+final_tf = [
+    ('Network Security Concepts', 'Network security broadly refers to cyberspace security at a national level.', 'True', 'Broad network security covers national cyberspace protection.'),
+    ('Network Security Concepts', 'The CIA triad excludes availability.', 'False', 'The CIA triad includes confidentiality, integrity, and availability.'),
+    ('Network Security Standards', 'ISO 27001 is certifiable.', 'True', 'Organizations can be certified against ISO 27001 requirements.'),
+    ('Network Security Standards', 'Classified Protection 2.0 has only three levels.', 'False', 'Classified Protection 2.0 defines five levels.'),
+    ('Network Fundamentals', 'TCP provides connection-oriented reliable delivery.', 'True', 'TCP establishes connections and ensures reliable, ordered delivery.'),
+    ('Network Fundamentals', 'A hub creates separate collision domains per port.', 'False', 'A hub shares a single collision domain; switches create separate collision domains.'),
+    ('Enterprise Security Threats', 'Phishing is a type of social engineering.', 'True', 'Phishing manipulates users into revealing information.'),
+    ('Enterprise Security Threats', 'A firewall at the network border can enforce zone-based policies.', 'True', 'Firewalls enforce policies between security zones.'),
+    ('Firewall Basics', 'The default Huawei firewall action is permit.', 'False', 'The default action is deny unless explicitly permitted.'),
+    ('Firewall Basics', 'ASPF inspects application-layer negotiation.', 'True', 'ASPF handles dynamic protocols such as FTP.'),
+    ('NAT', 'NAPT translates both IP addresses and port numbers.', 'True', 'NAPT uses port multiplexing for many-to-one translation.'),
+    ('NAT', 'NAT Server is used for outbound Internet access.', 'False', 'NAT Server publishes inbound services.'),
+    ('Firewall Hot Standby', 'VRRP provides a virtual gateway IP.', 'True', 'VRRP allows multiple routers to share a virtual IP.'),
+    ('Firewall Hot Standby', 'HRP synchronizes only configurations.', 'False', 'HRP synchronizes configurations and runtime state.'),
+    ('Intrusion Prevention and Antivirus', 'An IDS can block malicious traffic inline.', 'False', 'IDS typically detects and alerts; IPS blocks inline.'),
+    ('Intrusion Prevention and Antivirus', 'Heuristic detection can identify unknown threats.', 'True', 'Heuristics analyze behavior to find unknown malware.'),
+    ('AAA and User Authentication', 'Authorization happens after authentication.', 'True', 'Authorization defines what an authenticated user may do.'),
+    ('AAA and User Authentication', 'TACACS+ uses UDP.', 'False', 'TACACS+ uses TCP.'),
+    ('Cryptography and PKI', 'A hash function output can be reversed to find the input.', 'False', 'Hash functions are one-way.'),
+    ('Cryptography and PKI', 'A digital signature verifies integrity and authenticity.', 'True', 'Signatures prove the message came from the signer and was not altered.'),
+    ('VPN', 'GRE provides encryption by default.', 'False', 'GRE encapsulates but does not encrypt traffic.'),
+    ('VPN', 'SSL VPN commonly uses TCP port 443.', 'True', 'SSL VPN uses HTTPS/TCP 443.'),
+    ('Network Security Concepts', 'Risk is the combination of threat likelihood and impact.', 'True', 'Risk assesses probability and consequence of security incidents.'),
+    ('Network Fundamentals', 'IPv6 addresses are 128 bits long.', 'True', 'IPv6 addresses are 128-bit binary numbers.'),
+    ('Enterprise Security Threats', 'Least privilege reduces the impact of compromised accounts.', 'True', 'Limiting access limits damage from compromised credentials.'),
+    ('Firewall Basics', 'Stateful firewalls use session tables to track connections.', 'True', 'Session tables store connection state for return traffic.'),
+    ('NAT', 'Static NAT preserves a one-to-one public-private mapping.', 'True', 'Static NAT maps one public IP to one private IP consistently.'),
+    ('Firewall Hot Standby', 'Load-sharing mode allows multiple firewalls to forward traffic.', 'True', 'Multiple active firewalls share the traffic load.'),
+    ('Intrusion Prevention and Antivirus', 'Sandboxing executes files in an isolated environment.', 'True', 'Sandboxing observes behavior without risking production systems.'),
+    ('AAA and User Authentication', 'Portal authentication requires a web browser.', 'True', 'Portal presents a web login page to users.'),
+    ('Cryptography and PKI', 'RSA is a symmetric encryption algorithm.', 'False', 'RSA is asymmetric.'),
+    ('VPN', 'IPsec tunnel mode encrypts the entire original IP packet.', 'True', 'Tunnel mode encapsulates the whole original packet.'),
+]
+
+for topic, q, ans, exp in final_tf:
+    add('tf', topic, q, ['True', 'False'], ans, exp)
