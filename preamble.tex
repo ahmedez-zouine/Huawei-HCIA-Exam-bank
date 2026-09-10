@@ -1,0 +1,102 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper, margin=1.8cm, top=2.2cm, bottom=2.2cm, headheight=16pt, footskip=14pt]{geometry}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\usepackage{pifont}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+
+% Color Definitions
+\definecolor{hblue}{HTML}{1E3A8A}      % Navy Blue
+\definecolor{hred}{HTML}{DC2626}       % Huawei Red accent
+\definecolor{singlecol}{HTML}{0D9488}   % Teal for Single Choice
+\definecolor{multicol}{HTML}{6D28D9}    % Purple for Multi Choice
+\definecolor{tfcol}{HTML}{D97706}       % Amber for True/False
+\definecolor{ansgreen}{HTML}{047857}    % Forest Green
+\definecolor{ansbg}{HTML}{F0FDF4}       % Light Green Background
+\definecolor{qbg}{HTML}{F8FAFC}         % Light Slate Background
+\definecolor{qborder}{HTML}{CBD5E1}     % Border Slate
+\definecolor{darkslate}{HTML}{1E293B}   % Slate 800
+
+% Hyperref Setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=hblue,
+    citecolor=hblue,
+    urlcolor=hblue,
+    pdfauthor={Huawei ICT Academy / HCIA-Security Preparation},
+    pdftitle={HCIA-Security Comprehensive Exam Question Bank},
+    pdfsubject={HCIA-Security V3.0 Certification Exam Preparation},
+    pdfkeywords={HCIA, Security, Huawei, Firewall, NAT, VRRP, IPS, PKI, IPsec, VPN}
+}
+
+% Header & Footer Configuration
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkslate!70}\textbf{HCIA-Security Comprehensive Exam Bank (1050 Questions)}}
+\fancyhead[R]{\small\color{darkslate!70}\nouppercase{\leftmark}}
+\fancyfoot[L]{\small\color{darkslate!50}Huawei Certified ICT Associate - Security}
+\fancyfoot[R]{\small\color{darkslate!80}\textbf{Page \thepage}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Section Titles Styling
+\titleformat{\part}[display]
+  {\normalfont\huge\bfseries\centering\color{hblue}}
+  {\Large\MakeUppercase{\partname} \thepart}
+  {1ex}
+  {\titlerule\vspace{1ex}\Huge}
+  [\vspace{1ex}\titlerule]
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{hblue}}
+  {\thesection}{1em}{}
+  [\vspace{0.2ex}{\color{hblue}\titlerule[1.2pt]}]
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{darkslate}}
+  {\thesubsection}{0.8em}{}
+
+% Custom Question Box
+\newtcolorbox{qcard}[2]{
+    colback=qbg,
+    colframe=#2,
+    arc=1.8mm,
+    boxrule=0.7pt,
+    leftrule=3.8pt,
+    left=7pt,
+    right=7pt,
+    top=5pt,
+    bottom=5pt,
+    title={\textbf{Question #1}},
+    coltitle=white,
+    colbacktitle=#2,
+    before=\par\vspace{0.6em}\noindent,
+    after=\par\vspace{0.1em}
+}
+
+% Custom Explanation Box
+\newtcolorbox{explainbox}[1]{
+    colback=ansbg,
+    colframe=ansgreen,
+    arc=1.5mm,
+    boxrule=0.5pt,
+    leftrule=3.2pt,
+    left=7pt,
+    right=7pt,
+    top=4pt,
+    bottom=4pt,
+    title={\small\textbf{Correct Answer: #1}},
+    coltitle=white,
+    colbacktitle=ansgreen,
+    before=\par\vspace{0.1em}\noindent,
+    after=\par\vspace{0.6em}
+}
