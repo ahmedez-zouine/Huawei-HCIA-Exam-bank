@@ -1732,7 +1732,7 @@ def write_latex(filename='HCIA_Security_Question_Bank.tex'):
         ]
         for topic in topic_order_single:
             if topic in by_type_topic.get('single', {}):
-                f.write(r'\section{' + tex_escape(topic) + '}\n')
+                f.write(r'\section{' + tex_escape(topic) + '}' + '\n')
                 for idx, q in enumerate(by_type_topic['single'][topic], 1):
                     write_question(f, q, idx)
 
@@ -1740,7 +1740,7 @@ def write_latex(filename='HCIA_Security_Question_Bank.tex'):
         f.write(r'\part{Multiple-Answer Questions}' + '\n')
         for topic in topic_order_single:
             if topic in by_type_topic.get('multi', {}):
-                f.write(r'\section{' + tex_escape(topic) + '}\n')
+                f.write(r'\section{' + tex_escape(topic) + '}' + '\n')
                 for idx, q in enumerate(by_type_topic['multi'][topic], 1):
                     write_question(f, q, idx)
 
@@ -1748,7 +1748,7 @@ def write_latex(filename='HCIA_Security_Question_Bank.tex'):
         f.write(r'\part{True / False Questions}' + '\n')
         for topic in topic_order_single:
             if topic in by_type_topic.get('tf', {}):
-                f.write(r'\section{' + tex_escape(topic) + '}\n')
+                f.write(r'\section{' + tex_escape(topic) + '}' + '\n')
                 for idx, q in enumerate(by_type_topic['tf'][topic], 1):
                     write_question(f, q, idx)
 
