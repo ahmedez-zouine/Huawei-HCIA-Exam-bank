@@ -1,0 +1,66 @@
+# ==========================================
+# LaTeX Auxiliary and Build Artifacts
+# ==========================================
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.lof
+*.lot
+*.xdv
+*.fmt
+*.fot
+*.upa
+*.upb
+
+# Temporary LaTeX tests & backups
+*.bak
+*.sav
+test_sample.*
+
+# ==========================================
+# Python Caches & Bytecode
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+
+# ==========================================
+# OS-Specific Junk
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# IDE & Editor Configuration / Scratch
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
