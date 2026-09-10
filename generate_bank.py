@@ -946,3 +946,177 @@ add('tf', 'SSL VPN',
     'SSL VPN typically uses TCP port 443.',
     ['True', 'False'], 'True',
     'SSL/TLS VPNs commonly use HTTPS/TCP 443, which is usually allowed through firewalls.')
+
+
+# =============================================================================
+# BULK QUESTION POOLS
+# =============================================================================
+
+# Helper to add many questions from compact tuple lists
+# single/multi tuples: (topic, question, [options], answer, explanation)
+# tf tuples: (topic, question, answer, explanation)
+
+bulk_single = [
+    # Chapter 1 extra
+    ('Network Security Concepts', 'Which term describes the practice of protecting networks and data from unauthorized access?', ['Cybersecurity', 'Marketing', 'Accounting', 'Logistics'], 'A', 'Cybersecurity protects networks, devices, and data from unauthorized access or attack.'),
+    ('Network Security Concepts', 'Which of the following best defines a vulnerability?', ['A weakness that can be exploited', 'A security patch', 'A firewall rule', 'A network diagram'], 'A', 'A vulnerability is a weakness in a system that a threat actor can exploit.'),
+    ('Network Security Concepts', 'What is an exploit?', ['A software patch', 'A method to take advantage of a vulnerability', 'A type of firewall', 'A routing protocol'], 'B', 'An exploit is a technique or code that leverages a vulnerability.'),
+    ('Network Security Concepts', 'Which term describes a potential danger to an asset?', ['Risk', 'Threat', 'Vulnerability', 'Control'], 'B', 'A threat is any potential danger that could exploit a vulnerability.'),
+    ('Network Security Concepts', 'Which term describes the likelihood and impact of a threat exploiting a vulnerability?', ['Threat', 'Risk', 'Asset', 'Control'], 'B', 'Risk measures the probability and impact of a security incident.'),
+    ('Network Security Concepts', 'Future security architecture is moving toward:', ['Single perimeter defense', 'Zero-trust and dynamic trust models', 'Open anonymous access', 'No logging'], 'B', 'Zero trust assumes no implicit trust and verifies every access request dynamically.'),
+    ('Network Security Concepts', 'Which technology is increasingly used to detect unknown threats?', ['Signature-only antivirus', 'Artificial intelligence and machine learning', 'Hub-based networks', 'Plaintext protocols'], 'B', 'AI/ML helps analyze behavior and detect anomalies and unknown threats.'),
+    ('Network Security Concepts', 'What does confidentiality ensure?', ['Only speed', 'Information is accessible only to authorized users', 'Unlimited access', 'Data duplication'], 'B', 'Confidentiality ensures that information is disclosed only to authorized individuals.'),
+    ('Network Security Concepts', 'What does integrity ensure?', ['Fast transmission', 'Information is not tampered with during transmission/storage', 'Free access', 'Unencrypted storage'], 'B', 'Integrity ensures data is not altered or destroyed in an unauthorized manner.'),
+    ('Network Security Concepts', 'What does availability ensure?', ['Authorized users can access information when needed', 'All users can access', 'Systems are offline', 'Data is hidden'], 'A', 'Availability guarantees reliable and timely access to information for authorized users.'),
+    ('Network Security Concepts', 'What does controllability mean in information security?', ['No monitoring', 'Ability to monitor and control information/systems', 'Unlimited downloads', 'No access controls'], 'B', 'Controllability enables organizations to monitor, manage, and protect information and systems.'),
+    ('Network Security Concepts', 'What does non-repudiation prevent?', ['Fast data transfer', 'Senders or receivers from denying their actions', 'Encryption', 'Backups'], 'B', 'Non-repudiation provides proof of origin and delivery so parties cannot deny participation.'),
+    ('Network Security Standards', 'Which ISO standard family addresses information security management?', ['ISO 9000', 'ISO 27000', 'ISO 14000', 'ISO 20000'], 'B', 'The ISO/IEC 27000 family covers information security management systems and controls.'),
+    ('Network Security Standards', 'Which Chinese regulation is the basis for Classified Protection?', ['Cybersecurity Law', 'GDPR', 'HIPAA', 'PCI DSS'], 'A', 'China Cybersecurity Law underpins the Classified Protection compliance framework.'),
+    ('Network Security Standards', 'ISO 27001 uses which methodology for risk management?', ['Ignore risks', 'Plan-Do-Check-Act (PDCA)', 'Random patching', 'No reviews'], 'B', 'ISO 27001 follows the PDCA cycle for continuous improvement of the ISMS.'),
+    ('Network Security Standards', 'Which document in ISO 27000 family provides implementation guidance for controls?', ['ISO 27001', 'ISO 27002', 'ISO 27003', 'ISO 27005'], 'B', 'ISO 27002 lists security controls and implementation guidance.'),
+    ('Network Security Standards', 'Which is a key principle of Classified Protection 2.0?', ['Security synchronization with construction', 'Security as an afterthought', 'No auditing', 'Anonymous access'], 'A', 'Classified Protection requires security to be planned, constructed, and used simultaneously with information systems.'),
+    ('Network Security Standards', 'In Classified Protection 2.0, the security protection level is preliminarily determined by the network operator, but when the level reaches which level or above, expert review and approval are required?', ['Level 1', 'Level 2', 'Level 3', 'Level 4'], 'B', 'For protection Level 2 and above, the preliminary determination must be reviewed and approved; Level 1 can be determined by the operator.'),
+    # Chapter 2 extra
+    ('Network Fundamentals', 'What is the default subnet mask for a Class C IPv4 address?', ['255.0.0.0', '255.255.0.0', '255.255.255.0', '255.255.255.255'], 'C', 'Class C networks use a default /24 subnet mask: 255.255.255.0.'),
+    ('Network Fundamentals', 'Which protocol is used to automatically assign IPv6 addresses using MAC addresses?', ['DHCPv6', 'SLAAC', 'ARP', 'DNS'], 'B', 'SLAAC can generate IPv6 addresses from MAC addresses.'),
+    ('Network Fundamentals', 'Which layer-2 protocol prevents loops in redundant Ethernet topologies?', ['VTP', 'STP', 'RSTP', 'Both STP and RSTP'], 'D', 'Spanning Tree Protocol and Rapid STP prevent Layer 2 loops.'),
+    ('Network Fundamentals', 'What does VLAN stand for?', ['Virtual Local Area Network', 'Virtual Large Area Network', 'Verified Local Access Node', 'Virtual Link Aggregation Network'], 'A', 'VLANs logically segment a switch into separate broadcast domains.'),
+    ('Network Fundamentals', 'Which device interconnects VLANs at Layer 3?', ['Layer 2 switch', 'Router or Layer 3 switch', 'Hub', 'Bridge'], 'B', 'Routers or Layer 3 switches perform inter-VLAN routing.'),
+    ('Network Fundamentals', 'Which OSI layer is responsible for reliable data transfer between hosts?', ['Network', 'Transport', 'Data link', 'Physical'], 'B', 'The transport layer manages end-to-end reliability, flow control, and error recovery.'),
+    ('Network Fundamentals', 'In the TCP/IP model, which layer corresponds to the OSI network layer?', ['Internet layer', 'Network interface layer', 'Transport layer', 'Application layer'], 'A', 'The TCP/IP internet layer maps to the OSI network layer and handles IP routing.'),
+    ('Network Fundamentals', 'Which layer handles encryption and data format conversion?', ['Application', 'Presentation', 'Session', 'Transport'], 'B', 'The presentation layer handles syntax, encryption, compression, and character encoding.'),
+    ('Network Fundamentals', 'Which layer establishes, manages, and terminates application dialogs?', ['Application', 'Presentation', 'Session', 'Transport'], 'C', 'The session layer controls dialog establishment, maintenance, and termination.'),
+    ('Network Fundamentals', 'Which protocol is used to send email between servers?', ['HTTP', 'SMTP', 'POP3', 'IMAP'], 'B', 'SMTP is used to send and relay email.'),
+    ('Network Fundamentals', 'Which protocol is used by clients to retrieve email from a server while keeping messages on the server?', ['POP3', 'IMAP', 'SMTP', 'SNMP'], 'B', 'IMAP allows clients to access and manage email while messages remain on the server.'),
+    ('Network Fundamentals', 'Which protocol dynamically assigns IP addresses to hosts?', ['DNS', 'DHCP', 'ARP', 'FTP'], 'B', 'DHCP dynamically assigns IP addresses and network configuration parameters.'),
+    ('Network Fundamentals', 'Which protocol maps IP addresses to MAC addresses on a local network?', ['DNS', 'ARP', 'DHCP', 'ICMP'], 'B', 'ARP resolves IP addresses to MAC addresses.'),
+    ('Network Fundamentals', 'Which protocol is used for network management and monitoring?', ['SNMP', 'SMTP', 'FTP', 'Telnet'], 'A', 'SNMP manages and monitors network devices.'),
+    ('Network Fundamentals', 'What does ICMP primarily provide?', ['File transfer', 'Error reporting and diagnostics', 'Email delivery', 'Web browsing'], 'B', 'ICMP reports errors and provides diagnostic functions such as ping and traceroute.'),
+    ('Network Fundamentals', 'Which port does HTTP use by default?', ['20', '21', '80', '443'], 'C', 'HTTP uses TCP port 80 by default.'),
+    ('Network Fundamentals', 'Which port does HTTPS use by default?', ['80', '443', '22', '25'], 'B', 'HTTPS uses TCP port 443 by default, providing encrypted web traffic.'),
+    ('Network Fundamentals', 'Which port does SSH use by default?', ['21', '22', '23', '25'], 'B', 'SSH uses TCP port 22 for secure remote access.'),
+    ('Network Fundamentals', 'Telnet uses which port and is considered insecure because it transmits data in plaintext?', ['21', '22', '23', '25'], 'C', 'Telnet uses TCP port 23 and sends data, including credentials, in plaintext.'),
+    ('Network Fundamentals', 'Which address is a Layer 2 address?', ['IP address', 'MAC address', 'Port number', 'Domain name'], 'B', 'A MAC address is a hardware address used at the data link layer.'),
+    ('Network Fundamentals', 'A router forwards packets based on:', ['MAC address', 'IP address', 'Port number', 'VLAN ID'], 'B', 'Routers use IP addresses to make forwarding decisions.'),
+    ('Network Fundamentals', 'What is a subnet mask used for?', ['MAC address', 'IP address class', 'Network and host portions of an IP address', 'DNS server'], 'C', 'A subnet mask divides an IP address into network and host portions.'),
+    # Chapter 3 extra
+    ('Enterprise Security Threats', 'Which attack sends an overwhelming amount of traffic from many sources?', ['DoS', 'DDoS', 'Phishing', 'Spoofing'], 'B', 'DDoS uses multiple distributed sources to flood a target.'),
+    ('Enterprise Security Threats', 'Which attack falsifies the source address of packets?', ['Phishing', 'Spoofing', 'Sniffing', 'Spamming'], 'B', 'Spoofing impersonates a trusted source by falsifying addresses or identities.'),
+    ('Enterprise Security Threats', 'Which type of malware replicates itself across networks without user action?', ['Virus', 'Worm', 'Trojan', 'Spyware'], 'B', 'Worms can self-replicate and spread across networks, often without user interaction.'),
+    ('Enterprise Security Threats', 'Which malware disguises itself as legitimate software?', ['Virus', 'Worm', 'Trojan', 'Adware'], 'C', 'A Trojan horse masquerades as legitimate software to trick users into executing it.'),
+    ('Enterprise Security Threats', 'Ransomware primarily does what?', ['Steals credentials', 'Encrypts data and demands payment', 'Deletes logs', 'Monitors traffic'], 'B', 'Ransomware encrypts files and demands a ransom for decryption.'),
+    ('Enterprise Security Threats', 'Which attack intercepts communications between two parties without their knowledge?', ['Man-in-the-middle', 'DoS', 'Phishing', 'Tailgating'], 'A', 'A man-in-the-middle attack intercepts and possibly alters communication between parties.'),
+    ('Enterprise Security Threats', 'Which protocol can help prevent man-in-the-middle attacks by verifying server identity?', ['HTTP', 'HTTPS', 'FTP', 'Telnet'], 'B', 'HTTPS uses TLS/SSL to encrypt traffic and authenticate the server.'),
+    ('Enterprise Security Threats', 'Which wireless security protocol is more secure than WEP?', ['WPA2/WPA3', 'WEP', 'WPA (TKIP only)', 'Open network'], 'A', 'WPA2 and WPA3 provide stronger encryption and authentication than WEP.'),
+    ('Enterprise Security Threats', 'What is a DMZ typically used for?', ['Hosting internal databases only', 'Hosting public-facing servers', 'User workstations', 'Printer sharing'], 'B', 'A DMZ hosts public-facing services between the Internet and internal network.'),
+    ('Enterprise Security Threats', 'Which security zone usually has the highest priority in Huawei firewalls?', ['Untrust', 'Trust', 'DMZ', 'Local'], 'D', 'The Local zone (firewall itself) has priority 100, the highest default priority.'),
+    ('Enterprise Security Threats', 'Which practice limits the damage from compromised accounts?', ['Least privilege', 'Sharing admin passwords', 'Disabling logs', 'Open shares'], 'A', 'Least privilege gives users only the access they need, limiting blast radius.'),
+    ('Enterprise Security Threats', 'What is the purpose of host-based intrusion prevention?', ['Route packets', 'Detect and block malicious host activity', 'Assign IP addresses', 'Synchronize time'], 'B', 'Host-based IPS monitors and blocks suspicious activity on an endpoint.'),
+    ('Enterprise Security Threats', 'Which technology collects and analyzes security logs centrally?', ['SIEM', 'SNMP', 'DHCP', 'ARP'], 'A', 'SIEM centralizes log collection and analysis.'),
+    ('Enterprise Security Threats', 'What is a key benefit of centralized security management?', ['Reduced visibility', 'Unified policy and monitoring', 'More complex passwords', 'Faster malware spread'], 'B', 'Centralized management provides unified visibility, policy control, and monitoring.'),
+    ('Enterprise Security Threats', 'What is an insider threat?', ['An attack from outside the network', 'A security risk originating from within the organization', 'A hardware vendor', 'A natural disaster'], 'B', 'Insider threats come from employees, contractors, or partners with internal access.'),
+    ('Enterprise Security Threats', 'Which attack sends oversized ICMP packets to crash a target?', ['Ping of death', 'Ping sweep', 'ARP spoofing', 'DNS hijacking'], 'A', 'Ping of death sends ICMP packets larger than the maximum allowed size.'),
+    ('Enterprise Security Threats', 'Which attack uses broadcast pings to amplify traffic?', ['Smurf attack', 'SYN flood', 'Fraggle', 'Session hijacking'], 'A', 'Smurf attacks send ICMP echo requests to broadcast addresses with a spoofed source.'),
+    ('Enterprise Security Threats', 'Which attack intercepts ARP messages to redirect traffic?', ['ARP spoofing', 'DNS spoofing', 'IP spoofing', 'MAC flooding'], 'A', 'ARP spoofing sends forged ARP replies to associate an attacker MAC with another IP.'),
+    # Chapter 4 extra
+    ('Firewall Basics', 'Which firewall feature inspects application-layer data to detect attacks?', ['Packet filtering', 'Application inspection', 'Hub forwarding', 'NAT'], 'B', 'Application inspection examines payload content for malicious patterns.'),
+    ('Firewall Basics', 'Which Huawei firewall command mode is used for system-level configuration?', ['User view', 'System view', 'Interface view', 'Policy view'], 'B', 'System view allows global-level configuration on Huawei devices.'),
+    ('Firewall Basics', 'Which view is entered after the system-view command?', ['User view', 'System view', 'Interface view', 'None'], 'B', 'The system-view command enters system view from user view.'),
+    ('Firewall Basics', 'What is the purpose of a security profile in NGFW?', ['Physical installation', 'Applying advanced security features such as IPS/AV/URL filtering', 'Layer 1 forwarding', 'DHCP relay'], 'B', 'Security profiles group advanced inspection features applied to policies.'),
+    ('Firewall Basics', 'Which firewall generation combines traditional firewall functions with application awareness and intrusion prevention?', ['Packet-filtering firewall', 'Next-generation firewall', 'Stateful firewall', 'Proxy firewall'], 'B', 'Next-generation firewalls integrate application awareness, IPS, antivirus, and user identity.'),
+    ('Firewall Basics', 'What is the purpose of a default security policy deny action?', ['Improve performance', 'Ensure least-privilege access', 'Enable logging', 'Allow management'], 'B', 'Default deny enforces least privilege by blocking unspecified traffic.'),
+    ('Firewall Basics', 'Which zone would typically contain public web servers?', ['Trust', 'Untrust', 'DMZ', 'Local'], 'C', 'Public-facing servers are placed in the DMZ for isolation.'),
+    ('Firewall Basics', 'What does policy hit counting help with?', ['Routing optimization', 'Verifying policy usage and troubleshooting', 'MAC learning', 'DHCP assignment'], 'B', 'Hit counts show which policies are triggered, aiding auditing and troubleshooting.'),
+    ('Firewall Basics', 'Which of the following is NOT a firewall deployment mode?', ['Routing mode', 'Transparent mode', 'Hybrid mode', 'Broadcast mode'], 'D', 'Firewalls deploy in routing, transparent (bridge), or hybrid modes; broadcast mode is not standard.'),
+    ('Firewall Basics', 'What happens when traffic moves from a higher-priority zone to a lower-priority zone?', ['Inbound traffic', 'Outbound traffic', 'No traffic allowed', 'Always dropped'], 'B', 'Traffic from a higher-priority zone to a lower-priority zone is considered outbound.'),
+    ('Firewall Basics', 'What is the priority range for custom security zones on Huawei firewalls?', ['0-50', '1-100', '1-99 excluding defaults', '0-100'], 'C', 'Custom zone priorities range from 1 to 99, avoiding reserved default values.'),
+    ('Firewall Basics', 'Which action in a security policy can log permitted or denied traffic?', ['Permit', 'Deny', 'Both permit and deny', 'Neither'], 'C', 'Security policies can enable logging for both permit and deny actions.'),
+    ('Firewall Basics', 'Which security policy action is typically applied to suspicious traffic for further inspection?', ['Permit', 'Deny', 'Block', 'Redirect'], 'B', 'Suspicious traffic is commonly denied or blocked by policy.'),
+    ('Firewall Basics', 'When a return packet arrives, what does a stateful firewall check first?', ['Routing table', 'Session table', 'MAC table', 'ARP table'], 'B', 'A stateful firewall first checks the session table to find a matching connection.'),
+    ('Firewall Basics', 'What happens if a return packet does not match any session table entry?', ['Forwarded normally', 'Dropped or inspected against policies', 'Always permitted', 'Sent to DMZ'], 'B', 'Without a matching session, the firewall treats the packet as a new connection and applies policies.'),
+    ('Firewall Basics', 'Which protocol commonly requires ASPF support due to dynamic port negotiation?', ['HTTP', 'FTP', 'DNS', 'NTP'], 'B', 'FTP negotiates dynamic data ports in its control channel, requiring ASPF.'),
+    ('Firewall Basics', 'ASPF primarily inspects traffic at which layer?', ['Network layer only', 'Application layer', 'Physical layer', 'Data link layer'], 'B', 'ASPF performs application-layer inspection to identify negotiated connections.'),
+    # Chapter 5 extra
+    ('NAT', 'Which NAT type is also called many-to-one NAT?', ['Static NAT', 'Dynamic NAT', 'NAPT', 'NAT Server'], 'C', 'NAPT maps multiple private addresses to one public IP using port numbers.'),
+    ('NAT', 'Which NAT type preserves a one-to-one mapping between public and private addresses?', ['Static NAT', 'NAPT', 'Easy-IP', 'Dynamic PAT'], 'A', 'Static NAT maps one public IP to one private IP consistently.'),
+    ('NAT', 'Which NAT type uses the outbound interface IP as the public address?', ['NAPT', 'NAT No-PAT', 'Easy-IP', 'Destination NAT'], 'C', 'Easy-IP uses the firewall egress interface IP for translation.'),
+    ('NAT', 'Which source NAT mode maps one private address to one public address without port translation?', ['NAPT', 'NAT No-PAT', 'Easy-IP', 'NAT Server'], 'B', 'NAT No-PAT performs one-to-one address translation without changing port numbers.'),
+    ('NAT', 'When many internal hosts access the Internet using one public IP, which NAT is used?', ['NAT No-PAT', 'NAPT', 'NAT Server', 'Static NAT'], 'B', 'NAPT allows many-to-one address translation using port numbers.'),
+    ('NAT', 'Destination NAT is also known as:', ['Static NAT', 'Port forwarding / virtual IP', 'PAT', 'Proxy ARP'], 'B', 'Destination NAT maps external destinations to internal hosts, commonly called port forwarding or virtual IP.'),
+    ('NAT', 'Which NAT type maps a public IP/port to a private server IP/port?', ['Source NAT', 'NAT Server', 'NAPT', 'Bidirectional NAT'], 'B', 'NAT Server publishes internal services to external networks.'),
+    ('NAT', 'Bidirectional NAT is useful when:', ['Only source address translation is needed', 'Both source and destination must be rewritten', 'No NAT is needed', 'Only DNS traffic is involved'], 'B', 'It translates both source and destination addresses in a single flow.'),
+    ('NAT', 'Which problem can occur if NAT ALG is disabled for FTP?', ['FTP control channel fails', 'FTP data channel may fail because dynamic ports are not opened', 'FTP becomes encrypted', 'FTP speeds up'], 'B', 'Without ALG, the firewall cannot open the negotiated FTP data channel.'),
+    ('NAT', 'Which address type is preserved by NAT No-PAT?', ['Source port', 'Destination port', 'Both source and destination ports', 'No ports'], 'C', 'NAT No-PAT translates only IP addresses, preserving port numbers.'),
+    ('NAT', 'What is a major benefit of NAPT?', ['One-to-one address mapping', 'Conserves public IP addresses', 'Full protocol transparency', 'No ALG needed'], 'B', 'NAPT conserves public IPs by sharing one address across many internal hosts.'),
+    ('NAT', 'A NAT Server entry is typically:', ['Bidirectional and persistent', 'Temporary and random', 'Encrypted', 'Only for outbound traffic'], 'A', 'NAT Server entries are configured statically and persist for inbound access.'),
+    ('NAT', 'NAT ALG is often enabled together with:', ['ASPF', 'Routing', 'DHCP', 'DNS'], 'A', 'ALG and ASPF work together to inspect dynamic application channels.'),
+    ('NAT', 'Which RFC defines private IPv4 address space?', ['RFC 1918', 'RFC 2328', 'RFC 793', 'RFC 959'], 'A', 'RFC 1918 defines the private IPv4 address ranges.'),
+    ('NAT', 'Hairpin NAT allows internal users to access an internal server using:', ['The server private IP only', 'The server public NAT address', 'A VPN tunnel', 'Broadcast address'], 'B', 'Hairpin NAT lets internal hosts reach an internal server via its public NAT address.'),
+]
+
+for topic, q, opts, ans, exp in bulk_single:
+    add('single', topic, q, opts, ans, exp)
+
+
+bulk_multi = [
+    ('Network Security Concepts', 'Which are stages in the development history of network security? (Choose all that apply)', ['Communication security period', 'Information security period', 'Information assurance period', 'Cyberspace security period'], 'A,B,C,D', 'Network security has evolved through communication security, information security, information assurance, and cyberspace security periods.'),
+    ('Network Security Standards', 'Which are benefits of implementing ISO 27001? (Choose all that apply)', ['Systematic risk management', 'Improved stakeholder confidence', 'Legal/regulatory compliance', 'Guaranteed zero attacks'], 'A,B,C', 'ISO 27001 helps manage risk, build confidence, and comply with regulations, but cannot guarantee zero attacks.'),
+    ('Network Security Standards', 'Which are typical Classified Protection 2.0 security extension requirements? (Choose all that apply)', ['Cloud computing', 'Mobile Internet', 'Internet of Things', 'Industrial control systems'], 'A,B,C,D', 'Classified Protection 2.0 extends coverage to cloud, mobile Internet, IoT, and industrial control scenarios.'),
+    ('Network Fundamentals', 'Which layers are included in the TCP/IP equivalent model? (Choose all that apply)', ['Application', 'Transport', 'Network', 'Data link', 'Physical'], 'A,B,C,D,E', 'The TCP/IP equivalent model includes application, transport, network, data link, and physical layers.'),
+    ('Network Fundamentals', 'Which are connectionless protocols? (Choose all that apply)', ['UDP', 'IP', 'ICMP', 'TCP'], 'A,B,C', 'UDP, IP, and ICMP are connectionless; TCP is connection-oriented.'),
+    ('Network Fundamentals', 'Which fields are in a TCP header? (Choose all that apply)', ['Source port', 'Destination port', 'Sequence number', 'Acknowledgment number'], 'A,B,C,D', 'TCP headers include source/destination ports, sequence and acknowledgment numbers, flags, window size, etc.'),
+    ('Network Fundamentals', 'Which devices operate primarily at Layer 1? (Choose all that apply)', ['Hub', 'Repeater', 'Switch', 'Router'], 'A,B', 'Hubs and repeaters operate at the physical layer.'),
+    ('Network Fundamentals', 'Which protocols use TCP? (Choose all that apply)', ['HTTP', 'FTP', 'SMTP', 'DNS (sometimes)'], 'A,B,C,D', 'HTTP, FTP, and SMTP use TCP; DNS primarily uses UDP but can use TCP for zone transfers and large responses.'),
+    ('Network Fundamentals', 'Which protocols use UDP? (Choose all that apply)', ['DNS', 'TFTP', 'SNMP', 'DHCP'], 'A,B,C,D', 'DNS, TFTP, SNMP, and DHCP commonly use UDP.'),
+    ('Network Fundamentals', 'Which are valid IPv4 private address ranges? (Choose all that apply)', ['10.0.0.0/8', '172.16.0.0/12', '192.168.0.0/16', '224.0.0.0/4'], 'A,B,C', 'RFC 1918 private ranges are 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.'),
+    ('Enterprise Security Threats', 'Which are examples of malware? (Choose all that apply)', ['Virus', 'Worm', 'Trojan', 'Ransomware', 'Spyware'], 'A,B,C,D,E', 'All listed items are types of malware.'),
+    ('Enterprise Security Threats', 'Which are social engineering attacks? (Choose all that apply)', ['Phishing', 'Pretexting', 'Baiting', 'Tailgating'], 'A,B,C,D', 'Social engineering manipulates people through phishing, pretexting, baiting, tailgating, etc.'),
+    ('Enterprise Security Threats', 'Which protect communication confidentiality? (Choose all that apply)', ['Encryption', 'VPN', 'TLS/SSL', 'MAC filtering'], 'A,B,C', 'Encryption, VPNs, and TLS/SSL protect confidentiality; MAC filtering controls device access.'),
+    ('Enterprise Security Threats', 'Which are typical security zones? (Choose all that apply)', ['Trust', 'Untrust', 'DMZ', 'Local'], 'A,B,C,D', 'Huawei firewalls define Trust, Untrust, DMZ, and Local security zones by default.'),
+    ('Enterprise Security Threats', 'Which are endpoint security controls? (Choose all that apply)', ['Antivirus', 'Host firewall', 'Application whitelisting', 'Full-disk encryption'], 'A,B,C,D', 'Endpoint security includes antivirus, host firewalls, whitelisting, and encryption.'),
+    ('Firewall Basics', 'Which are Huawei firewall default security zones? (Choose all that apply)', ['Trust', 'Untrust', 'DMZ', 'Local'], 'A,B,C,D', 'Huawei firewalls provide Trust, Untrust, DMZ, and Local zones by default.'),
+    ('Firewall Basics', 'Which actions can a security policy perform? (Choose all that apply)', ['Permit', 'Deny', 'Log', 'Redirect'], 'A,B,C', 'Policies can permit, deny, and log traffic; redirect may be available in specific features.'),
+    ('Firewall Basics', 'Which are common firewall deployment modes? (Choose all that apply)', ['Routing mode', 'Transparent mode', 'Hybrid mode', 'Bridge mode'], 'A,B,C', 'Firewalls commonly deploy in routing, transparent (bridge), and hybrid modes.'),
+    ('Firewall Basics', 'Which conditions can be matched in a security policy? (Choose all that apply)', ['Source zone', 'Destination zone', 'Source IP', 'Destination port', 'User'], 'A,B,C,D,E', 'Policies can match zones, IPs, ports, users, applications, services, and time.'),
+    ('NAT', 'Which are private IPv4 address ranges? (Choose all that apply)', ['10.0.0.0/8', '172.16.0.0/12', '192.168.0.0/16', '127.0.0.0/8'], 'A,B,C', 'RFC 1918 private ranges are 10/8, 172.16/12, and 192.168/16.'),
+    ('NAT', 'Which are valid uses of NAT Server? (Choose all that apply)', ['Publishing a web server', 'Publishing an email server', 'Remote access to an internal host', 'Hiding internal topology'], 'A,B,C,D', 'NAT Server can publish services, enable remote access, and obscure internal addressing.'),
+]
+
+for topic, q, opts, ans, exp in bulk_multi:
+    add('multi', topic, q, opts, ans, exp)
+
+
+bulk_tf = [
+    ('Network Security Concepts', 'Non-repudiation ensures that senders or receivers cannot deny their actions.', 'True', 'Non-repudiation provides evidence to prevent denial of participation.'),
+    ('Network Security Concepts', 'Availability means anyone can access the system at any time.', 'False', 'Availability means authorized users can access information when required, not unlimited access.'),
+    ('Network Security Standards', 'ISO 27001 provides a list of security controls but is not certifiable.', 'False', 'ISO 27001 is the certifiable standard specifying ISMS requirements; ISO 27002 provides controls.'),
+    ('Network Security Standards', 'Classified Protection 2.0 requires security and informatization to be planned together.', 'True', 'The framework emphasizes synchronized planning, construction, and use of security.'),
+    ('Network Security Concepts', 'Zero trust means everything inside the network is trusted by default.', 'False', 'Zero trust never assumes trust based on network location and verifies every request.'),
+    ('Network Security Concepts', 'Integrity ensures that data is not tampered with during transmission.', 'True', 'Integrity protects against unauthorized modification or destruction of data.'),
+    ('Network Security Standards', 'Level assessment is part of the Classified Protection lifecycle.', 'True', 'After construction, a level assessment verifies that protection measures meet the required level.'),
+    ('Network Fundamentals', 'The OSI model was developed before the TCP/IP model.', 'False', 'TCP/IP was developed earlier and became the de facto standard; OSI was later as a reference model.'),
+    ('Network Fundamentals', 'DNS always uses TCP port 53.', 'False', 'DNS primarily uses UDP port 53; TCP port 53 is used for zone transfers and large responses.'),
+    ('Network Fundamentals', 'A switch forwards packets based on IP addresses.', 'False', 'A switch forwards frames based on MAC addresses; routers forward packets based on IP addresses.'),
+    ('Network Fundamentals', 'IPv4 addresses are 32 bits long.', 'True', 'IPv4 addresses are 32-bit binary numbers, usually written in dotted-decimal notation.'),
+    ('Network Fundamentals', 'ICMP is a transport-layer protocol.', 'False', 'ICMP is a network-layer protocol used for diagnostics and error reporting.'),
+    ('Enterprise Security Threats', 'A worm requires a host program to spread.', 'False', 'Worms are standalone malware that can self-replicate; viruses require host programs.'),
+    ('Enterprise Security Threats', 'Phishing attacks target human psychology rather than software vulnerabilities.', 'True', 'Phishing uses deception and social engineering to trick users.'),
+    ('Enterprise Security Threats', 'Using HTTP instead of HTTPS improves confidentiality.', 'False', 'HTTP sends data in plaintext; HTTPS encrypts data to protect confidentiality.'),
+    ('Enterprise Security Threats', 'The DMZ zone is typically more trusted than the Untrust zone but less trusted than the Trust zone.', 'True', 'DMZ has an intermediate trust level for public-facing servers.'),
+    ('Enterprise Security Threats', 'Patch management helps eliminate known vulnerabilities on hosts.', 'True', 'Applying patches closes security holes that attackers could exploit.'),
+    ('Enterprise Security Threats', 'All security threats originate from external attackers.', 'False', 'Threats can be external or internal, accidental or malicious.'),
+    ('Firewall Basics', 'Security policies on Huawei firewalls are matched from bottom to top by default.', 'False', 'Policies are matched from top to bottom based on configured order/priority.'),
+    ('Firewall Basics', 'A packet-filtering firewall tracks the state of every connection.', 'False', 'Only stateful firewalls maintain connection state; packet filters inspect packets individually.'),
+    ('Firewall Basics', 'ASPF can generate temporary server-map entries for dynamic protocols.', 'True', 'ASPF creates server-map entries to permit negotiated secondary connections.'),
+    ('Firewall Basics', 'Next-generation firewalls can identify applications regardless of port.', 'True', 'NGFWs use application-layer inspection to identify applications beyond simple port numbers.'),
+    ('Firewall Basics', 'Traffic between interfaces in the same security zone is always allowed.', 'False', 'Even intra-zone traffic can be controlled by policies, though default behavior may vary by configuration.'),
+    ('Firewall Basics', 'A deny action in a security policy can generate logs.', 'True', 'Both permit and deny actions can be configured to log traffic.'),
+    ('NAT', 'NAT can hide internal network topology from external observers.', 'True', 'NAT translates private addresses, making internal topology invisible from outside.'),
+    ('NAT', 'Easy-IP uses a fixed public IP address pool.', 'False', 'Easy-IP uses the firewall egress interface IP address dynamically.'),
+    ('NAT', 'NAT ALG is required for HTTP because HTTP embeds IP addresses in payloads.', 'False', 'HTTP generally does not embed IP addresses in payloads, so ALG is not required.'),
+    ('NAT', 'NAPT conserves public IPv4 addresses by using port multiplexing.', 'True', 'NAPT maps many private addresses to one public IP using unique port numbers.'),
+    ('NAT', 'FTP data channel failure can be caused by disabled NAT ALG.', 'True', 'Without ALG, the firewall cannot identify and permit the negotiated FTP data channel.'),
+]
+
+for topic, q, ans, exp in bulk_tf:
+    add('tf', topic, q, ['True', 'False'], ans, exp)
