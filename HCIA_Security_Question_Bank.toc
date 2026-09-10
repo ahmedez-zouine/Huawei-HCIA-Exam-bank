@@ -1,117 +1,117 @@
-\contentsline {part}{I\hspace {1em}Single-Answer Questions}{2}{part.1}%
-\contentsline {section}{\numberline {1}Network Security Concepts}{2}{section.1}%
-\contentsline {section}{\numberline {2}Network Security Standards}{10}{section.2}%
-\contentsline {section}{\numberline {3}Network Fundamentals}{16}{section.3}%
-\contentsline {section}{\numberline {4}OSI and TCP/IP Models}{28}{section.4}%
-\contentsline {section}{\numberline {5}Network Protocols}{29}{section.5}%
-\contentsline {section}{\numberline {6}Network Devices}{30}{section.6}%
-\contentsline {section}{\numberline {7}Enterprise Security Threats}{30}{section.7}%
-\contentsline {section}{\numberline {8}Communication Network Security}{39}{section.8}%
-\contentsline {section}{\numberline {9}Zone Border Security}{40}{section.9}%
-\contentsline {section}{\numberline {10}Computing Environment Security}{40}{section.10}%
-\contentsline {section}{\numberline {11}Firewall Basics}{40}{section.11}%
-\contentsline {section}{\numberline {12}Security Zones}{48}{section.12}%
-\contentsline {section}{\numberline {13}Security Policies}{49}{section.13}%
-\contentsline {section}{\numberline {14}Stateful Inspection}{50}{section.14}%
-\contentsline {section}{\numberline {15}ASPF}{50}{section.15}%
-\contentsline {section}{\numberline {16}NAT}{51}{section.16}%
-\contentsline {section}{\numberline {17}NAT Basics}{57}{section.17}%
-\contentsline {section}{\numberline {18}Source NAT}{58}{section.18}%
-\contentsline {section}{\numberline {19}Destination NAT}{58}{section.19}%
-\contentsline {section}{\numberline {20}NAT Server}{58}{section.20}%
-\contentsline {section}{\numberline {21}NAT ALG}{59}{section.21}%
-\contentsline {section}{\numberline {22}Firewall Hot Standby}{59}{section.22}%
-\contentsline {section}{\numberline {23}VRRP}{64}{section.23}%
-\contentsline {section}{\numberline {24}VGMP}{65}{section.24}%
-\contentsline {section}{\numberline {25}HRP}{65}{section.25}%
-\contentsline {section}{\numberline {26}Intrusion Prevention and Antivirus}{65}{section.26}%
-\contentsline {section}{\numberline {27}Intrusion Overview}{72}{section.27}%
-\contentsline {section}{\numberline {28}Intrusion Prevention}{72}{section.28}%
-\contentsline {section}{\numberline {29}Antivirus}{73}{section.29}%
-\contentsline {section}{\numberline {30}AAA and User Authentication}{74}{section.30}%
-\contentsline {section}{\numberline {31}AAA Basics}{79}{section.31}%
-\contentsline {section}{\numberline {32}Firewall User Authentication}{80}{section.32}%
-\contentsline {section}{\numberline {33}Cryptography and PKI}{81}{section.33}%
-\contentsline {section}{\numberline {34}Cryptography Basics}{89}{section.34}%
-\contentsline {section}{\numberline {35}Hash Algorithms}{90}{section.35}%
-\contentsline {section}{\numberline {36}Digital Signatures}{91}{section.36}%
-\contentsline {section}{\numberline {37}PKI}{91}{section.37}%
-\contentsline {section}{\numberline {38}VPN}{92}{section.38}%
-\contentsline {section}{\numberline {39}VPN Overview}{100}{section.39}%
-\contentsline {section}{\numberline {40}GRE VPN}{101}{section.40}%
-\contentsline {section}{\numberline {41}IPsec VPN}{101}{section.41}%
-\contentsline {section}{\numberline {42}L2TP VPN}{103}{section.42}%
-\contentsline {section}{\numberline {43}SSL VPN}{103}{section.43}%
-\contentsline {part}{II\hspace {1em}Multiple-Answer Questions}{103}{part.2}%
-\contentsline {section}{\numberline {44}Network Security Concepts}{103}{section.44}%
-\contentsline {section}{\numberline {45}Network Security Standards}{104}{section.45}%
-\contentsline {section}{\numberline {46}Network Fundamentals}{106}{section.46}%
-\contentsline {section}{\numberline {47}OSI and TCP/IP Models}{108}{section.47}%
-\contentsline {section}{\numberline {48}Network Protocols}{109}{section.48}%
-\contentsline {section}{\numberline {49}Network Devices}{109}{section.49}%
-\contentsline {section}{\numberline {50}Enterprise Security Threats}{109}{section.50}%
-\contentsline {section}{\numberline {51}Zone Border Security}{111}{section.51}%
-\contentsline {section}{\numberline {52}Firewall Basics}{111}{section.52}%
-\contentsline {section}{\numberline {53}Security Zones}{113}{section.53}%
-\contentsline {section}{\numberline {54}Security Policies}{113}{section.54}%
-\contentsline {section}{\numberline {55}Stateful Inspection}{113}{section.55}%
-\contentsline {section}{\numberline {56}NAT}{113}{section.56}%
-\contentsline {section}{\numberline {57}NAT Basics}{115}{section.57}%
-\contentsline {section}{\numberline {58}Source NAT}{115}{section.58}%
-\contentsline {section}{\numberline {59}NAT ALG}{115}{section.59}%
-\contentsline {section}{\numberline {60}Firewall Hot Standby}{115}{section.60}%
-\contentsline {section}{\numberline {61}VRRP}{117}{section.61}%
-\contentsline {section}{\numberline {62}HRP}{117}{section.62}%
-\contentsline {section}{\numberline {63}Intrusion Prevention and Antivirus}{118}{section.63}%
-\contentsline {section}{\numberline {64}Intrusion Prevention}{119}{section.64}%
-\contentsline {section}{\numberline {65}Antivirus}{119}{section.65}%
-\contentsline {section}{\numberline {66}AAA and User Authentication}{120}{section.66}%
-\contentsline {section}{\numberline {67}AAA Basics}{121}{section.67}%
-\contentsline {section}{\numberline {68}Firewall User Authentication}{121}{section.68}%
-\contentsline {section}{\numberline {69}Cryptography and PKI}{121}{section.69}%
-\contentsline {section}{\numberline {70}Cryptography Basics}{123}{section.70}%
-\contentsline {section}{\numberline {71}PKI}{123}{section.71}%
-\contentsline {section}{\numberline {72}VPN}{123}{section.72}%
-\contentsline {section}{\numberline {73}VPN Overview}{125}{section.73}%
-\contentsline {section}{\numberline {74}IPsec VPN}{126}{section.74}%
-\contentsline {section}{\numberline {75}SSL VPN}{126}{section.75}%
-\contentsline {part}{III\hspace {1em}True / False Questions}{126}{part.3}%
-\contentsline {section}{\numberline {76}Network Security Concepts}{126}{section.76}%
-\contentsline {section}{\numberline {77}Network Security Standards}{133}{section.77}%
-\contentsline {section}{\numberline {78}Network Fundamentals}{138}{section.78}%
-\contentsline {section}{\numberline {79}OSI and TCP/IP Models}{150}{section.79}%
-\contentsline {section}{\numberline {80}Network Protocols}{150}{section.80}%
-\contentsline {section}{\numberline {81}Network Devices}{150}{section.81}%
-\contentsline {section}{\numberline {82}Enterprise Security Threats}{151}{section.82}%
-\contentsline {section}{\numberline {83}Communication Network Security}{159}{section.83}%
-\contentsline {section}{\numberline {84}Zone Border Security}{159}{section.84}%
-\contentsline {section}{\numberline {85}Firewall Basics}{159}{section.85}%
-\contentsline {section}{\numberline {86}Security Zones}{166}{section.86}%
-\contentsline {section}{\numberline {87}Security Policies}{167}{section.87}%
-\contentsline {section}{\numberline {88}Stateful Inspection}{167}{section.88}%
-\contentsline {section}{\numberline {89}ASPF}{167}{section.89}%
-\contentsline {section}{\numberline {90}NAT}{167}{section.90}%
-\contentsline {section}{\numberline {91}NAT Basics}{173}{section.91}%
-\contentsline {section}{\numberline {92}Source NAT}{173}{section.92}%
-\contentsline {section}{\numberline {93}Destination NAT}{173}{section.93}%
-\contentsline {section}{\numberline {94}NAT Server}{173}{section.94}%
-\contentsline {section}{\numberline {95}NAT ALG}{174}{section.95}%
-\contentsline {section}{\numberline {96}Firewall Hot Standby}{174}{section.96}%
-\contentsline {section}{\numberline {97}VRRP}{179}{section.97}%
-\contentsline {section}{\numberline {98}VGMP}{179}{section.98}%
-\contentsline {section}{\numberline {99}HRP}{179}{section.99}%
-\contentsline {section}{\numberline {100}Intrusion Prevention and Antivirus}{180}{section.100}%
-\contentsline {section}{\numberline {101}Intrusion Prevention}{185}{section.101}%
-\contentsline {section}{\numberline {102}Antivirus}{186}{section.102}%
-\contentsline {section}{\numberline {103}AAA and User Authentication}{186}{section.103}%
-\contentsline {section}{\numberline {104}AAA Basics}{191}{section.104}%
-\contentsline {section}{\numberline {105}Firewall User Authentication}{191}{section.105}%
-\contentsline {section}{\numberline {106}Cryptography and PKI}{192}{section.106}%
-\contentsline {section}{\numberline {107}Cryptography Basics}{200}{section.107}%
-\contentsline {section}{\numberline {108}Hash Algorithms}{201}{section.108}%
-\contentsline {section}{\numberline {109}PKI}{201}{section.109}%
-\contentsline {section}{\numberline {110}VPN}{202}{section.110}%
-\contentsline {section}{\numberline {111}GRE VPN}{209}{section.111}%
-\contentsline {section}{\numberline {112}IPsec VPN}{209}{section.112}%
-\contentsline {section}{\numberline {113}L2TP VPN}{209}{section.113}%
-\contentsline {section}{\numberline {114}SSL VPN}{210}{section.114}%
+\contentsline {part}{I\hspace {1em}Single-Answer Questions}{5}{part.1}%
+\contentsline {section}{\numberline {1}Network Security Concepts}{5}{section.1}%
+\contentsline {section}{\numberline {2}Network Security Standards}{13}{section.2}%
+\contentsline {section}{\numberline {3}Network Fundamentals}{19}{section.3}%
+\contentsline {section}{\numberline {4}OSI and TCP/IP Models}{31}{section.4}%
+\contentsline {section}{\numberline {5}Network Protocols}{32}{section.5}%
+\contentsline {section}{\numberline {6}Network Devices}{33}{section.6}%
+\contentsline {section}{\numberline {7}Enterprise Security Threats}{33}{section.7}%
+\contentsline {section}{\numberline {8}Communication Network Security}{42}{section.8}%
+\contentsline {section}{\numberline {9}Zone Border Security}{43}{section.9}%
+\contentsline {section}{\numberline {10}Computing Environment Security}{43}{section.10}%
+\contentsline {section}{\numberline {11}Firewall Basics}{43}{section.11}%
+\contentsline {section}{\numberline {12}Security Zones}{51}{section.12}%
+\contentsline {section}{\numberline {13}Security Policies}{52}{section.13}%
+\contentsline {section}{\numberline {14}Stateful Inspection}{53}{section.14}%
+\contentsline {section}{\numberline {15}ASPF}{53}{section.15}%
+\contentsline {section}{\numberline {16}NAT}{54}{section.16}%
+\contentsline {section}{\numberline {17}NAT Basics}{60}{section.17}%
+\contentsline {section}{\numberline {18}Source NAT}{61}{section.18}%
+\contentsline {section}{\numberline {19}Destination NAT}{61}{section.19}%
+\contentsline {section}{\numberline {20}NAT Server}{61}{section.20}%
+\contentsline {section}{\numberline {21}NAT ALG}{62}{section.21}%
+\contentsline {section}{\numberline {22}Firewall Hot Standby}{62}{section.22}%
+\contentsline {section}{\numberline {23}VRRP}{67}{section.23}%
+\contentsline {section}{\numberline {24}VGMP}{68}{section.24}%
+\contentsline {section}{\numberline {25}HRP}{68}{section.25}%
+\contentsline {section}{\numberline {26}Intrusion Prevention and Antivirus}{68}{section.26}%
+\contentsline {section}{\numberline {27}Intrusion Overview}{75}{section.27}%
+\contentsline {section}{\numberline {28}Intrusion Prevention}{75}{section.28}%
+\contentsline {section}{\numberline {29}Antivirus}{76}{section.29}%
+\contentsline {section}{\numberline {30}AAA and User Authentication}{76}{section.30}%
+\contentsline {section}{\numberline {31}AAA Basics}{82}{section.31}%
+\contentsline {section}{\numberline {32}Firewall User Authentication}{83}{section.32}%
+\contentsline {section}{\numberline {33}Cryptography and PKI}{84}{section.33}%
+\contentsline {section}{\numberline {34}Cryptography Basics}{92}{section.34}%
+\contentsline {section}{\numberline {35}Hash Algorithms}{93}{section.35}%
+\contentsline {section}{\numberline {36}Digital Signatures}{94}{section.36}%
+\contentsline {section}{\numberline {37}PKI}{94}{section.37}%
+\contentsline {section}{\numberline {38}VPN}{95}{section.38}%
+\contentsline {section}{\numberline {39}VPN Overview}{103}{section.39}%
+\contentsline {section}{\numberline {40}GRE VPN}{104}{section.40}%
+\contentsline {section}{\numberline {41}IPsec VPN}{104}{section.41}%
+\contentsline {section}{\numberline {42}L2TP VPN}{105}{section.42}%
+\contentsline {section}{\numberline {43}SSL VPN}{106}{section.43}%
+\contentsline {part}{II\hspace {1em}Multiple-Answer Questions}{106}{part.2}%
+\contentsline {section}{\numberline {44}Network Security Concepts}{106}{section.44}%
+\contentsline {section}{\numberline {45}Network Security Standards}{107}{section.45}%
+\contentsline {section}{\numberline {46}Network Fundamentals}{109}{section.46}%
+\contentsline {section}{\numberline {47}OSI and TCP/IP Models}{111}{section.47}%
+\contentsline {section}{\numberline {48}Network Protocols}{111}{section.48}%
+\contentsline {section}{\numberline {49}Network Devices}{112}{section.49}%
+\contentsline {section}{\numberline {50}Enterprise Security Threats}{112}{section.50}%
+\contentsline {section}{\numberline {51}Zone Border Security}{114}{section.51}%
+\contentsline {section}{\numberline {52}Firewall Basics}{114}{section.52}%
+\contentsline {section}{\numberline {53}Security Zones}{115}{section.53}%
+\contentsline {section}{\numberline {54}Security Policies}{116}{section.54}%
+\contentsline {section}{\numberline {55}Stateful Inspection}{116}{section.55}%
+\contentsline {section}{\numberline {56}NAT}{116}{section.56}%
+\contentsline {section}{\numberline {57}NAT Basics}{117}{section.57}%
+\contentsline {section}{\numberline {58}Source NAT}{118}{section.58}%
+\contentsline {section}{\numberline {59}NAT ALG}{118}{section.59}%
+\contentsline {section}{\numberline {60}Firewall Hot Standby}{118}{section.60}%
+\contentsline {section}{\numberline {61}VRRP}{120}{section.61}%
+\contentsline {section}{\numberline {62}HRP}{120}{section.62}%
+\contentsline {section}{\numberline {63}Intrusion Prevention and Antivirus}{120}{section.63}%
+\contentsline {section}{\numberline {64}Intrusion Prevention}{122}{section.64}%
+\contentsline {section}{\numberline {65}Antivirus}{122}{section.65}%
+\contentsline {section}{\numberline {66}AAA and User Authentication}{122}{section.66}%
+\contentsline {section}{\numberline {67}AAA Basics}{123}{section.67}%
+\contentsline {section}{\numberline {68}Firewall User Authentication}{124}{section.68}%
+\contentsline {section}{\numberline {69}Cryptography and PKI}{124}{section.69}%
+\contentsline {section}{\numberline {70}Cryptography Basics}{126}{section.70}%
+\contentsline {section}{\numberline {71}PKI}{126}{section.71}%
+\contentsline {section}{\numberline {72}VPN}{126}{section.72}%
+\contentsline {section}{\numberline {73}VPN Overview}{128}{section.73}%
+\contentsline {section}{\numberline {74}IPsec VPN}{128}{section.74}%
+\contentsline {section}{\numberline {75}SSL VPN}{129}{section.75}%
+\contentsline {part}{III\hspace {1em}True / False Questions}{129}{part.3}%
+\contentsline {section}{\numberline {76}Network Security Concepts}{129}{section.76}%
+\contentsline {section}{\numberline {77}Network Security Standards}{136}{section.77}%
+\contentsline {section}{\numberline {78}Network Fundamentals}{141}{section.78}%
+\contentsline {section}{\numberline {79}OSI and TCP/IP Models}{152}{section.79}%
+\contentsline {section}{\numberline {80}Network Protocols}{153}{section.80}%
+\contentsline {section}{\numberline {81}Network Devices}{153}{section.81}%
+\contentsline {section}{\numberline {82}Enterprise Security Threats}{153}{section.82}%
+\contentsline {section}{\numberline {83}Communication Network Security}{162}{section.83}%
+\contentsline {section}{\numberline {84}Zone Border Security}{162}{section.84}%
+\contentsline {section}{\numberline {85}Firewall Basics}{162}{section.85}%
+\contentsline {section}{\numberline {86}Security Zones}{169}{section.86}%
+\contentsline {section}{\numberline {87}Security Policies}{169}{section.87}%
+\contentsline {section}{\numberline {88}Stateful Inspection}{169}{section.88}%
+\contentsline {section}{\numberline {89}ASPF}{170}{section.89}%
+\contentsline {section}{\numberline {90}NAT}{170}{section.90}%
+\contentsline {section}{\numberline {91}NAT Basics}{175}{section.91}%
+\contentsline {section}{\numberline {92}Source NAT}{176}{section.92}%
+\contentsline {section}{\numberline {93}Destination NAT}{176}{section.93}%
+\contentsline {section}{\numberline {94}NAT Server}{176}{section.94}%
+\contentsline {section}{\numberline {95}NAT ALG}{176}{section.95}%
+\contentsline {section}{\numberline {96}Firewall Hot Standby}{176}{section.96}%
+\contentsline {section}{\numberline {97}VRRP}{181}{section.97}%
+\contentsline {section}{\numberline {98}VGMP}{182}{section.98}%
+\contentsline {section}{\numberline {99}HRP}{182}{section.99}%
+\contentsline {section}{\numberline {100}Intrusion Prevention and Antivirus}{182}{section.100}%
+\contentsline {section}{\numberline {101}Intrusion Prevention}{188}{section.101}%
+\contentsline {section}{\numberline {102}Antivirus}{188}{section.102}%
+\contentsline {section}{\numberline {103}AAA and User Authentication}{189}{section.103}%
+\contentsline {section}{\numberline {104}AAA Basics}{194}{section.104}%
+\contentsline {section}{\numberline {105}Firewall User Authentication}{194}{section.105}%
+\contentsline {section}{\numberline {106}Cryptography and PKI}{194}{section.106}%
+\contentsline {section}{\numberline {107}Cryptography Basics}{203}{section.107}%
+\contentsline {section}{\numberline {108}Hash Algorithms}{204}{section.108}%
+\contentsline {section}{\numberline {109}PKI}{204}{section.109}%
+\contentsline {section}{\numberline {110}VPN}{204}{section.110}%
+\contentsline {section}{\numberline {111}GRE VPN}{211}{section.111}%
+\contentsline {section}{\numberline {112}IPsec VPN}{212}{section.112}%
+\contentsline {section}{\numberline {113}L2TP VPN}{212}{section.113}%
+\contentsline {section}{\numberline {114}SSL VPN}{212}{section.114}%
