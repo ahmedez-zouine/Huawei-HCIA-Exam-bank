@@ -1761,8 +1761,8 @@ def write_latex(filename='HCIA_Security_Question_Bank.tex'):
 def write_question(f, q, idx):
     color = TYPE_COLORS[q.qtype]
     label = TYPE_LABELS[q.qtype]
-    # qcard title shows Question # and badge text via fbox inside title
-    title_inner = r'\color{white}\textbf{Question ' + str(idx) + r'} \hfill \small ' + label + r' \textbar{} Topic: ' + tex_escape(q.topic)
+    # qcard preamble already prepends "Question" to the title argument
+    title_inner = r'\color{white}\textbf{' + str(idx) + r'} \hfill \small ' + label + r' \textbar{} Topic: ' + tex_escape(q.topic)
     f.write(r'\begin{qcard}{' + title_inner + '}{' + color + '}' + '\n')
     f.write(tex_escape(q.question) + '\n\n')
     f.write(r'\begin{qoptions}' + '\n')
