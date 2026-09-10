@@ -12,7 +12,12 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{tcolorbox}
+\usepackage{enumitem}
 \usepackage{hyperref}
+
+% Tight options list for questions
+\newlist{qoptions}{enumerate}{1}
+\setlist[qoptions]{label=\textbf{\Alph*.}, leftmargin=2em, itemsep=1.5pt, topsep=2.5pt, parsep=0pt}
 
 % Color Definitions
 \definecolor{hblue}{HTML}{1E3A8A}      % Navy Blue
