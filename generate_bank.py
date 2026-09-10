@@ -1665,3 +1665,113 @@ for item in mg:
     add(*item)
 for item in tg:
     add(*item)
+
+
+# =============================================================================
+# LaTeX OUTPUT
+# =============================================================================
+
+TYPE_COLORS = {
+    'single': 'singlecol',
+    'multi': 'multicol',
+    'tf': 'tfcol',
+}
+
+TYPE_LABELS = {
+    'single': 'Single Choice',
+    'multi': 'Multiple Choice',
+    'tf': 'True / False',
+}
+
+
+def write_latex(filename='HCIA_Security_Question_Bank.tex'):
+    with open(filename, 'w', encoding='utf-8') as f:
+        # Preamble
+        f.write(r'\documentclass[10pt,a4paper]{article}' + '\n')
+        f.write(r'\input{preamble.tex}' + '\n')
+        f.write(r'\begin{document}' + '\n\n')
+
+        # Title page
+        f.write(r'\begin{titlepage}' + '\n')
+        f.write(r'\centering' + '\n')
+        f.write(r'\vspace*{2cm}' + '\n')
+        f.write(r'{\Huge\bfseries\color{hblue} HCIA-Security Comprehensive Exam Question Bank\\[0.8cm]}' + '\n')
+        f.write(r'{\Large\color{darkslate} V3.0 Certification Preparation\\[0.4cm]}' + '\n')
+        f.write(r'\vspace{1.5cm}' + '\n')
+        f.write(r'\begin{tcolorbox}[colback=qbg,colframe=hblue,arc=3mm,boxrule=1pt,width=0.85\textwidth]' + '\n')
+        f.write(r'\centering' + '\n')
+        f.write(r'\textbf{Total Questions:} ' + str(len(questions)) + r'\\[0.3cm]' + '\n')
+        f.write(r'\textbf{Question Types:} Single Choice, Multiple Choice, True/False\\[0.3cm]' + '\n')
+        f.write(r'\textbf{Coverage:} All HCIA-Security V3.0 Exam Topics' + '\n')
+        f.write(r'\end{tcolorbox}' + '\n')
+        f.write(r'\vfill' + '\n')
+        f.write(r'{\small Generated for HCIA-Security exam preparation}' + '\n')
+        f.write(r'\end{titlepage}' + '\n\n')
+
+        f.write(r'\tableofcontents' + '\n')
+        f.write(r'\newpage' + '\n\n')
+
+        # Organize questions by type then topic
+        by_type_topic = {}
+        for q in questions:
+            by_type_topic.setdefault(q.qtype, {}).setdefault(q.topic, []).append(q)
+
+        # Part I: Single
+        f.write(r'\part{Single-Answer Questions}' + '\n')
+        topic_order_single = [
+            'Network Security Concepts', 'Network Security Standards',
+            'Network Fundamentals', 'OSI and TCP/IP Models', 'Network Protocols', 'Network Devices',
+            'Enterprise Security Threats', 'Communication Network Security', 'Zone Border Security', 'Computing Environment Security', 'Management Center Security',
+            'Firewall Basics', 'Security Zones', 'Security Policies', 'Stateful Inspection', 'ASPF',
+            'NAT', 'NAT Basics', 'Source NAT', 'Destination NAT', 'NAT Server', 'Bidirectional NAT', 'NAT ALG',
+            'Firewall Hot Standby', 'VRRP', 'VGMP', 'HRP',
+            'Intrusion Prevention and Antivirus', 'Intrusion Overview', 'Intrusion Prevention', 'Antivirus',
+            'AAA and User Authentication', 'AAA Basics', 'Firewall User Authentication',
+            'Cryptography and PKI', 'Cryptography Basics', 'Hash Algorithms', 'Digital Signatures', 'PKI',
+            'VPN', 'VPN Overview', 'GRE VPN', 'IPsec VPN', 'L2TP VPN', 'SSL VPN',
+        ]
+        for topic in topic_order_single:
+            if topic in by_type_topic.get('single', {}):
+                f.write(r'\section{' + tex_escape(topic) + '}\n')
+                for idx, q in enumerate(by_type_topic['single'][topic], 1):
+                    write_question(f, q, idx)
+
+        # Part II: Multi
+        f.write(r'\part{Multiple-Answer Questions}' + '\n')
+        for topic in topic_order_single:
+            if topic in by_type_topic.get('multi', {}):
+                f.write(r'\section{' + tex_escape(topic) + '}\n')
+                for idx, q in enumerate(by_type_topic['multi'][topic], 1):
+                    write_question(f, q, idx)
+
+        # Part III: True/False
+        f.write(r'\part{True / False Questions}' + '\n')
+        for topic in topic_order_single:
+            if topic in by_type_topic.get('tf', {}):
+                f.write(r'\section{' + tex_escape(topic) + '}\n')
+                for idx, q in enumerate(by_type_topic['tf'][topic], 1):
+                    write_question(f, q, idx)
+
+        f.write(r'\end{document}' + '\n')
+
+
+def write_question(f, q, idx):
+    color = TYPE_COLORS[q.qtype]
+    label = TYPE_LABELS[q.qtype]
+    f.write(r'\begin{questioncard}{' + str(idx) + '}{' + color + '}\n')
+    f.write(r'\qtypebadge{' + color + '}{' + label + r'} \hfill \textcolor{darkslate!70}{\small Topic: ' + tex_escape(q.topic) + '}\n\n')
+    f.write(tex_escape(q.question) + '\n\n')
+    f.write(r'\begin{optlist}' + '\n')
+    for opt in q.options:
+        f.write(r'\item ' + tex_escape(opt) + '\n')
+    f.write(r'\end{optlist}' + '\n')
+    f.write(r'\begin{explainbox}{}\n')
+    f.write(r'\textbf{Correct Answer: ' + tex_escape(q.answer) + r'}\\[0.3em]' + '\n')
+    f.write(r'\textbf{Concept:} ' + tex_escape(q.explanation) + '\n')
+    f.write(r'\end{explainbox}' + '\n')
+    f.write(r'\end{questioncard}' + '\n\n')
+
+
+if __name__ == '__main__':
+    write_latex()
+    print(f'Generated {len(questions)} questions in HCIA_Security_Question_Bank.tex')
