@@ -116,8 +116,8 @@ def build_all_questions():
 
     return all_single, all_multi, all_tf, ch_stats
 
-def write_exam_blueprint(ch_stats, out_path):
     lines = [
+        r"\phantomsection",
         r"\section*{HCIA-Security V3.0 Exam Blueprint \& Question Distribution}",
         r"\addcontentsline{toc}{section}{HCIA-Security V3.0 Exam Blueprint \& Question Distribution}",
         r"",
@@ -129,7 +129,7 @@ def write_exam_blueprint(ch_stats, out_path):
         r"\begin{table}[h!]",
         r"\centering",
         r"\small",
-        r"\begin{tabular}{clcccc}",
+        r"\begin{tabular}{cp{7.2cm}cccc}",
         r"\toprule",
         r"\textbf{Ch.} & \textbf{Chapter Curriculum Topic} & \textbf{Single (Pt 1)} & \textbf{Multi (Pt 2)} & \textbf{T/F (Pt 3)} & \textbf{Total Questions} \\",
         r"\midrule"
