@@ -1396,3 +1396,272 @@ final_tf = [
 
 for topic, q, ans, exp in final_tf:
     add('tf', topic, q, ['True', 'False'], ans, exp)
+
+
+# =============================================================================
+# AUTO-GENERATED POOL FROM TOPIC FACTS
+# =============================================================================
+
+topic_facts = {
+    'Network Security Concepts': [
+        ('Broad network security', 'is synonymous with national cyberspace security'),
+        ('Narrow network security', 'focuses on enterprise network protection solutions'),
+        ('CIA triad', 'consists of confidentiality, integrity, and availability'),
+        ('Information assurance period', 'added controllability and non-repudiation'),
+        ('Cyberspace security', 'protects facilities, data, users, and operations'),
+        ('Confidentiality', 'ensures information is accessible only to authorized users'),
+        ('Integrity', 'ensures data is not tampered with during transmission or storage'),
+        ('Availability', 'ensures authorized users can access information when needed'),
+        ('Controllability', 'enables monitoring and control of information and systems'),
+        ('Non-repudiation', 'prevents senders or receivers from denying actions'),
+        ('Risk', 'is the combination of threat likelihood and impact'),
+        ('Vulnerability', 'is a weakness that can be exploited by threats'),
+        ('Threat', 'is a potential danger to an asset'),
+        ('Exploit', 'is a method that takes advantage of a vulnerability'),
+        ('Future security trend', 'includes zero-trust architecture'),
+        ('AI and machine learning', 'help detect unknown threats and anomalies'),
+    ],
+    'Network Security Standards': [
+        ('ISO 27001', 'specifies certifiable ISMS requirements'),
+        ('ISO 27002', 'provides a code of practice for security controls'),
+        ('PDCA', 'is the continuous improvement methodology used in ISO 27001'),
+        ('Classified Protection 2.0', 'is a Chinese national cybersecurity framework'),
+        ('Classified Protection levels', 'range from Level 1 to Level 5'),
+        ('Level 2 and above', 'require expert review and approval'),
+        ('Classified Protection lifecycle', 'includes classification, filing, construction, assessment, and supervision'),
+        ('Security synchronization', 'means planning security with information system construction'),
+        ('ISO 27001:2022', 'organizes controls into four themes'),
+        ('Cybersecurity Law', 'underpins Classified Protection in China'),
+    ],
+    'Network Fundamentals': [
+        ('OSI model', 'has seven layers'),
+        ('TCP/IP standard model', 'has four layers'),
+        ('TCP/IP equivalent model', 'has five layers'),
+        ('Physical layer', 'transmits raw bits over a medium'),
+        ('Data link layer', 'handles framing and MAC addressing'),
+        ('Network layer', 'handles logical addressing and routing'),
+        ('Transport layer', 'provides end-to-end communication and reliability'),
+        ('Session layer', 'manages application dialogs'),
+        ('Presentation layer', 'handles encryption and data format conversion'),
+        ('Application layer', 'provides network services to applications'),
+        ('TCP', 'is connection-oriented and reliable'),
+        ('UDP', 'is connectionless and has low overhead'),
+        ('FTP', 'uses TCP ports 20 and 21'),
+        ('HTTP', 'uses TCP port 80'),
+        ('HTTPS', 'uses TCP port 443'),
+        ('SSH', 'uses TCP port 22'),
+        ('Telnet', 'uses TCP port 23 and is insecure'),
+        ('DNS', 'primarily uses UDP port 53'),
+        ('SMTP', 'uses TCP port 25'),
+        ('DHCP', 'dynamically assigns IP addresses'),
+        ('ARP', 'maps IP addresses to MAC addresses'),
+        ('ICMP', 'provides error reporting and diagnostics'),
+        ('IPv4 address', 'is 32 bits long'),
+        ('IPv6 address', 'is 128 bits long'),
+        ('MAC address', 'is a Layer 2 hardware address'),
+        ('Switch', 'operates at Layer 2 and forwards frames by MAC'),
+        ('Router', 'operates at Layer 3 and forwards packets by IP'),
+        ('Hub', 'operates at Layer 1 and repeats signals'),
+        ('VLAN', 'logically segments a network into broadcast domains'),
+        ('STP', 'prevents Layer 2 loops'),
+        ('RFC 1918', 'defines private IPv4 address ranges'),
+    ],
+    'Enterprise Security Threats': [
+        ('Passive attack', 'monitors traffic without altering it'),
+        ('Active attack', 'modifies or disrupts systems or data'),
+        ('Malware', 'includes viruses, worms, Trojans, and ransomware'),
+        ('Virus', 'requires a host program to spread'),
+        ('Worm', 'can self-replicate across networks'),
+        ('Trojan', 'disguises itself as legitimate software'),
+        ('Ransomware', 'encrypts data and demands payment'),
+        ('Phishing', 'uses deception to steal information'),
+        ('Social engineering', 'manipulates people into breaking security rules'),
+        ('DoS attack', 'aims to make a service unavailable'),
+        ('DDoS attack', 'uses many distributed sources to flood a target'),
+        ('Man-in-the-middle attack', 'intercepts communication between two parties'),
+        ('ARP spoofing', 'forges ARP replies to redirect traffic'),
+        ('SYN flood', 'sends many half-open TCP connections'),
+        ('Ping of death', 'sends oversized ICMP packets'),
+        ('Smurf attack', 'uses broadcast pings to amplify traffic'),
+        ('Least privilege', 'limits user access to the minimum necessary'),
+        ('Patch management', 'eliminates known vulnerabilities'),
+        ('SIEM', 'centralizes log collection and analysis'),
+        ('DMZ', 'hosts public-facing servers between Internet and internal network'),
+        ('Insider threat', 'originates from within the organization'),
+    ],
+    'Firewall Basics': [
+        ('Trust zone priority', 'is 85 by default'),
+        ('DMZ zone priority', 'is 50 by default'),
+        ('Untrust zone priority', 'is 5 by default'),
+        ('Local zone priority', 'is 100 by default'),
+        ('Default security policy action', 'is deny'),
+        ('Stateful firewall', 'tracks connections in a session table'),
+        ('Packet-filtering firewall', 'inspects packets individually without state'),
+        ('ASPF', 'inspects multi-channel protocols like FTP'),
+        ('Next-generation firewall', 'includes application awareness and IPS'),
+        ('Security zones', 'group interfaces with similar trust levels'),
+        ('Intra-zone traffic', 'can be controlled by policies'),
+        ('Policy hit count', 'helps verify which rules are used'),
+        ('Security policy logging', 'can be enabled for permit and deny actions'),
+        ('Routing mode', 'is a firewall deployment mode'),
+        ('Transparent mode', 'is a firewall deployment mode'),
+        ('Hybrid mode', 'is a firewall deployment mode'),
+    ],
+    'NAT': [
+        ('NAT', 'translates IP addresses between private and public'),
+        ('Source NAT', 'translates the source IP of outbound packets'),
+        ('Destination NAT', 'translates the destination IP of inbound packets'),
+        ('NAT Server', 'publishes internal services to the Internet'),
+        ('Bidirectional NAT', 'translates both source and destination addresses'),
+        ('NAPT', 'translates many private addresses to one public IP using ports'),
+        ('NAT No-PAT', 'performs one-to-one address translation preserving ports'),
+        ('Easy-IP', 'uses the outbound interface IP for translation'),
+        ('NAT ALG', 'rewrites addresses inside application payloads'),
+        ('RFC 1918', 'defines private IPv4 address ranges'),
+        ('Hairpin NAT', 'lets internal users access servers via public NAT address'),
+        ('Static NAT', 'provides a persistent one-to-one mapping'),
+    ],
+    'Firewall Hot Standby': [
+        ('VRRP', 'provides gateway redundancy with a virtual IP'),
+        ('VRRP master', 'forwards traffic for the virtual IP'),
+        ('VRRP backup', 'takes over if the master fails'),
+        ('VGMP', 'manages VRRP group states consistently'),
+        ('HRP', 'synchronizes sessions and configurations'),
+        ('Active/standby mode', 'has one firewall forwarding traffic'),
+        ('Load-sharing mode', 'has multiple firewalls forwarding traffic'),
+        ('Heartbeat link', 'should be dedicated and reliable'),
+        ('HRP session backup', 'ensures connections survive failover'),
+        ('Preempt delay', 'reduces rapid master-backup flapping'),
+    ],
+    'Intrusion Prevention and Antivirus': [
+        ('IDS', 'detects intrusions and generates alerts'),
+        ('IPS', 'detects and blocks intrusions inline'),
+        ('Signature detection', 'matches known attack patterns'),
+        ('Anomaly detection', 'flags deviations from normal behavior'),
+        ('False positive', 'incorrectly blocks legitimate traffic'),
+        ('False negative', 'misses an actual attack'),
+        ('Sandboxing', 'observes file behavior in an isolated environment'),
+        ('Heuristic analysis', 'detects malware by examining behavior'),
+        ('Whitelisting', 'allows only approved applications'),
+        ('Antivirus signatures', 'must be updated regularly'),
+        ('NIDS', 'monitors network traffic for intrusions'),
+        ('HIDS', 'monitors host activity for intrusions'),
+        ('Reconnaissance', 'is an early attack phase'),
+        ('Exploitation', 'gains unauthorized access using vulnerabilities'),
+    ],
+    'AAA and User Authentication': [
+        ('Authentication', 'verifies user identity'),
+        ('Authorization', 'determines what a user can access'),
+        ('Accounting', 'records user activities and resource usage'),
+        ('RADIUS', 'uses UDP ports 1812 and 1813'),
+        ('TACACS+', 'uses TCP port 49'),
+        ('Portal authentication', 'uses a web login page'),
+        ('802.1X', 'provides port-based network access control'),
+        ('Local authentication', 'uses the device user database'),
+        ('LDAP', 'queries a directory server for authentication'),
+        ('User group', 'applies policies to multiple users collectively'),
+        ('SSO', 'allows one authentication for multiple services'),
+    ],
+    'Cryptography and PKI': [
+        ('Symmetric encryption', 'uses the same key for encryption and decryption'),
+        ('Asymmetric encryption', 'uses public and private key pairs'),
+        ('AES', 'is a symmetric encryption standard'),
+        ('RSA', 'is an asymmetric encryption algorithm'),
+        ('DES', 'uses a 56-bit effective key'),
+        ('Hash function', 'produces a fixed-length digest'),
+        ('MD5', 'is considered broken due to collision attacks'),
+        ('SHA-256', 'produces a 256-bit digest'),
+        ('HMAC', 'provides message authentication using a hash and key'),
+        ('Digital signature', 'verifies authenticity and integrity'),
+        ('Public key', 'is used to verify a digital signature'),
+        ('Private key', 'is used to create a digital signature'),
+        ('PKI', 'manages public keys and certificates'),
+        ('CA', 'issues and signs digital certificates'),
+        ('RA', 'validates identity before certificate issuance'),
+        ('CRL', 'lists revoked certificates'),
+        ('OCSP', 'provides online certificate status checking'),
+        ('X.509', 'is the standard certificate format'),
+        ('Root CA certificate', 'is self-signed and acts as a trust anchor'),
+        ('GCM', 'provides authenticated encryption'),
+        ('ECB', 'should be avoided because it reveals plaintext patterns'),
+    ],
+    'VPN': [
+        ('VPN', 'provides secure communication over public networks'),
+        ('Site-to-site VPN', 'connects entire networks at different locations'),
+        ('Remote-access VPN', 'connects individual users to a corporate network'),
+        ('GRE', 'is IP protocol 47 and lacks built-in encryption'),
+        ('GRE', 'can tunnel multicast and non-IP protocols'),
+        ('IPsec', 'provides confidentiality, integrity, and authentication'),
+        ('ESP', 'provides encryption and authentication'),
+        ('AH', 'provides authentication without encryption'),
+        ('IKE', 'negotiates IPsec keys and security associations'),
+        ('Tunnel mode', 'encrypts the entire original IP packet'),
+        ('Transport mode', 'encrypts only the IP payload'),
+        ('L2TP', 'uses UDP port 1701 and lacks encryption'),
+        ('L2TP over IPsec', 'combines L2TP tunneling with IPsec encryption'),
+        ('SSL VPN', 'commonly uses TCP port 443'),
+        ('Web proxy mode', 'provides browser-based access to web apps'),
+        ('Network extension mode', 'assigns a virtual IP to the remote host'),
+        ('IKEv2', 'is faster and more reliable than IKEv1'),
+    ],
+}
+
+
+def generate_from_facts():
+    """Generate single, multi, and tf questions from topic facts."""
+    # Single-answer: pick one fact and ask which concept matches the detail
+    single_generated = []
+    for topic, facts in topic_facts.items():
+        for concept, detail in facts:
+            q = f"Which concept is described as: {detail}?"
+            opts = [concept]
+            # Pick three other random concepts from same topic
+            other_concepts = [c for c, _ in facts if c != concept]
+            import random
+            random.seed(hash(concept + detail))
+            others = random.sample(other_concepts, min(3, len(other_concepts)))
+            opts.extend(others)
+            random.shuffle(opts)
+            ans = chr(ord('A') + opts.index(concept))
+            exp = f"{concept} refers to the concept where {detail}."
+            single_generated.append(('single', topic, q, opts, ans, exp))
+
+    # Multi-answer: ask which concepts share a common detail keyword
+    multi_generated = []
+    for topic, facts in topic_facts.items():
+        # Group by shared concept word (first word)
+        from collections import defaultdict
+        groups = defaultdict(list)
+        for concept, detail in facts:
+            key = concept.split()[0]
+            groups[key].append((concept, detail))
+        for key, items in groups.items():
+            if len(items) >= 2:
+                q = f"Which of the following relate to {key}? (Choose all that apply)"
+                opts = [c for c, _ in items]
+                if len(opts) > 4:
+                    opts = opts[:4]
+                ans = ','.join(chr(ord('A') + i) for i in range(len(opts)))
+                exp = f"These concepts all relate to {key} in {topic}."
+                multi_generated.append(('multi', topic, q, opts, ans, exp))
+
+    # True/False: simple factual statements
+    tf_generated = []
+    for topic, facts in topic_facts.items():
+        for concept, detail in facts:
+            q = f"{concept} means that {detail}."
+            tf_generated.append(('tf', topic, q, ['True', 'False'], 'True', f"This statement correctly describes {concept}."))
+            # Add a false variant by negating detail
+            false_q = f"{concept} is unrelated to {detail}."
+            tf_generated.append(('tf', topic, false_q, ['True', 'False'], 'False', f"{concept} is directly related to {detail}."))
+
+    return single_generated, multi_generated, tf_generated
+
+
+sg, mg, tg = generate_from_facts()
+for item in sg:
+    add(*item)
+for item in mg:
+    add(*item)
+for item in tg:
+    add(*item)
