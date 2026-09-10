@@ -77,7 +77,7 @@ def get_ch9_questions():
           "ECC provides equivalent cryptographic strength with significantly shorter key lengths (e.g. 256-bit ECC provides security equivalent to 3072-bit RSA), reducing processing overhead and bandwidth",
           "ECC does not use any mathematical equations",
           "ECC can only be executed on supercomputers"], "B",
-         "Based on the discrete logarithm problem over elliptic curves, ECC delivers equivalent cryptographic security with much smaller key sizes (e.g., 256-bit ECC $\approx$ 3072-bit RSA), resulting in faster computations and lower bandwidth/memory footprints."),
+         "Based on the discrete logarithm problem over elliptic curves, ECC delivers equivalent cryptographic security with much smaller key sizes (e.g., 256-bit ECC roughly equivalent to 3072-bit RSA), resulting in faster computations and lower bandwidth/memory footprints."),
         ("Diffie-Hellman (DH) Function", "What is the primary operational capability provided by the Diffie-Hellman (DH) algorithm in network protocols like IPsec?",
          ["Direct bulk file encryption of multi-gigabyte databases",
           "Allowing two parties to securely negotiate and establish a shared secret key over an insecure, public communication channel",
