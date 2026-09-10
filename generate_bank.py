@@ -1120,3 +1120,142 @@ bulk_tf = [
 
 for topic, q, ans, exp in bulk_tf:
     add('tf', topic, q, ['True', 'False'], ans, exp)
+
+
+# =============================================================================
+# BULK QUESTION POOLS - CHAPTERS 6-10
+# =============================================================================
+
+bulk_single_2 = [
+    # Chapter 6 extra
+    ('Firewall Hot Standby', 'What is the default VRRP advertisement interval?', ['1 second', '3 seconds', '10 seconds', '30 seconds'], 'A', 'VRRP master sends advertisements approximately every 1 second by default.'),
+    ('Firewall Hot Standby', 'Which VRRP priority value is highest configurable?', ['1', '100', '254', '255'], 'C', 'VRRP priority ranges from 1 to 254 configurable; 255 is reserved for the IP owner.'),
+    ('Firewall Hot Standby', 'What happens if a backup router stops receiving VRRP advertisements?', ['It remains backup', 'It preempts and becomes master', 'It shuts down', 'It sends ARP requests'], 'B', 'Missing advertisements trigger a backup to assume the master role.'),
+    ('Firewall Hot Standby', 'What does VGMP group priority determine?', ['NAT pool size', 'Which firewall becomes active', 'Number of interfaces', 'DHCP lease time'], 'B', 'VGMP priority determines the active/standby role among redundant firewalls.'),
+    ('Firewall Hot Standby', 'Which HRP state indicates the firewall is currently forwarding traffic?', ['Standby', 'Active', 'Initialize', 'Backup'], 'B', 'The active HRP peer forwards traffic and synchronizes state to the standby.'),
+    ('Firewall Hot Standby', 'Which HRP command enables automatic configuration synchronization?', ['hrp enable', 'hrp auto-sync config', 'hrp mirror session', 'hrp vrrp enable'], 'B', 'hrp auto-sync config enables automatic configuration synchronization between peers.'),
+    ('Firewall Hot Standby', 'Which deployment places both firewalls inline with the same traffic path?', ['Dual-hot standby', 'Active/standby inline', 'Route backup only', 'Transparent bridge'], 'B', 'Inline active/standby deployment places firewalls in the same forwarding path.'),
+    ('Firewall Hot Standby', 'What is a common requirement for HRP heartbeat links?', ['Use the same interface as user traffic', 'Use a dedicated high-reliability link', 'Use wireless link only', 'No link required'], 'B', 'Heartbeat links should be dedicated and reliable to avoid false failovers.'),
+    ('Firewall Hot Standby', 'Which mechanism reduces unnecessary VRRP state changes when interface flaps briefly?', ['Preempt delay', 'Track interface', 'Authentication', 'Priority 255'], 'A', 'Preempt delay prevents rapid master/backup flapping.'),
+    ('Firewall Hot Standby', 'Which HRP feature ensures sessions survive a failover?', ['Session backup', 'Route backup', 'NAT ALG', 'URL filtering'], 'A', 'HRP session backup keeps session state synchronized so connections continue after failover.'),
+    # Chapter 7 extra
+    ('Intrusion Prevention and Antivirus', 'Which phase of an attack involves identifying vulnerable services?', ['Exploitation', 'Reconnaissance', 'Installation', 'Exfiltration'], 'B', 'Reconnaissance gathers information about targets before exploitation.'),
+    ('Intrusion Prevention and Antivirus', 'Which phase involves gaining unauthorized access?', ['Reconnaissance', 'Exploitation', 'Covering tracks', 'Reporting'], 'B', 'Exploitation uses vulnerabilities to gain access to the target.'),
+    ('Intrusion Prevention and Antivirus', 'Which deployment mode allows IDS to monitor traffic without affecting it?', ['Inline', 'Tap/SPAN', 'Bridge', 'Gateway'], 'B', 'IDS commonly connects to a tap or switch SPAN port for passive monitoring.'),
+    ('Intrusion Prevention and Antivirus', 'Which signature action drops the offending packet?', ['Alert', 'Block', 'Permit', 'Mirror'], 'B', 'Block actions discard malicious packets.'),
+    ('Intrusion Prevention and Antivirus', 'What is a false positive in IPS?', ['Attack missed', 'Legitimate traffic blocked as malicious', 'Correct detection', 'Signature update failure'], 'B', 'False positives incorrectly classify legitimate traffic as malicious.'),
+    ('Intrusion Prevention and Antivirus', 'What is a false negative in IPS?', ['Legitimate traffic blocked', 'Attack missed by IPS', 'Correct block', 'Logging error'], 'B', 'False negatives occur when an actual attack is not detected.'),
+    ('Intrusion Prevention and Antivirus', 'Which malware type encrypts user files and demands ransom?', ['Virus', 'Worm', 'Trojan', 'Ransomware'], 'D', 'Ransomware encrypts files and demands a ransom for decryption.'),
+    ('Intrusion Prevention and Antivirus', 'Which approach only allows known-good applications to run?', ['Blacklisting', 'Whitelisting', 'Heuristics', 'Sandboxing'], 'B', 'Whitelisting permits only approved applications.'),
+    ('Intrusion Prevention and Antivirus', 'Which technique detects malware by examining code behavior rather than signatures?', ['Signature scanning', 'Heuristic analysis', 'Whitelisting', 'Patching'], 'B', 'Heuristics analyze code behavior to identify potentially malicious activity.'),
+    ('Intrusion Prevention and Antivirus', 'Which protocol is commonly targeted by brute-force attacks against remote access?', ['HTTP', 'SSH', 'DNS', 'NTP'], 'B', 'SSH and similar remote-access protocols are frequent brute-force targets.'),
+    ('Intrusion Prevention and Antivirus', 'What does an IPS signature database contain?', ['User passwords', 'Known attack patterns', 'Routing tables', 'DNS records'], 'B', 'Signature databases contain patterns used to identify known attacks.'),
+    ('Intrusion Prevention and Antivirus', 'What is the role of the antivirus engine on a firewall?', ['Route packets', 'Scan files and traffic for malware', 'Assign IP addresses', 'Authenticate users'], 'B', 'The antivirus engine inspects files and traffic to detect and block malware.'),
+    # Chapter 8 extra
+    ('AAA and User Authentication', 'Which AAA protocol commonly uses UDP ports 1812 and 1813?', ['TACACS+', 'RADIUS', 'LDAP', 'Kerberos'], 'B', 'RADIUS commonly uses UDP ports 1812/1813 (or 1645/1646 legacy).'),
+    ('AAA and User Authentication', 'Which AAA protocol uses TCP port 49 by default?', ['RADIUS', 'TACACS+', 'LDAP', 'DHCP'], 'B', 'TACACS+ uses TCP port 49 by default.'),
+    ('AAA and User Authentication', 'In AAA, which process maps users to privileges?', ['Authentication', 'Authorization', 'Accounting', 'Admission'], 'B', 'Authorization maps authenticated identities to permitted actions/resources.'),
+    ('AAA and User Authentication', 'Which authentication type identifies users based on source IP?', ['User authentication', 'Access user authentication', 'Device authentication', 'IP/MAC binding'], 'B', 'Access user authentication can identify users by IP/MAC for transparent access control.'),
+    ('AAA and User Authentication', 'Which user type is created directly on the firewall?', ['RADIUS user', 'LDAP user', 'Local user', 'Domain user'], 'C', 'Local users are defined directly in the firewall local user database.'),
+    ('AAA and User Authentication', 'Which component is queried when using LDAP authentication?', ['DNS server', 'LDAP directory server', 'NTP server', 'SNMP server'], 'B', 'The firewall queries an LDAP directory server to validate credentials.'),
+    ('AAA and User Authentication', 'What is the purpose of a user group?', ['Increase Internet speed', 'Apply policies to multiple users collectively', 'Replace firewalls', 'Encrypt traffic'], 'B', 'User groups simplify policy management by grouping users with similar access needs.'),
+    ('AAA and User Authentication', 'Which authentication method is often used for wired/wireless network access control?', ['Portal', '802.1X', 'Local', 'RADIUS accounting'], 'B', '802.1X is commonly used for port-based network access control on wired and wireless networks.'),
+    ('AAA and User Authentication', 'What does single sign-on (SSO) provide?', ['Multiple passwords', 'One authentication for multiple services', 'No authentication', 'Local only access'], 'B', 'SSO allows users to authenticate once and access multiple services.'),
+    ('AAA and User Authentication', 'Which user authentication policy condition can match traffic?', ['Source zone', 'Time range', 'Source/destination address', 'All of the above'], 'D', 'Authentication policies can match zones, addresses, time ranges, and other conditions.'),
+    # Chapter 9 extra
+    ('Cryptography and PKI', 'Which symmetric algorithm uses variable key lengths of 128, 192, or 256 bits?', ['DES', 'AES', 'RSA', 'MD5'], 'B', 'AES supports 128, 192, and 256-bit keys.'),
+    ('Cryptography and PKI', 'How many bits is a DES key?', ['56', '64', '128', '256'], 'A', 'DES uses a 56-bit effective key length.'),
+    ('Cryptography and PKI', 'Which asymmetric algorithm is commonly used for key exchange in TLS?', ['AES', 'RSA', 'SHA-256', 'HMAC'], 'B', 'RSA or Diffie-Hellman are commonly used for TLS key exchange.'),
+    ('Cryptography and PKI', 'What is the main disadvantage of symmetric encryption?', ['Slow speed', 'Key distribution challenge', 'Large key sizes', 'No confidentiality'], 'B', 'Distributing the shared secret key securely is the main challenge.'),
+    ('Cryptography and PKI', 'Which property ensures a small input change produces a very different hash?', ['Determinism', 'Avalanche effect', 'Fixed output', 'Reversibility'], 'B', 'The avalanche effect means tiny input changes cause large output changes.'),
+    ('Cryptography and PKI', 'Which hash algorithm produces a 128-bit digest?', ['MD5', 'SHA-1', 'SHA-256', 'SHA-512'], 'A', 'MD5 produces a 128-bit digest.'),
+    ('Cryptography and PKI', 'What is HMAC?', ['A hash-based message authentication code', 'A symmetric cipher', 'A key exchange protocol', 'A firewall feature'], 'A', 'HMAC combines a hash function with a secret key to provide message authentication.'),
+    ('Cryptography and PKI', 'Which key is used to create a digital signature?', ['Public key', 'Private key', 'Shared secret', 'Session key'], 'B', 'The signer uses their private key to create a digital signature.'),
+    ('Cryptography and PKI', 'Which key is used to verify a digital signature?', ['Public key', 'Private key', 'Shared secret', 'Master key'], 'A', 'The verifier uses the signer public key to verify the signature.'),
+    ('Cryptography and PKI', 'Which standard defines the format of digital certificates?', ['X.509', 'X.500', 'LDAP', 'DNS'], 'A', 'X.509 is the standard format for public key certificates.'),
+    ('Cryptography and PKI', 'What does OCSP provide?', ['Online certificate status checking', 'Certificate issuance', 'Key generation', 'Email encryption'], 'A', 'OCSP checks certificate revocation status in real time.'),
+    ('Cryptography and PKI', 'In a PKI hierarchy, which certificate is self-signed?', ['End-entity certificate', 'Root CA certificate', 'Intermediate CA certificate', 'Server certificate'], 'B', 'Root CA certificates are self-signed because they are the trust anchor.'),
+    ('Cryptography and PKI', 'Which entity stores issued certificates for retrieval?', ['CA', 'RA', 'Repository', 'CRL'], 'C', 'A repository distributes certificates and CRLs to relying parties.'),
+    ('Cryptography and PKI', 'Which cipher mode provides both confidentiality and authentication?', ['ECB', 'CBC', 'GCM', 'CTR'], 'C', 'Galois/Counter Mode (GCM) provides authenticated encryption.'),
+    ('Cryptography and PKI', 'Which mode should be avoided because identical plaintext blocks produce identical ciphertext?', ['ECB', 'CBC', 'GCM', 'CFB'], 'A', 'ECB reveals patterns in plaintext and is generally insecure.'),
+    # Chapter 10 extra
+    ('VPN', 'Which VPN deployment connects two fixed sites?', ['Remote access VPN', 'Site-to-site VPN', 'Clientless VPN', 'Host-to-host VPN'], 'B', 'Site-to-site VPNs connect entire networks at different locations.'),
+    ('VPN', 'What is a key advantage of GRE?', ['Built-in encryption', 'Can encapsulate multicast and non-IP protocols', 'Uses TCP', 'Automatic key exchange'], 'B', 'GRE can tunnel multicast and non-IP traffic, making it useful for routing protocols.'),
+    ('VPN', 'Which protocol number is assigned to GRE?', ['47', '50', '51', '89'], 'A', 'GRE is IP protocol 47.'),
+    ('VPN', 'What does IKE Phase 1 establish?', ['IPsec SA', 'IKE SA', 'Routing table', 'DHCP lease'], 'B', 'IKE Phase 1 establishes a secure IKE SA for protected negotiation.'),
+    ('VPN', 'What does IKE Phase 2 establish?', ['IKE SA', 'IPsec SA', 'SSL session', 'ARP entry'], 'B', 'IKE Phase 2 negotiates the IPsec SA that protects actual data traffic.'),
+    ('VPN', 'Which authentication method does IKE support? (single best answer)', ['Pre-shared key', 'Digital signatures', 'Both pre-shared key and digital signatures', 'None'], 'C', 'IKE supports both pre-shared key and digital signature authentication.'),
+    ('VPN', 'Which Diffie-Hellman group provides stronger key exchange?', ['Group 1', 'Group 2', 'Group 5', 'Group 14 or higher'], 'D', 'Higher Diffie-Hellman groups such as 14 or above provide stronger security.'),
+    ('VPN', 'Which IKE version provides faster SA setup and improved reliability?', ['IKEv1', 'IKEv2', 'IKEv3', 'ISAKMP'], 'B', 'IKEv2 simplifies negotiation and improves resilience compared to IKEv1.'),
+    ('VPN', 'Which UDP ports does L2TP use?', ['500 and 4500', '1701', '443', '50 and 51'], 'B', 'L2TP uses UDP port 1701.'),
+    ('VPN', 'Why is L2TP often combined with IPsec?', ['To provide encryption', 'To increase speed', 'To reduce overhead', 'To avoid tunnels'], 'A', 'L2TP lacks encryption, so IPsec is added for confidentiality and integrity.'),
+    ('VPN', 'Which SSL VPN mode grants the remote host a virtual IP on the internal network?', ['Web proxy', 'Network extension', 'File sharing', 'Port forwarding'], 'B', 'Network extension mode assigns a virtual IP and routes traffic into the corporate network.'),
+    ('VPN', 'Which SSL VPN mode is best for accessing internal web apps without installing a client?', ['Web proxy', 'Network extension', 'IPsec', 'L2TP'], 'A', 'Web proxy mode requires only a browser.'),
+    ('VPN', 'Which encapsulation mode is typically used for site-to-site VPNs?', ['Transport mode', 'Tunnel mode', 'Bridge mode', 'Trunk mode'], 'B', 'Site-to-site VPNs typically use tunnel mode to protect the entire original packet.'),
+    ('VPN', 'Which tunneling protocol is considered a Layer 2 VPN technology?', ['GRE', 'IPsec', 'L2TP', 'SSL VPN'], 'C', 'L2TP operates at Layer 2, while GRE, IPsec, and SSL VPN operate at higher layers.'),
+    ('VPN', 'Which component defines the security parameters for an IPsec connection?', ['SPD', 'SA', 'NAT', 'ARP'], 'B', 'A Security Association (SA) defines algorithms, keys, and lifetimes for IPsec.'),
+]
+
+for topic, q, opts, ans, exp in bulk_single_2:
+    add('single', topic, q, opts, ans, exp)
+
+
+bulk_multi_2 = [
+    ('Firewall Hot Standby', 'Which are VRRP components? (Choose all that apply)', ['Virtual IP', 'Virtual MAC', 'Master router', 'Backup router'], 'A,B,C,D', 'VRRP uses a virtual IP, virtual MAC, master, and backup routers.'),
+    ('Firewall Hot Standby', 'Which are HRP synchronization modes? (Choose all that apply)', ['Real-time', 'Fast', 'Batch', 'Auto'], 'A,B,C', 'HRP supports real-time, fast, and batch synchronization modes.'),
+    ('Firewall Hot Standby', 'Which are valid hot-standby modes? (Choose all that apply)', ['Active/standby', 'Load sharing', 'Cluster', 'Standalone'], 'A,B', 'Huawei firewall hot standby supports active/standby and load-sharing modes.'),
+    ('Firewall Hot Standby', 'Which items should be checked when HRP is not synchronizing? (Choose all that apply)', ['Heartbeat link status', 'HRP enable status', 'VGMP priority', 'Configuration consistency'], 'A,B,C,D', 'Check heartbeat links, HRP status, priorities, and configuration consistency.'),
+    ('Intrusion Prevention and Antivirus', 'Which are common attack phases? (Choose all that apply)', ['Reconnaissance', 'Exploitation', 'Lateral movement', 'Exfiltration'], 'A,B,C,D', 'Cyber kill chain phases include reconnaissance, exploitation, lateral movement, and exfiltration.'),
+    ('Intrusion Prevention and Antivirus', 'Which are types of intrusion detection/prevention systems? (Choose all that apply)', ['NIDS', 'NIPS', 'HIDS', 'HIPS'], 'A,B,C,D', 'Network and host-based IDS/IPS exist for different monitoring scopes.'),
+    ('Intrusion Prevention and Antivirus', 'Which factors should be considered when tuning IPS signatures? (Choose all that apply)', ['False positive rate', 'False negative rate', 'Performance impact', 'Business context'], 'A,B,C,D', 'Effective tuning balances detection accuracy, performance, and business needs.'),
+    ('Intrusion Prevention and Antivirus', 'Which are methods to improve malware detection? (Choose all that apply)', ['Keep signatures updated', 'Use heuristics', 'Deploy sandboxing', 'User education'], 'A,B,C,D', 'Updated signatures, heuristics, sandboxing, and user awareness improve detection.'),
+    ('AAA and User Authentication', 'Which are AAA functions? (Choose all that apply)', ['Authentication', 'Authorization', 'Accounting', 'Alerting'], 'A,B,C', 'AAA provides authentication, authorization, and accounting.'),
+    ('AAA and User Authentication', 'Which can be authentication sources on Huawei firewalls? (Choose all that apply)', ['Local database', 'RADIUS server', 'HWTACACS server', 'LDAP server'], 'A,B,C,D', 'Firewalls can authenticate against local, RADIUS, HWTACACS, and LDAP sources.'),
+    ('AAA and User Authentication', 'Which are differences between RADIUS and TACACS+? (Choose all that apply)', ['RADIUS uses UDP; TACACS+ uses TCP', 'RADIUS combines auth/authz; TACACS+ separates them', 'RADIUS encrypts only password; TACACS+ encrypts entire payload', 'RADIUS is Cisco proprietary'], 'A,B,C', 'RADIUS uses UDP and combines auth/authz; TACACS+ uses TCP and separates AAA; only the password is encrypted in RADIUS.'),
+    ('Cryptography and PKI', 'Which are asymmetric algorithms? (Choose all that apply)', ['RSA', 'ECC', 'DSA', 'AES'], 'A,B,C', 'RSA, ECC, and DSA are asymmetric; AES is symmetric.'),
+    ('Cryptography and PKI', 'Which are block cipher modes? (Choose all that apply)', ['ECB', 'CBC', 'CTR', 'GCM'], 'A,B,C,D', 'ECB, CBC, CTR, and GCM are all AES block cipher modes.'),
+    ('Cryptography and PKI', 'Which are secure hash algorithms? (Choose all that apply)', ['SHA-256', 'SHA-3', 'BLAKE2', 'MD5'], 'A,B,C', 'SHA-256, SHA-3, and BLAKE2 are considered secure; MD5 is broken.'),
+    ('Cryptography and PKI', 'Which are PKI trust models? (Choose all that apply)', ['Single CA', 'Hierarchical CA', 'Cross-certification', 'Bridge CA'], 'A,B,C,D', 'PKI can use single, hierarchical, cross-certified, or bridge CA models.'),
+    ('Cryptography and PKI', 'Which fields are typically found in an X.509 certificate? (Choose all that apply)', ['Subject', 'Issuer', 'Public key', 'Validity period'], 'A,B,C,D', 'X.509 certificates contain subject, issuer, public key, validity, serial number, and signature.'),
+    ('VPN', 'Which are benefits of using a VPN? (Choose all that apply)', ['Confidentiality', 'Data integrity', 'Authentication', 'Secure remote access'], 'A,B,C,D', 'VPNs provide confidentiality, integrity, authentication, and secure remote access.'),
+    ('VPN', 'Which are IPsec security services? (Choose all that apply)', ['Confidentiality', 'Integrity', 'Authentication', 'Anti-replay'], 'A,B,C,D', 'IPsec provides confidentiality, integrity, authentication, and anti-replay protection.'),
+    ('VPN', 'Which are phases of IKEv1? (Choose all that apply)', ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 1.5'], 'A,B', 'IKEv1 has two phases: Phase 1 (IKE SA) and Phase 2 (IPsec SA).'),
+    ('VPN', 'Which protocols operate at the IP layer? (Choose all that apply)', ['AH', 'ESP', 'GRE', 'L2TP'], 'A,B', 'AH and ESP are IP-layer protocols; GRE is also IP-layer but L2TP is not.'),
+]
+
+for topic, q, opts, ans, exp in bulk_multi_2:
+    add('multi', topic, q, opts, ans, exp)
+
+
+bulk_tf_2 = [
+    ('Firewall Hot Standby', 'VRRP provides default gateway redundancy for end hosts.', 'True', 'VRRP allows multiple routers to act as a single virtual gateway.'),
+    ('Firewall Hot Standby', 'In VRRP, only the router with the physical IP matching the virtual IP can become master.', 'False', 'Any router with sufficient priority can become master, not just the IP owner.'),
+    ('Firewall Hot Standby', 'VGMP prevents individual VRRP groups from becoming inconsistent during failover.', 'True', 'VGMP manages multiple VRRP groups as a single entity.'),
+    ('Firewall Hot Standby', 'HRP can synchronize NAT sessions between active and standby firewalls.', 'True', 'HRP keeps NAT/session state consistent across hot-standby peers.'),
+    ('Firewall Hot Standby', 'Load-sharing mode improves resource utilization compared to active/standby mode.', 'True', 'Multiple firewalls forward traffic simultaneously in load-sharing mode.'),
+    ('Firewall Hot Standby', 'The HRP heartbeat link can share bandwidth with regular user traffic without risk.', 'False', 'Sharing heartbeat and user traffic can cause false failover due to congestion.'),
+    ('Intrusion Prevention and Antivirus', 'IPS is typically deployed inline to block threats.', 'True', 'Inline deployment allows IPS to actively block malicious traffic.'),
+    ('Intrusion Prevention and Antivirus', 'Anomaly-based detection requires a database of known attack signatures.', 'False', 'Anomaly detection uses baselines of normal behavior, not attack signatures.'),
+    ('Intrusion Prevention and Antivirus', 'Heuristic analysis can detect previously unknown malware.', 'True', 'Heuristics identify suspicious behavior even without a known signature.'),
+    ('Intrusion Prevention and Antivirus', 'Signature-based antivirus is effective against all zero-day threats.', 'False', 'Zero-day threats lack signatures, so signature-only detection cannot catch them.'),
+    ('AAA and User Authentication', 'Authentication verifies who a user is.', 'True', 'Authentication confirms identity before granting access.'),
+    ('AAA and User Authentication', 'TACACS+ separates authentication, authorization, and accounting.', 'True', 'TACACS+ provides independent AAA functions.'),
+    ('AAA and User Authentication', 'RADIUS encrypts the entire authentication request.', 'False', 'RADIUS encrypts only the password attribute.'),
+    ('AAA and User Authentication', 'Local authentication does not require an external server.', 'True', 'Local authentication uses the firewall own user database.'),
+    ('Cryptography and PKI', 'AES is a symmetric encryption algorithm.', 'True', 'AES uses the same key for encryption and decryption.'),
+    ('Cryptography and PKI', 'RSA is faster than AES for bulk data encryption.', 'False', 'RSA is slower and typically used for key exchange or signatures, not bulk encryption.'),
+    ('Cryptography and PKI', 'SHA-256 produces a 256-bit digest.', 'True', 'SHA-256 generates a fixed 256-bit output.'),
+    ('Cryptography and PKI', 'Hash functions are reversible.', 'False', 'Hash functions are designed to be one-way.'),
+    ('Cryptography and PKI', 'A digital signature provides non-repudiation.', 'True', 'Digital signatures prove the signer created the message and cannot easily deny it.'),
+    ('Cryptography and PKI', 'A root CA certificate is typically signed by another CA.', 'False', 'Root CA certificates are self-signed and act as trust anchors.'),
+    ('Cryptography and PKI', 'OCSP provides real-time certificate revocation checking.', 'True', 'OCSP allows clients to query revocation status online.'),
+    ('VPN', 'A VPN allows secure communication over an untrusted public network.', 'True', 'VPNs create encrypted tunnels over public networks.'),
+    ('VPN', 'GRE can tunnel multicast traffic.', 'True', 'GRE supports multicast tunneling, which is useful for routing protocols.'),
+    ('VPN', 'IPsec transport mode encrypts the entire original IP packet.', 'False', 'Transport mode encrypts only the payload; tunnel mode encrypts the entire packet.'),
+    ('VPN', 'IKE is responsible for negotiating IPsec keys and security associations.', 'True', 'IKE automates key exchange and SA negotiation.'),
+    ('VPN', 'L2TP provides encryption by itself.', 'False', 'L2TP does not encrypt traffic; it is usually combined with IPsec.'),
+    ('VPN', 'SSL VPN can be accessed through a standard web browser.', 'True', 'SSL VPN supports browser-based access via HTTPS.'),
+]
+
+for topic, q, ans, exp in bulk_tf_2:
+    add('tf', topic, q, ['True', 'False'], ans, exp)
