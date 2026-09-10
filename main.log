@@ -1065,4 +1065,51 @@ os-tics use \T1/lmtt/m/n/10 display user-manage online-user\T1/lmr/m/n/10 (+20)
 ] [225] [226] [227] [228] [229]
 [230] [231] [232] [233] [234] [235] [236] [237] [238] [239] [240] [241]
 [242] [243] [244] [245] [246] [247] [248] [249] [250] [251] [252] [253]
-[254] [255] [256] [257] [258] [259] [260] [261] [2
+[254] [255] [256] [257] [258] [259] [260] [261] [262] [263] [264] [265]
+[266] [267] [268] [269] [270] [271] [272] [273] [274] [275] [276] [277]
+[278] [279] [280] [281] [282] [283] [284] [285] [286] [287] [288] [289]
+[290] [291] [292] [293] [294] [295] [296] [297]) [298]
+(./chapters/quick_answer_key.tex
+ignored: Infinite glue shrinkage found in box being spli
+t [299
+
+] [300]
+ignored: Infinite glue shrinkage found in box being split [301
+
+] [302]
+ignored: Infinite glue shrinkage found in box being split [303
+
+]) [304]
+(./main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 460B6F8F7432AD2B81E56B1822D6AAA1;11044.
+ ) 
+Here is how much of TeX's memory you used:
+ 32874 strings out of 469006
+ 577152 string characters out of 5454813
+ 990657 words of memory out of 5000000
+ 56828 multiletter control sequences out of 15000+600000
+ 711955 words of font info for 211 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 121i,13n,124p,1001b,618s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></u
+sr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
+cal/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/te
+xlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texliv
+e/2026basic/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026
+basic/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026basic/t
+exmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2026basic/texmf-
+dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/
+fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/
+type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (305 pages, 1484820 bytes).
+PDF statistics:
+ 6103 PDF objects out of 6186 (max. 8388607)
+ 5717 compressed objects within 58 object streams
+ 4039 named destinations out of 4296 (max. 500000)
+ 45885 words of extra memory for PDF output out of 51595 (max. 10000000)
+
