@@ -8,37 +8,67 @@
 % =========================================================================
 \begin{titlepage}
     \centering
-    \vspace*{0.8cm}
+    \vspace*{0.4cm}
     
     % Official UM5R University Logo & Department Info
-    \includegraphics[height=2.5cm]{assets/um5r_logo.png}\par
-    \vspace{0.5cm}
-    {\normalsize\bfseries\color{darkslate!90} Université Mohammed V de Rabat $\;\cdot\;$ Faculté des Sciences}\par
-    \vspace{0.25em}
-    {\normalsize\bfseries\color{hblue} Master 2I2S -- Ingénierie Informatique et Sécurité des Systèmes}\par
-    \vspace{0.8em}
-    {\color{hblue}\rule{0.92\textwidth}{1.4pt}}\par
-    \vspace{1.4cm}
-    
-    % Main Title & Subtitles
-    {\fontsize{28}{34}\selectfont\bfseries\color{hblue} Huawei HCIA-Security V3.0\par}
-    \vspace{0.4cm}
-    {\fontsize{19}{24}\selectfont\bfseries\color{darkslate} Master 2I2S Exam Preparation Guide\par}
+    \includegraphics[height=2.4cm]{assets/um5r_logo.png}\par
     \vspace{0.35cm}
-    {\large\bfseries\color{hred} 1,050 Practice Questions with Clear Conceptual Explanations\par}
+    {\fontsize{11}{14}\selectfont\scshape\bfseries\color{darkslate!90} Université Mohammed V de Rabat $\;\cdot\;$ Faculté des Sciences}\par
+    \vspace{0.2cm}
+    {\fontsize{11.5}{15}\selectfont\bfseries\color{hblue} Département d'Informatique $\;\cdot\;$ Master 2I2S}\par
+    \vspace{0.15cm}
+    {\fontsize{9.5}{12}\selectfont\itshape\color{darkslate!75} Ingénierie Informatique et Sécurité des Systèmes}\par
+    \vspace{0.65cm}
+    {\color{hblue!70}\rule{0.90\textwidth}{1.2pt}}\par
+    \vspace{1.0cm}
     
-    \vspace{0.5cm}
-    {\color{darkslate!25}\rule{0.25\textwidth}{1.2pt}}\par
+    % Main Title Block
+    {\fontsize{28}{34}\selectfont\bfseries\color{hblue} Huawei HCIA-Security V3.0\par}
+    \vspace{0.35cm}
+    {\fontsize{18}{22}\selectfont\bfseries\color{darkslate} Master 2I2S Exam Preparation Guide\par}
+    \vspace{0.35cm}
+    {\fontsize{12.5}{16}\selectfont\bfseries\color{singlecol!90!black} 1,050 Practice Questions with Detailed Explanations\par}
+    \vspace{0.25cm}
+    {\fontsize{10}{13}\selectfont\color{darkslate!65} Target Exam: \textbf{H12-711} $\;\cdot\;$ Huawei Certified ICT Associate -- Security\par}
+    
+    \vspace{1.1cm}
+    
+    % 3 Question Type Cards (Single Choice / Multi Choice / True False)
+    \begin{center}
+    \begin{tikzpicture}
+        % Single Choice
+        \node[draw=singlecol, fill=singlecol!8, rounded corners=2.5mm, line width=0.9pt, inner sep=9pt, text width=4.1cm, align=center] at (-4.8,0) {
+            {\bfseries\color{singlecol}\large Part I}\\[0.25em]
+            {\bfseries\color{darkslate}\large 420 Questions}\\[0.25em]
+            {\footnotesize\bfseries\color{singlecol!90!black} Single Choice}\\[0.15em]
+            {\scriptsize\color{darkslate!70}Questions 1 -- 420}
+        };
+        % Multi Choice
+        \node[draw=multicol, fill=multicol!8, rounded corners=2.5mm, line width=0.9pt, inner sep=9pt, text width=4.1cm, align=center] at (0,0) {
+            {\bfseries\color{multicol}\large Part II}\\[0.25em]
+            {\bfseries\color{darkslate}\large 320 Questions}\\[0.25em]
+            {\footnotesize\bfseries\color{multicol!90!black} Multiple Choice}\\[0.15em]
+            {\scriptsize\color{darkslate!70}Questions 421 -- 740}
+        };
+        % True / False
+        \node[draw=tfcol, fill=tfcol!8, rounded corners=2.5mm, line width=0.9pt, inner sep=9pt, text width=4.1cm, align=center] at (4.8,0) {
+            {\bfseries\color{tfcol}\large Part III}\\[0.25em]
+            {\bfseries\color{darkslate}\large 310 Questions}\\[0.25em]
+            {\footnotesize\bfseries\color{tfcol!90!black} True / False}\\[0.15em]
+            {\scriptsize\color{darkslate!70}Questions 741 -- 1050}
+        };
+    \end{tikzpicture}
+    \end{center}
+    
     \vspace{0.9cm}
     
-    % Clean Specification Card
+    % Clean Information Grid / Table of Exam Domains
     \begin{tcolorbox}[
         colback=qbg,
-        colframe=hblue,
+        colframe=hblue!25,
         arc=2.5mm,
-        boxrule=0.9pt,
-        leftrule=5pt,
-        width=0.92\textwidth,
+        boxrule=0.8pt,
+        width=0.90\textwidth,
         halign=left,
         top=11pt,
         bottom=11pt,
@@ -46,36 +76,33 @@
         right=16pt
     ]
         \centering
-        {\large\bfseries\color{hblue} Master 2I2S Certification Exam Specifications}\\[0.7em]
-        \color{darkslate}\small
-        \renewcommand{\arraystretch}{1.3}
-        \begin{tabular}{r@{\hspace{0.9em}}l}
-            \textbf{Target Exam:} & Huawei Certified ICT Associate -- Security (Exam Code: \textbf{H12-711}) \\
-            \textbf{Master Program:} & \textbf{Master 2I2S} (Université Mohammed V de Rabat -- UM5R) \\
-            \textbf{Total Questions:} & \textbf{1,050 Questions} (420 Single Choice $\;\cdot\;$ 320 Multiple Choice $\;\cdot\;$ 310 True/False) \\
-            \textbf{Explanations:} & Clear explanation for every question explaining the real concept \\
-            \textbf{Answer Key:} & Master quick-check tables at the end (Pages 300--305) for fast scoring \\
-            \textbf{Passing Score:} & 600 / 1000 (Pass your HCIA during your Master 2I2S degree!) \\
-        \end{tabular}
+        {\bfseries\color{hblue}\normalsize Comprehensive Coverage of All 11 Exam Chapters}\\[0.6em]
+        \renewcommand{\arraystretch}{1.25}
+        \begin{tabular}{p{7.1cm}p{7.1cm}}
+            {\small $\bullet$ \textbf{Ch 1-2:} Network Basics \& Attack Defense} & 
+            {\small $\bullet$ \textbf{Ch 7:} Intrusion Prevention System (IPS)} \\
+            {\small $\bullet$ \textbf{Ch 3:} Next-Gen Firewall Technologies} & 
+            {\small $\bullet$ \textbf{Ch 8:} Cryptography Fundamentals} \\
+            {\small $\bullet$ \textbf{Ch 4:} Network Address Translation (NAT)} & 
+            {\small $\bullet$ \textbf{Ch 9:} PKI Certificate Architecture} \\
+            {\small $\bullet$ \textbf{Ch 5:} Dual-System Hot Standby (VRRP/VGMP)} & 
+            {\small $\bullet$ \textbf{Ch 10:} IPsec VPN Technologies} \\
+            {\small $\bullet$ \textbf{Ch 6:} User Management \& AAA Security} & 
+            {\small $\bullet$ \textbf{Ch 11:} SSL VPN Technologies} \\
+        \end{tabular}\\[0.7em]
+        {\footnotesize\color{ansgreen}\textbf{+ Complete Master Quick Answer Key Included (Pages 300--305)}}
     \end{tcolorbox}
-    
-    \vspace{0.9cm}
-    
-    % Core Domains Overview
-    {\small\color{darkslate!75}
-    \textbf{All 11 Huawei Curriculum Chapters:}\\[0.3em]
-    Network Basics $\;\cdot\;$ Attacks \& Defense $\;\cdot\;$ Next-Gen Firewalls $\;\cdot\;$ NAT\\
-    Dual-System Hot Standby (VRRP/VGMP) $\;\cdot\;$ AAA \& Users $\;\cdot\;$ IPS $\;\cdot\;$ Cryptography $\;\cdot\;$ PKI $\;\cdot\;$ IPsec \& SSL VPN\par}
     
     \vfill
     
-    % Bottom Footer Rule & Tagline
-    {\color{hblue!30}\rule{0.92\textwidth}{0.8pt}}\par
+    % Bottom Academic Meta Block
+    {\color{hblue!40}\rule{0.90\textwidth}{0.8pt}}\par
     \vspace{0.45em}
-    {\footnotesize\color{darkslate!65}
-    \textbf{Master 2I2S $\;\cdot\;$ Université Mohammed V de Rabat (UM5R)} \hfill \textbf{Student Revision Guide $\cdot$ 2025/2026}
+    {\footnotesize\color{darkslate!75}
+    \textbf{Université Mohammed V de Rabat} $\;\cdot\;$ Faculté des Sciences de Rabat\hfill \textbf{Academic Year 2025 -- 2026}\\[0.2em]
+    \textbf{Master 2I2S} $\;\cdot\;$ Ingénierie Informatique et Sécurité des Systèmes\hfill \textbf{Student Revision Guide}
     }\par
-    \vspace*{0.3cm}
+    \vspace*{0.2cm}
 \end{titlepage}
 
 % =========================================================================
