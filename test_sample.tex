@@ -1,0 +1,38 @@
+\documentclass[10pt,a4paper]{book}
+\input{preamble.tex}
+
+\begin{document}
+\chapter{Single-Answer Questions}
+\section{Chapter 1: Network Security Concepts and Specifications}
+
+\begin{qcard}{1}{singlecol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} CIA - Confidentiality \hfill \textbf{Type:} Single Choice}\vspace{0.4em}\par
+Which security attribute ensures that sensitive information is not disclosed to unauthorized entities or eavesdropped during transmission?
+\begin{qoptions}
+\item Integrity
+\item Confidentiality
+\item Availability
+\item Non-repudiation
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B}
+\textbf{Concept \& Rationale:} Confidentiality ensures that information can be accessed and viewed only by authorized personnel. Cryptographic encryption is the primary mechanism to enforce confidentiality across untrusted networks.
+\end{explainbox}
+
+\begin{qcard}{2}{singlecol}
+\textcolor{darkslate!75}{\small\textbf{Topic:} CIA - Integrity \hfill \textbf{Type:} Single Choice}\vspace{0.4em}\par
+Which security property guarantees that transmitted data has not been altered, deleted, or forged in transit?
+\begin{qoptions}
+\item Availability
+\item Integrity
+\item Confidentiality
+\item Authenticity
+\end{qoptions}
+\end{qcard}
+\nopagebreak
+\begin{explainbox}{B}
+\textbf{Concept \& Rationale:} Integrity guarantees that data has not been tampered with or modified during transit or storage. Cryptographic hash functions (such as SHA-256) and message authentication codes are primary mechanisms to verify integrity.
+\end{explainbox}
+
+\end{document}
