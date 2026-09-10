@@ -38,13 +38,23 @@ Every single question comes with a **simple and clear explanation** so you can u
 
 ---
 
-## 🎨 Cover Page Preview
+## 🎨 Preview of the Guide
 
+### 📌 Cover Page (Master 2I2S Edition)
 Here is how the first page of our PDF guide looks:
 
 <p align="center">
   <a href="HCIA_Security_1050_Questions_Master_Guide.pdf">
     <img src="assets/cover_preview.png" alt="Master 2I2S Cover Page Preview" width="55%" style="border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);">
+  </a>
+</p>
+
+### 📋 Exam Blueprint & Curriculum Breakdown (Page 4)
+Here is Page 4 of the guide showing the exam specification and the question distribution across all 11 Huawei chapters:
+
+<p align="center">
+  <a href="HCIA_Security_1050_Questions_Master_Guide.pdf#page=4">
+    <img src="assets/page_4_preview.png" alt="Exam Blueprint & Question Distribution (Page 4)" width="58%" style="border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);">
   </a>
 </p>
 
@@ -123,6 +133,7 @@ The complete PDF book is compiled and ready to read:
 ├── assets/
 │   ├── um5r_logo.png                              # Official UM5R University logo
 │   ├── cover_preview.png                          # Preview of the cover page
+│   ├── page_4_preview.png                         # Exam blueprint & syllabus (Page 4)
 │   ├── sample_single_choice.png                   # Single-choice question preview
 │   ├── sample_multi_choice.png                    # Multiple-choice question preview
 │   ├── sample_true_false.png                      # True/False question preview
