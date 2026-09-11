@@ -7,7 +7,7 @@
 
 <p align="center">
   <b>Master 2I2S</b> — Ingénierie Informatique et Sécurité des Systèmes<br>
-  <i>Study material created to help all students in Master 2I2S prepare for and pass the Huawei HCIA-Security certification exam.</i>
+  <i>Study guide created for Master 2I2S students at UM5R in partnership with Huawei (Huawei ICT Academy) to prepare for and pass the HCIA-Security certification exam.</i>
 </p>
 
 <p align="center">
@@ -30,9 +30,9 @@
 
 Welcome to the **Master 2I2S** Huawei HCIA-Security revision repository!
 
-This project was made specifically for students in our **Master 2I2S** (Ingénierie Informatique et Sécurité des Systèmes) program at **Université Mohammed V de Rabat (UM5R)**. 
+This project was created for students in our **Master 2I2S** (Ingénierie Informatique et Sécurité des Systèmes) program at **Université Mohammed V de Rabat (UM5R)**, in official partnership with **Huawei (Huawei ICT Academy)**.
 
-Validating the **Huawei Certified ICT Associate - Security (HCIA-Security, Exam H12-711)** certification is an important step during our Master's degree. To make exam preparation as clear and stress-free as possible for everyone in our promotion, we organized **1,050 practice questions** directly from the official 499-page courseware (`HCiA.pdf`).
+As part of this partnership, validating the **Huawei Certified ICT Associate - Security (HCIA-Security, Exam H12-711)** certification is an important milestone for all Master 2I2S students. To make exam preparation as clear and stress-free as possible for everyone in our promotion, we organized **1,050 practice questions** directly from the official 499-page courseware (`HCiA.pdf`).
 
 Every single question comes with a **simple and clear explanation** so you can understand the actual networking and security concepts instead of just memorizing letters.
 
