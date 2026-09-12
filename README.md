@@ -122,7 +122,7 @@ The complete PDF book is compiled and ready to read:
 
 ---
 
-## 📁 Repository Structure 
+## 📁 Repository Structure
 
 ```text
 ├── HCIA_Security_1050_Questions_Master_Guide.pdf  # The full 305-page PDF book
